@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>कृषि समाचार - AI Farmer News</title>
+  <meta name="description" content="भारत का नंबर 1 AI-Powered किसान न्यूज़लेटर - 14 भाषाओं में रोज़ की खबरें" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌾</text></svg>" />
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #f0f4f0;
+      color: #1a2e1a;
+      min-height: 100vh;
+    }
+    /* HEADER */
+    .header {
+      background: linear-gradient(135deg, #1a4d2e, #2d7a4f);
+      padding: 16px;
+      color: #fff;
+    }
+    .header-top { display: flex; align-items: center; gap: 12px; margin-bottom: 10px; }
+    .logo { font-size: 26px; }
+    .brand { font-size: 20px; font-weight: 600; }
+    .brand-sub { font-size: 11px; opacity: 0.7; }
+    .live-dot {
+      width: 9px; height: 9px; background: #4caf50;
+      border-radius: 50%; margin-left: auto; flex-shrink: 0;
+      animation: blink 1.2s infinite;
+    }
+    @keyframes blink { 0%,100%{opacity:1} 50%{opacity:.3} }
+    .date-pill {
+      display: inline-block;
+      background: rgba(255,255,255,0.15);
+      border: 1px solid rgba(255,255,255,0.3);
+      border-radius: 20px; padding: 3px 12px;
+      font-size: 11px;
+    }
+    /* LANGUAGE BAR */
+    .lang-section {
+      background: #163d24;
+      padding: 8px 12px;
+      border-bottom: 2px solid #e8a020;
+      overflow-x: auto;
+      white-space: nowrap;
+      scrollbar-width: none;
+    }
+    .lang-section::-webkit-scrollbar { display: none; }
+    .lang-label { color: rgba(255,255,255,0.5); font-size: 10px; margin-bottom: 6px; text-transform: uppercase; letter-spacing: 1px; }
+    .lang-btn {
+      display: inline-block;
+      padding: 5px 13px;
+      border-radius: 20px;
+      border: 1.5px solid rgba(255,255,255,0.2);
+      background: transparent;
+      color: rgba(255,255,255,0.75);
+      font-size: 12px; cursor: pointer;
+      margin-right: 6px;
+      transition: all 0.15s;
+      font-family: inherit;
+    }
+    .lang-btn:hover { border-color: #e8a020; color: #e8a020; }
+    .lang-btn.active { background: #e8a020; color: #3a2000; border-color: #e8a020; font-weight: 600; }
+    /* TOOLBAR */
+    .toolbar {
+      display: flex; align-items: center; gap: 8px;
+      padding: 10px 14px;
+      background: #fff;
+      border-bottom: 1px solid #d0e8d0;
+    }
+    .refresh-btn {
+      padding: 6px 16px;
+      background: #1a4d2e; color: #fff;
+      border: none; border-radius: 20px;
+      font-size: 12px; cursor: pointer;
+      font-family: inherit;
+      display: flex; align-items: center; gap: 6px;
+      transition: opacity .2s;
+    }
+    .refresh-btn:hover { opacity: 0.85; }
+    .refresh-btn:disabled { opacity: 0.5; cursor: not-allowed; }
+    .spin { display: inline-block; animation: spin 0.7s linear infinite; }
+    @keyframes spin { to { transform: rotate(360deg); } }
+    .status-txt { font-size: 11px; color: #5a7a5a; flex: 1; }
+    .ai-badge {
+      background: #e6f4ea; color: #1a4d2e;
+      font-size: 10px; padding: 3px 10px;
+      border-radius: 20px; font-weight: 600;
+    }
+    /* NEWS */
+    .news-list { padding: 12px; max-width: 760px; margin: 0 auto; }
+    .news-card {
+      background: #fff;
+      border: 1px solid #d0e8d0;
+      border-radius: 10px;
+      padding: 12px 12px 12px 15px;
+      margin-bottom: 8px;
+      cursor: pointer;
+      transition: box-shadow 0.15s, border-color 0.15s;
+      position: relative; overflow: hidden;
+      display: flex; gap: 10px; align-items: flex-start;
+    }
+    .news-card:hover { box-shadow: 0 3px 16px rgba(0,0,0,0.09); border-color: #4caf7d; }
+    .accent { position: absolute; top: 0; left: 0; width: 4px; height: 100%; }
+    .num { flex-shrink: 0; width: 26px; height: 26px; border-radius: 50%; background: #e6f4ea; display: flex; align-items: center; justify-content: center; font-size: 11px; font-weight: 600; color: #1a4d2e; margin-top: 2px; }
+    .news-body { flex: 1; min-width: 0; }
+    .news-hl { font-size: 14px; font-weight: 500; line-height: 1.45; margin-bottom: 5px; color: #1a2e1a; }
+    .news-meta { display: flex; gap: 6px; flex-wrap: wrap; align-items: center; }
+    .cat-tag { font-size: 10px; padding: 2px 8px; border-radius: 10px; font-weight: 500; }
+    .meta-txt { font-size: 10px; color: #5a7a5a; }
+    /* SKELETON */
+    .skel { background: #e8f4e8; border-radius: 5px; height: 13px; margin-bottom: 5px; animation: shimmer 1.2s ease-in-out infinite; }
+    .skel.w90 { width: 90%; } .skel.w65 { width: 65%; } .skel.w40 { width: 40%; }
+    @keyframes shimmer { 0%,100%{opacity:.4} 50%{opacity:.9} }
+    /* MODAL */
+    .modal-overlay {
+      display: none; position: fixed; inset: 0;
+      background: rgba(0,0,0,0.5);
+      z-index: 100;
+      align-items: center; justify-content: center;
+      padding: 16px;
+    }
+    .modal-overlay.open { display: flex; }
+    .modal-box {
+      background: #fff; border-radius: 14px;
+      max-width: 540px; width: 100%;
+      max-height: 85vh; overflow-y: auto;
+      padding: 18px;
+      position: relative;
+    }
+    .modal-close {
+      position: absolute; top: 12px; right: 12px;
+      width: 28px; height: 28px; border-radius: 50%;
+      background: #e6f4ea; border: none; cursor: pointer;
+      font-size: 14px; color: #1a4d2e;
+      display: flex; align-items: center; justify-content: center;
+    }
+    .modal-title { font-size: 16px; font-weight: 600; line-height: 1.45; margin: 6px 0 12px; padding-right: 30px; }
+    .modal-body { font-size: 13px; color: #4a6a4a; line-height: 1.85; }
+    .modal-footer { margin-top: 12px; padding-top: 10px; border-top: 1px solid #d0e8d0; font-size: 11px; color: #5a7a5a; }
+    /* ERROR */
+    .error-box { background: #fff3f3; border: 1px solid #fca5a5; border-radius: 10px; padding: 16px; text-align: center; margin: 12px; }
+    /* FOOTER */
+    .footer { text-align: center; padding: 16px; font-size: 11px; color: #5a7a5a; border-top: 1px solid #d0e8d0; margin-top: 8px; }
+  </style>
+</head>
+<body>
+
+<div class="header">
+  <div class="header-top">
+    <span class="logo">🌾</span>
+    <div>
+      <div class="brand" id="brandName">कृषि समाचार</div>
+      <div class="brand-sub">AI-Powered • 14 Languages • Daily Auto-Update</div>
+    </div>
+    <div class="live-dot"></div>
+  </div>
+  <span class="date-pill" id="datePill"></span>
+  &nbsp;
+  <span style="font-size:11px;opacity:.65" id="langIndicator">हिंदी</span>
+</div>
+
+<div class="lang-section">
+  <div class="lang-label">भाषा चुनें / Choose Language</div>
+  <div id="langBar"></div>
+</div>
+
+<div class="toolbar" style="max-width:760px;margin:0 auto">
+  <button class="refresh-btn" id="refreshBtn" onclick="fetchNews()">
+    <span id="rIcon">↻</span>
+    <span id="rTxt">नई खबरें लाएं</span>
+  </button>
+  <span class="status-txt" id="statusTxt">भाषा चुनें और खबरें देखें</span>
+  <span class="ai-badge">⚡ Claude AI</span>
+</div>
+
+<div class="news-list" id="newsList"></div>
+
+<!-- MODAL -->
+<div class="modal-overlay" id="modalOverlay" onclick="handleOverlayClick(event)">
+  <div class="modal-box">
+    <button class="modal-close" onclick="closeModal()">✕</button>
+    <div id="mTag" style="margin-bottom:6px"></div>
+    <div class="modal-title" id="mTitle"></div>
+    <div class="modal-body" id="mBody"></div>
+    <div class="modal-footer" id="mFooter"></div>
+  </div>
+</div>
+
+<div class="footer">
+  ⚡ Anthropic Claude AI द्वारा संचालित &nbsp;|&nbsp; 🌾 भारतीय किसानों के लिए &nbsp;|&nbsp; 14 भाषाएँ
+</div>
+
+<script>
+const APIKEY_ENV = ''; // Vercel पर env variable से आएगा — यहाँ खाली छोड़ें
+
+const LANGS = [
+  {code:'hi',label:'हिंदी',name:'Hindi'},{code:'en',label:'English',name:'English'},
+  {code:'pa',label:'ਪੰਜਾਬੀ',name:'Punjabi'},{code:'mr',label:'मराठी',name:'Marathi'},
+  {code:'gu',label:'ગુજરાતી',name:'Gujarati'},{code:'ta',label:'தமிழ்',name:'Tamil'},
+  {code:'te',label:'తెలుగు',name:'Telugu'},{code:'kn',label:'ಕನ್ನಡ',name:'Kannada'},
+  {code:'ml',label:'മലയാളം',name:'Malayalam'},{code:'bn',label:'বাংলা',name:'Bengali'},
+  {code:'or',label:'ଓଡ଼ିଆ',name:'Odia'},{code:'as',label:'অসমীয়া',name:'Assamese'},
+  {code:'ur',label:'اردو',name:'Urdu'},{code:'raj',label:'राजस्थानी',name:'Rajasthani'},
+];
+
+const RTXT = {hi:'नई खबरें लाएं',en:'Fetch News',pa:'ਖ਼ਬਰਾਂ ਲਿਆਓ',mr:'बातम्या आणा',gu:'સમાચાર લાવો',ta:'செய்தி',te:'వార్తలు',kn:'ಸುದ್ದಿ',ml:'വാർത്ത',bn:'সংবাদ',or:'ସମ୍ବାଦ',as:'বাতৰি',ur:'خبریں',raj:'खबरां'};
+const LTXT = {hi:'AI खबरें तैयार कर रहा है...',en:'AI fetching news...',pa:'AI ਖ਼ਬਰਾਂ ਲੱਭ ਰਿਹਾ ਹੈ...',mr:'AI बातम्या आणत आहे...',gu:'AI સમાચાર...',ta:'AI செய்தி...',te:'AI వార్తలు...',kn:'AI ಸುದ್ದಿ...',ml:'AI വാർത്ത...',bn:'AI সংবাদ...',or:'AI ସମ୍ବାଦ...',as:'AI বাতৰি...',ur:'AI خبریں...',raj:'AI खबरां...'};
+
+const CAT = {
+  weather:{bg:'#e3f2fd',c:'#1565c0',a:'#2196f3',e:'🌦'},
+  price:  {bg:'#fdf3e0',c:'#8b5000',a:'#e8a020',e:'💰'},
+  scheme: {bg:'#f3e5f5',c:'#6a1b9a',a:'#9c27b0',e:'📋'},
+  tech:   {bg:'#e0f7fa',c:'#006064',a:'#00bcd4',e:'🔬'},
+  market: {bg:'#fbe9e7',c:'#bf360c',a:'#ff5722',e:'📊'},
+};
+
+let lang = 'hi';
+let newsData = [];
+let loading = false;
+
+function getDate(){ return new Date().toLocaleDateString('en-IN',{day:'numeric',month:'long',year:'numeric'}); }
+function getTime(){ return new Date().toLocaleTimeString('en-IN',{hour:'2-digit',minute:'2-digit'}); }
+
+function buildLangBar(){
+  const bar = document.getElementById('langBar');
+  bar.innerHTML = '';
+  LANGS.forEach(l => {
+    const b = document.createElement('button');
+    b.className = 'lang-btn' + (l.code === lang ? ' active' : '');
+    b.textContent = l.label;
+    b.onclick = () => { lang = l.code; document.getElementById('langIndicator').textContent = l.label; document.getElementById('rTxt').textContent = RTXT[lang]||'News'; buildLangBar(); closeModal(); fetchNews(); };
+    bar.appendChild(b);
+  });
+}
+
+function showSkeletons(){
+  const c = document.getElementById('newsList');
+  c.innerHTML = '';
+  for(let i=0;i<10;i++){
+    c.innerHTML += `<div class="news-card" style="pointer-events:none">
+      <div class="num" style="opacity:.3">${i+1}</div>
+      <div class="news-body">
+        <div class="skel w90"></div><div class="skel w65"></div><div class="skel w40" style="margin-top:4px"></div>
+      </div></div>`;
+  }
+}
+
+async function fetchNews(){
+  if(loading) return;
+  loading = true;
+  closeModal();
+  const btn = document.getElementById('refreshBtn');
+  btn.disabled = true;
+  document.getElementById('rIcon').className = 'spin';
+  document.getElementById('rIcon').textContent = '↻';
+  document.getElementById('statusTxt').textContent = LTXT[lang] || 'Loading...';
+  showSkeletons();
+
+  const langObj = LANGS.find(l => l.code === lang);
+  const today = getDate();
+
+  const prompt = `You are a senior agricultural journalist in India. Today is ${today}.
+
+Generate exactly 10 important agriculture/farmer news headlines for Indian farmers in ${langObj.name} language.
+
+Return ONLY valid JSON array, no markdown:
+[{"id":1,"cat":"weather","headline":"...","source":"..."},...]
+
+Categories: weather, price, scheme, tech, market
+Sources: IMD, APMC, NABARD, Agriculture Ministry, etc.
+Make headlines specific with numbers. Cover April 2026 farming season.`;
+
+  try {
+    const resp = await fetch('/api/news', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ prompt, lang: langObj.name })
+    });
+    const data = await resp.json();
+    newsData = data.news || [];
+    renderNews(newsData);
+    document.getElementById('statusTxt').textContent = `✅ ${newsData.length} खबरें • ${getTime()} पर अपडेट`;
+  } catch(e) {
+    document.getElementById('newsList').innerHTML = `<div class="error-box"><p style="color:#991b1b;font-size:13px;margin-bottom:8px">⚠️ खबरें लोड नहीं हो सकीं</p><p style="font-size:11px;color:#7f1d1d;margin-bottom:10px">${e.message}</p><button onclick="fetchNews()" style="padding:6px 16px;background:#1a4d2e;color:#fff;border:none;border-radius:20px;cursor:pointer">पुनः प्रयास करें</button></div>`;
+    document.getElementById('statusTxt').textContent = '❌ Error — पुनः प्रयास करें';
+  }
+
+  loading = false;
+  btn.disabled = false;
+  document.getElementById('rIcon').className = '';
+  document.getElementById('rIcon').textContent = '↻';
+}
+
+function renderNews(news){
+  const c = document.getElementById('newsList');
+  c.innerHTML = '';
+  news.forEach((item, i) => {
+    const cat = CAT[item.cat] || CAT.market;
+    const div = document.createElement('div');
+    div.className = 'news-card';
+    div.onclick = () => openModal(i);
+    div.innerHTML = `
+      <div class="accent" style="background:${cat.a}"></div>
+      <div class="num">${i+1}</div>
+      <div class="news-body">
+        <div class="news-hl">${item.headline}</div>
+        <div class="news-meta">
+          <span class="cat-tag" style="background:${cat.bg};color:${cat.c}">${cat.e} ${item.cat}</span>
+          <span class="meta-txt">📰 ${item.source}</span>
+          <span class="meta-txt">🕐 ${getTime()}</span>
+        </div>
+      </div>`;
+    c.appendChild(div);
+  });
+}
+
+async function openModal(idx){
+  const item = newsData[idx];
+  if(!item) return;
+  const cat = CAT[item.cat] || CAT.market;
+  const langObj = LANGS.find(l => l.code === lang);
+  document.getElementById('modalOverlay').classList.add('open');
+  document.getElementById('mTag').innerHTML = `<span class="cat-tag" style="background:${cat.bg};color:${cat.c};padding:2px 10px;border-radius:10px;font-size:11px">${cat.e} ${item.cat}</span>`;
+  document.getElementById('mTitle').textContent = item.headline;
+  document.getElementById('mBody').innerHTML = `<span class="spin">⟳</span> AI विवरण लिख रहा है...`;
+  document.getElementById('mFooter').textContent = '';
+
+  try {
+    const resp = await fetch('/api/detail', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ headline: item.headline, cat: item.cat, source: item.source, lang: langObj.name, date: getDate() })
+    });
+    const data = await resp.json();
+    document.getElementById('mBody').innerHTML = `<p style="line-height:1.8">${data.detail}</p>`;
+    document.getElementById('mFooter').textContent = `📰 ${item.source} · 📅 ${getDate()} · 🕐 ${getTime()}`;
+  } catch(e) {
+    document.getElementById('mBody').innerHTML = `<p style="color:#991b1b">विवरण लोड नहीं हो सका।</p>`;
+  }
+}
+
+function closeModal(){ document.getElementById('modalOverlay').classList.remove('open'); }
+function handleOverlayClick(e){ if(e.target === document.getElementById('modalOverlay')) closeModal(); }
+
+document.getElementById('datePill').textContent = getDate();
+buildLangBar();
+fetchNews();
+</script>
+</body>
+</html>

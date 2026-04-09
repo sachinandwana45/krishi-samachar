@@ -1,0 +1,13 @@
+{
+  "name": "krishi-samachar",
+  "version": "1.0.0",
+  "description": "AI-Powered Agriculture News in 14 Indian Languages",
+  "main": "index.html",
+  "scripts": {
+    "dev": "vercel dev",
+    "deploy": "vercel --prod"
+  },
+  "keywords": ["agriculture", "news", "AI", "farmer", "india"],
+  "author": "Your Name",
+  "license": "MIT"
+}
