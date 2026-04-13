@@ -1,255 +1,233 @@
-// ════════════════════════════════════════════════════════
-// fetch-news.js — BH Krishi Samachar
-// GitHub Actions mein roz subah 6 baje run hoga
-// Google News RSS se agriculture news fetch karta hai
-// news.json file save karta hai jise index.html padhta hai
-// ════════════════════════════════════════════════════════
-
 const https = require('https');
 const http = require('http');
 const fs = require('fs');
-const url = require('url');
 
-// ── Agriculture RSS Feeds (Google News) ──
-const RSS_FEEDS = [
-  // Hindi agriculture news
-  {
-    url: 'https://news.google.com/rss/search?q=krishi+kisan+farming+India&hl=hi&gl=IN&ceid=IN:hi',
-    lang: 'hi'
-  },
-  // English agriculture India
-  {
-    url: 'https://news.google.com/rss/search?q=agriculture+India+farmers+MSP&hl=en&gl=IN&ceid=IN:en',
-    lang: 'en'
-  },
-  // Mandi prices
-  {
-    url: 'https://news.google.com/rss/search?q=mandi+bhav+fasal+price+India&hl=hi&gl=IN&ceid=IN:hi',
-    lang: 'hi'
-  },
-  // Government schemes for farmers
-  {
-    url: 'https://news.google.com/rss/search?q=PM-KISAN+kisan+yojana+subsidy&hl=hi&gl=IN&ceid=IN:hi',
-    lang: 'hi'
-  },
-  // Weather for farmers
-  {
-    url: 'https://news.google.com/rss/search?q=monsoon+kisan+fasal+weather+India&hl=hi&gl=IN&ceid=IN:hi',
-    lang: 'hi'
-  },
-];
-
-// ── HTTP/HTTPS fetch ──
-function fetchURL(rawUrl) {
-  return new Promise((resolve) => {
+// ── URL Fetch karo ──
+function fetchURL(rawUrl, timeout) {
+  timeout = timeout || 15000;
+  return new Promise(function(resolve) {
     try {
-      const parsed = url.parse(rawUrl);
-      const lib = parsed.protocol === 'https:' ? https : http;
-      const req = lib.get({
+      var parsed = new URL(rawUrl);
+      var lib = parsed.protocol === 'https:' ? https : http;
+      var req = lib.get({
         hostname: parsed.hostname,
-        path: parsed.path,
+        path: parsed.pathname + parsed.search,
         headers: {
-          'User-Agent': 'Mozilla/5.0 (compatible; BHKrishiBot/1.0)',
-          'Accept': 'application/rss+xml, application/xml, text/xml, */*'
-        },
-        timeout: 10000
-      }, (res) => {
-        // Handle redirects
-        if (res.statusCode >= 300 && res.statusCode < 400 && res.headers.location) {
-          return fetchURL(res.headers.location).then(resolve);
+          'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/120',
+          'Accept': 'text/html,application/xml,application/rss+xml,*/*',
+          'Accept-Language': 'hi-IN,hi;q=0.9,en;q=0.8'
         }
-        let data = '';
-        res.on('data', chunk => data += chunk);
-        res.on('end', () => resolve(data));
+      }, function(res) {
+        // Redirect handle karo
+        if (res.statusCode >= 300 && res.statusCode < 400 && res.headers.location) {
+          var loc = res.headers.location;
+          if (!loc.startsWith('http')) loc = parsed.protocol + '//' + parsed.hostname + loc;
+          return fetchURL(loc, timeout).then(resolve);
+        }
+        var data = '';
+        res.setEncoding('utf8');
+        res.on('data', function(c) { data += c; });
+        res.on('end', function() { resolve(data); });
       });
-      req.on('error', () => resolve(''));
-      req.on('timeout', () => { req.destroy(); resolve(''); });
-    } catch(e) {
-      resolve('');
-    }
+      req.on('error', function() { resolve(''); });
+      var timer = setTimeout(function() { req.destroy(); resolve(''); }, timeout);
+      req.on('close', function() { clearTimeout(timer); });
+    } catch(e) { resolve(''); }
   });
 }
 
-// ── RSS XML Parser ──
-function parseRSS(xmlText, lang) {
-  const items = [];
+// ── og:image nikalo article se ──
+async function getArticleImage(articleUrl) {
+  if (!articleUrl || articleUrl === '#') return '';
+  try {
+    var html = await fetchURL(articleUrl, 8000);
+    if (!html) return '';
+    // og:image dhundho
+    var ogMatch = html.match(/<meta[^>]+property=["']og:image["'][^>]+content=["']([^"']+)["']/i)
+                || html.match(/<meta[^>]+content=["']([^"']+)["'][^>]+property=["']og:image["']/i);
+    if (ogMatch && ogMatch[1]) {
+      var imgUrl = ogMatch[1].trim();
+      if (imgUrl.startsWith('http')) return imgUrl;
+    }
+    // twitter:image bhi try karo
+    var twMatch = html.match(/<meta[^>]+name=["']twitter:image["'][^>]+content=["']([^"']+)["']/i)
+                || html.match(/<meta[^>]+content=["']([^"']+)["'][^>]+name=["']twitter:image["']/i);
+    if (twMatch && twMatch[1]) {
+      var twUrl = twMatch[1].trim();
+      if (twUrl.startsWith('http')) return twUrl;
+    }
+  } catch(e) {}
+  return '';
+}
 
-  // Extract <item> blocks
-  const itemMatches = xmlText.match(/<item>[\s\S]*?<\/item>/g) || [];
-
-  for (const itemXml of itemMatches) {
+// ── RSS Parse karo ──
+function parseRSS(xml) {
+  var items = [];
+  var re = /<item>([\s\S]*?)<\/item>/g;
+  var m;
+  while ((m = re.exec(xml)) !== null) {
+    var x = m[1];
     // Title
-    let title = '';
-    const titleCDATA = itemXml.match(/<title><!\[CDATA\[([\s\S]*?)\]\]><\/title>/);
-    const titlePlain = itemXml.match(/<title>([\s\S]*?)<\/title>/);
-    title = (titleCDATA ? titleCDATA[1] : (titlePlain ? titlePlain[1] : '')).trim();
-    title = decodeHTMLEntities(title);
-
-    if (!title || title.length < 5) continue;
+    var tm = x.match(/<title><!\[CDATA\[([\s\S]*?)\]\]>/);
+    var tp = x.match(/<title>([\s\S]*?)<\/title>/);
+    var title = (tm ? tm[1] : (tp ? tp[1] : '')).trim();
+    title = title.replace(/&amp;/g,'&').replace(/&lt;/g,'<').replace(/&gt;/g,'>').replace(/&quot;/g,'"');
 
     // Link
-    let link = '';
-    const linkMatch = itemXml.match(/<link>([\s\S]*?)<\/link>/);
-    if (linkMatch) link = linkMatch[1].trim();
-    // Google News ke link ko direct URL se replace karo
-    link = cleanGoogleLink(link);
+    var lm = x.match(/<link>([\s\S]*?)<\/link>/);
+    var link = lm ? lm[1].trim() : '#';
+    // Google News redirect fix
+    if (link.includes('news.google.com')) {
+      var urlMatch = link.match(/url=([^&]+)/);
+      if (urlMatch) { try { link = decodeURIComponent(urlMatch[1]); } catch(e) {} }
+    }
 
     // Description
-    let desc = '';
-    const descCDATA = itemXml.match(/<description><!\[CDATA\[([\s\S]*?)\]\]><\/description>/);
-    const descPlain = itemXml.match(/<description>([\s\S]*?)<\/description>/);
-    desc = (descCDATA ? descCDATA[1] : (descPlain ? descPlain[1] : '')).trim();
-    desc = stripHTML(decodeHTMLEntities(desc)).substring(0, 300);
+    var dm = x.match(/<description><!\[CDATA\[([\s\S]*?)\]\]>/);
+    var dp = x.match(/<description>([\s\S]*?)<\/description>/);
+    var desc = (dm ? dm[1] : (dp ? dp[1] : '')).replace(/<[^>]*>/g,'').trim();
+    desc = desc.replace(/&amp;/g,'&').replace(/&lt;/g,'<').replace(/&gt;/g,'>').replace(/&nbsp;/g,' ').trim();
+    if (desc.length > 250) desc = desc.substring(0, 250) + '...';
 
     // Source
-    let source = '';
-    const srcMatch = itemXml.match(/<source[^>]*>([\s\S]*?)<\/source>/);
-    if (srcMatch) source = srcMatch[1].trim();
+    var sm = x.match(/<source[^>]*>([\s\S]*?)<\/source>/);
+    var source = sm ? sm[1].trim() : '';
     if (!source) {
-      // URL se source nikalo
-      try {
-        const srcUrl = new URL(link);
-        source = srcUrl.hostname.replace('www.', '');
-      } catch(e) { source = 'News'; }
+      try { source = new URL(link).hostname.replace('www.',''); } catch(e) { source = 'News'; }
     }
 
-    // PubDate
-    let pubDate = '';
-    const dateMatch = itemXml.match(/<pubDate>([\s\S]*?)<\/pubDate>/);
-    if (dateMatch) pubDate = dateMatch[1].trim();
+    // Media image (RSS mein)
+    var imgMatch = x.match(/<media:content[^>]+url=["']([^"']+)["']/i)
+                 || x.match(/<media:thumbnail[^>]+url=["']([^"']+)["']/i)
+                 || x.match(/<enclosure[^>]+url=["']([^"']+)["'][^>]+type=["']image/i);
+    var rssImage = imgMatch ? imgMatch[1] : '';
 
-    // Image (if available)
-    let image = '';
-    const imgMatch = itemXml.match(/<media:content[^>]+url="([^"]+)"/);
-    const encMatch = itemXml.match(/<enclosure[^>]+url="([^"]+)"/);
-    if (imgMatch) image = imgMatch[1];
-    else if (encMatch) image = encMatch[1];
-
-    if (title && link) {
-      items.push({ title, url: link, description: desc, source, pubDate, image, lang });
+    if (title && title.length > 5) {
+      items.push({ title, url: link, description: desc, source, rssImage, pubDate: new Date().toISOString() });
     }
   }
-
   return items;
 }
 
-// ── Google News URL ko real URL mein convert karo ──
-function cleanGoogleLink(link) {
-  if (!link) return '#';
-  // Google News redirect URL से actual URL nikalo
-  const match = link.match(/url=([^&]+)/);
-  if (match) {
-    try {
-      return decodeURIComponent(match[1]);
-    } catch(e) {}
-  }
-  return link;
-}
-
-// ── HTML entities decode ──
-function decodeHTMLEntities(str) {
-  return str
-    .replace(/&amp;/g, '&')
-    .replace(/&lt;/g, '<')
-    .replace(/&gt;/g, '>')
-    .replace(/&quot;/g, '"')
-    .replace(/&#39;/g, "'")
-    .replace(/&nbsp;/g, ' ')
-    .replace(/&#(\d+);/g, (m, n) => String.fromCharCode(parseInt(n)));
-}
-
-// ── HTML tags strip karo ──
-function stripHTML(str) {
-  return str.replace(/<[^>]*>/g, ' ').replace(/\s+/g, ' ').trim();
-}
-
-// ── Agriculture related hai ya nahi check karo ──
-function isAgricultureNews(title, desc) {
-  const text = (title + ' ' + desc).toLowerCase();
-  const agriKeywords = [
-    'kisan', 'farmer', 'farming', 'agriculture', 'agri', 'crop', 'fasal',
-    'mandi', 'krishi', 'खेती', 'किसान', 'फसल', 'कृषि', 'मंडी', 'बुवाई',
-    'msp', 'wheat', 'rice', 'paddy', 'soybean', 'cotton', 'sugarcane',
-    'gehu', 'dhan', 'गेहूं', 'धान', 'गन्ना', 'कपास',
-    'monsoon', 'rain', 'drought', 'irrigation', 'मानसून', 'बारिश', 'सिंचाई',
-    'fertilizer', 'pesticide', 'seed', 'soil', 'खाद', 'बीज', 'मिट्टी',
-    'pm-kisan', 'kcc', 'nabard', 'agriculture ministry', 'कृषि मंत्रालय',
-    'subsidy', 'yojana', 'scheme', 'सब्सिडी', 'योजना',
-    'harvest', 'sowing', 'rabi', 'kharif', 'rabi', 'खरीफ', 'रबी',
-    'pest', 'disease', 'locust', 'टिड्डी', 'कीट', 'रोग',
-    'export', 'import', 'agmarknet', 'apeda', 'icar'
+// ── Agriculture check ──
+function isAgri(title, desc) {
+  var text = (title + ' ' + desc).toLowerCase();
+  var keywords = [
+    'kisan','farmer','farming','agriculture','agri','crop','fasal','mandi','krishi',
+    'खेती','किसान','फसल','कृषि','मंडी','बुवाई','msp','wheat','rice','paddy','soybean',
+    'cotton','sugarcane','gehu','dhan','गेहूं','धान','गन्ना','कपास','monsoon','rain',
+    'drought','irrigation','मानसून','बारिश','सिंचाई','fertilizer','pesticide','seed',
+    'soil','खाद','बीज','मिट्टी','pm-kisan','kcc','nabard','subsidy','yojana','सब्सिडी',
+    'योजना','harvest','sowing','rabi','kharif','खरीफ','रबी','pest','disease','locust',
+    'टिड्डी','कीट','रोग','export','agmarknet','apeda','icar','budget kisan','farm'
   ];
-  return agriKeywords.some(kw => text.includes(kw));
+  return keywords.some(function(kw) { return text.indexOf(kw) !== -1; });
 }
 
-// ── MAIN FUNCTION ──
+// ── RSS Feeds ──
+var FEEDS = [
+  'https://news.google.com/rss/search?q=kisan+krishi+India+farming&hl=hi&gl=IN&ceid=IN:hi',
+  'https://news.google.com/rss/search?q=agriculture+farmers+India+crop&hl=en&gl=IN&ceid=IN:en',
+  'https://news.google.com/rss/search?q=MSP+mandi+fasal+price+India&hl=hi&gl=IN&ceid=IN:hi',
+  'https://news.google.com/rss/search?q=PM+kisan+yojana+subsidy+India&hl=hi&gl=IN&ceid=IN:hi',
+  'https://news.google.com/rss/search?q=Indian+farmer+agriculture+news&hl=en&gl=IN&ceid=IN:en',
+];
+
 async function main() {
-  console.log('BH Krishi Samachar — News Fetch Start:', new Date().toISOString());
+  console.log('=== BH Krishi Samachar News Fetch ===');
+  console.log('Time:', new Date().toISOString());
 
-  const allArticles = [];
+  var all = [];
 
-  // Har RSS feed se news laao
-  for (const feed of RSS_FEEDS) {
-    console.log('Fetching:', feed.url.substring(0, 60) + '...');
+  // RSS feeds fetch karo
+  for (var i = 0; i < FEEDS.length; i++) {
+    console.log('Feed', i+1, 'of', FEEDS.length, '...');
     try {
-      const xml = await fetchURL(feed.url);
-      if (xml && xml.length > 100) {
-        const items = parseRSS(xml, feed.lang);
-        console.log(`  Got ${items.length} items`);
-        allArticles.push(...items);
+      var xml = await fetchURL(FEEDS[i], 20000);
+      if (xml && xml.indexOf('<item>') !== -1) {
+        var items = parseRSS(xml);
+        console.log('  Got', items.length, 'items');
+        all = all.concat(items);
       } else {
-        console.log('  Empty or error response');
+        console.log('  No items or empty response');
       }
     } catch(e) {
-      console.error('  Error:', e.message);
+      console.log('  Error:', e.message);
     }
-
-    // Rate limiting — feeds ke beech thoda wait
-    await new Promise(r => setTimeout(r, 1000));
+    // Rate limiting
+    await new Promise(function(r) { setTimeout(r, 800); });
   }
 
   // Agriculture filter + deduplicate
-  const seen = new Set();
-  const filtered = allArticles
-    .filter(a => {
-      // Agriculture related hona chahiye
-      if (!isAgricultureNews(a.title, a.description)) return false;
-      // Duplicate title hata do
-      const key = a.title.substring(0, 50).toLowerCase();
-      if (seen.has(key)) return false;
-      seen.add(key);
-      return true;
-    })
-    .slice(0, 15); // Top 15 articles
+  var seen = {};
+  var filtered = [];
+  for (var j = 0; j < all.length; j++) {
+    var a = all[j];
+    var key = a.title.substring(0, 45).toLowerCase().replace(/\s+/g,'');
+    if (seen[key]) continue;
+    if (!isAgri(a.title, a.description)) continue;
+    seen[key] = true;
+    filtered.push(a);
+    if (filtered.length >= 18) break;
+  }
 
-  console.log(`Total agriculture articles: ${filtered.length}`);
+  console.log('Agriculture articles after filter:', filtered.length);
 
   if (filtered.length === 0) {
-    console.log('No articles found — keeping previous news.json if exists');
-    // Agar pehle ki news.json hai to use rakho
-    if (fs.existsSync('news.json')) {
-      const old = JSON.parse(fs.readFileSync('news.json', 'utf8'));
-      old.updated = new Date().toISOString();
-      old.note = 'Previous articles (no new fetch today)';
-      fs.writeFileSync('news.json', JSON.stringify(old, null, 2));
-    }
+    console.log('No articles! Saving empty JSON.');
+    var empty = { updated: new Date().toISOString(), count: 0, articles: [] };
+    fs.writeFileSync('news.json', JSON.stringify(empty, null, 2), 'utf8');
     return;
   }
 
+  // Top 15 articles ke liye images fetch karo
+  var top15 = filtered.slice(0, 15);
+  console.log('Fetching images for', top15.length, 'articles...');
+
+  var withImages = [];
+  for (var k = 0; k < top15.length; k++) {
+    var article = top15[k];
+    var image = article.rssImage || '';
+
+    // Agar RSS mein image nahi thi toh article se og:image nikalo
+    if (!image && article.url && article.url !== '#' && !article.url.includes('news.google.com')) {
+      try {
+        image = await getArticleImage(article.url);
+        if (image) console.log('  Image found for:', article.title.substring(0, 40));
+      } catch(e) {}
+    }
+
+    withImages.push({
+      title: article.title,
+      url: article.url,
+      description: article.description,
+      source: article.source,
+      image: image,
+      pubDate: article.pubDate
+    });
+
+    // Thodi delay - servers ke liye
+    await new Promise(function(r) { setTimeout(r, 300); });
+  }
+
   // news.json save karo
-  const output = {
+  var output = {
     updated: new Date().toISOString(),
-    count: filtered.length,
-    source: 'Google News RSS',
-    articles: filtered
+    count: withImages.length,
+    articles: withImages
   };
 
   fs.writeFileSync('news.json', JSON.stringify(output, null, 2), 'utf8');
-  console.log(`SUCCESS: Saved ${filtered.length} articles to news.json`);
-  console.log('Sample:', filtered[0]?.title);
+  console.log('SUCCESS! Saved', withImages.length, 'articles with images!');
+  
+  // Sample check
+  var withImg = withImages.filter(function(a) { return a.image; }).length;
+  console.log('Articles with images:', withImg, 'of', withImages.length);
 }
 
-main().catch(err => {
-  console.error('FATAL ERROR:', err);
-  process.exit(1);
+main().catch(function(e) {
+  console.error('FATAL ERROR:', e.message);
+  var empty = { updated: new Date().toISOString(), count: 0, articles: [] };
+  fs.writeFileSync('news.json', JSON.stringify(empty, null, 2), 'utf8');
+  process.exit(0);
 });
