@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
-<title>🌾 BH Krishi Samachar — Daily Live</title>
+<title>🌾 BH Krishi Samachar</title>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet"/>
 <style>
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
@@ -21,6 +21,7 @@
 }
 body{font-family:var(--fb);background:var(--bg);color:var(--td);min-height:100vh;font-size:15px;}
 
+/* TOPBAR */
 .topbar{background:var(--gd);padding:0 20px;display:flex;align-items:center;justify-content:space-between;height:54px;position:sticky;top:0;z-index:100;}
 .tb-logo{font-family:var(--fd);font-size:18px;color:#fff;}
 .tb-logo span{color:var(--gold);}
@@ -28,24 +29,21 @@ body{font-family:var(--fb);background:var(--bg);color:var(--td);min-height:100vh
 .live-dot{width:8px;height:8px;background:#4caf50;border-radius:50%;animation:blink 1.2s infinite;}
 @keyframes blink{0%,100%{opacity:1}50%{opacity:.3}}
 
+/* LANG BAR */
 .lang-bar-wrap{background:#163d24;border-bottom:2px solid var(--gold);padding:0 12px;overflow-x:auto;white-space:nowrap;scrollbar-width:none;}
 .lang-bar-wrap::-webkit-scrollbar{display:none;}
 .lang-btn{display:inline-block;padding:10px 14px;background:transparent;border:none;border-bottom:3px solid transparent;color:rgba(255,255,255,.65);font-size:13px;font-weight:500;cursor:pointer;transition:all .15s;font-family:var(--fb);margin-bottom:-2px;}
 .lang-btn:hover{color:#fff;}
 .lang-btn.active{color:var(--gold);border-bottom-color:var(--gold);font-weight:600;}
 
+/* MASTHEAD */
 .masthead{background:linear-gradient(135deg,var(--gd),#2d6e42);padding:24px 20px;color:#fff;display:flex;align-items:center;gap:16px;}
 .mh-icon{font-size:40px;flex-shrink:0;}
 .mh-title{font-family:var(--fd);font-size:22px;line-height:1.2;margin-bottom:4px;}
 .mh-sub{font-size:12px;opacity:.75;line-height:1.5;}
 .mh-date{margin-left:auto;font-size:11px;opacity:.8;text-align:right;flex-shrink:0;}
 
-/* LIVE STATUS BAR */
-.live-bar{background:#e8f5ee;border-bottom:1px solid #b8dfc8;padding:8px 16px;display:flex;align-items:center;gap:10px;flex-wrap:wrap;}
-.live-tag{background:var(--gd);color:#fff;font-size:10px;font-weight:700;padding:2px 8px;border-radius:20px;letter-spacing:.5px;}
-.live-info{font-size:12px;color:var(--gd);}
-.live-updated{font-size:11px;color:var(--tmut);margin-left:auto;}
-
+/* ADMIN BAR */
 .admin-bar{background:var(--gold-l);border-bottom:1px solid #f0d898;padding:10px 14px;display:flex;gap:8px;flex-wrap:wrap;align-items:center;}
 .ab-label{font-size:11px;font-weight:600;color:var(--gold);text-transform:uppercase;letter-spacing:.5px;}
 .abtn{background:var(--wh);border:1px solid var(--bdr);border-radius:var(--rs);padding:6px 12px;font-family:var(--fb);font-size:12px;font-weight:500;color:var(--td);cursor:pointer;transition:all .15s;}
@@ -53,18 +51,22 @@ body{font-family:var(--fb);background:var(--bg);color:var(--td);min-height:100vh
 .abtn.pri{background:var(--gd);color:#fff;border-color:var(--gd);}
 .abtn.pri:hover{background:var(--gm);}
 
+/* FILTERS */
 .filters{display:flex;gap:6px;flex-wrap:wrap;padding:14px 14px 0;}
 .fbtn{background:var(--wh);border:1px solid var(--bdr);border-radius:20px;padding:5px 14px;font-family:var(--fb);font-size:12px;font-weight:500;cursor:pointer;color:var(--tm);transition:all .15s;}
 .fbtn:hover{border-color:var(--gm);color:var(--gd);}
 .fbtn.active{background:var(--gd);color:#fff;border-color:var(--gd);}
 
+/* SECTION */
 .sec-hdr{display:flex;align-items:center;gap:10px;padding:14px 14px 10px;}
 .sec-hdr h2{font-family:var(--fd);font-size:18px;color:var(--gd);}
 .sec-line{flex:1;height:1px;background:var(--bdr);}
 .sec-cnt{background:var(--gp);color:var(--gd);font-size:11px;font-weight:600;padding:2px 10px;border-radius:20px;}
 
+/* NEWS GRID */
 .news-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:16px;padding:0 14px 40px;}
 
+/* NEWS CARD */
 .news-card{background:var(--wh);border:1px solid var(--bdr);border-radius:var(--r);overflow:hidden;cursor:pointer;transition:transform .15s,box-shadow .15s;}
 .news-card:hover{transform:translateY(-2px);box-shadow:0 6px 20px rgba(26,92,46,.1);}
 .card-img{height:160px;overflow:hidden;background:#e0e0e0;position:relative;}
@@ -85,6 +87,7 @@ body{font-family:var(--fb);background:var(--bg);color:var(--td);min-height:100vh
 .read-btn{font-size:12px;font-weight:500;color:var(--gd);background:var(--gp);border:none;padding:4px 12px;border-radius:20px;cursor:pointer;font-family:var(--fb);}
 .read-btn:hover{background:#cce8d6;}
 
+/* SKELETON */
 .sk{background:#e0e8e0;border-radius:5px;animation:sk 1.2s ease-in-out infinite;}
 @keyframes sk{0%,100%{opacity:.4}50%{opacity:.9}}
 .sk-img{height:160px;width:100%;}
@@ -116,18 +119,12 @@ body{font-family:var(--fb);background:var(--bg);color:var(--td);min-height:100vh
 .nd-visit:hover{background:var(--gm);}
 .nd-share{padding:11px 16px;background:var(--wh);border:1px solid var(--bdr);border-radius:var(--rs);font-family:var(--fb);font-size:13px;cursor:pointer;color:var(--td);}
 
-/* SOURCE BADGE */
-.nd-source-badge{display:inline-block;background:var(--blue-l);color:var(--blue);font-size:11px;font-weight:600;padding:3px 10px;border-radius:20px;margin-bottom:12px;}
-
+/* TOAST */
 .toast{position:fixed;bottom:24px;right:20px;background:var(--gd);color:#fff;padding:10px 20px;border-radius:var(--rs);font-size:13px;font-weight:500;opacity:0;transform:translateY(10px);transition:all .25s;pointer-events:none;z-index:999;max-width:300px;}
 .toast.show{opacity:1;transform:translateY(0);}
 .toast.err{background:var(--red);}
 
-/* ERROR STATE */
-.error-state{text-align:center;padding:40px 20px;color:var(--tmut);}
-.error-state .e-icon{font-size:40px;margin-bottom:12px;}
-.error-state p{font-size:14px;line-height:1.6;}
-
+/* RESPONSIVE */
 @media(max-width:600px){
   .news-grid{grid-template-columns:1fr;padding:0 10px 40px;}
   .masthead{flex-direction:column;align-items:flex-start;}
@@ -151,15 +148,14 @@ body{font-family:var(--fb);background:var(--bg);color:var(--td);min-height:100vh
     </div>
     <div class="nd-body">
       <div class="nd-title" id="ndTitle"></div>
-      <div class="nd-source-badge" id="ndSourceBadge"></div>
       <div class="nd-meta"><span id="ndSrc"></span><span id="ndDate"></span></div>
       <div class="nd-sum" id="ndSum"></div>
       <div class="nd-ai-box">
         <div class="nd-ai-lbl" id="ndAiLbl">🤖 AI विश्लेषण</div>
-        <div class="nd-ai-txt" id="ndAiTxt">लोड हो रहा है...</div>
+        <div class="nd-ai-txt" id="ndAiTxt"><span class="nd-spin">⟳</span> लोड हो रहा है...</div>
       </div>
       <div class="nd-btns">
-        <button class="nd-visit" id="ndVisit" onclick="visitSource()">🔗 <span id="ndVisitLbl">स्रोत देखें — असली खबर पढ़ें</span></button>
+        <button class="nd-visit" id="ndVisit" onclick="visitSource()">🔗 <span id="ndVisitLbl">स्रोत देखें</span></button>
         <button class="nd-share" onclick="shareItem()">📤 Share</button>
       </div>
     </div>
@@ -173,7 +169,7 @@ body{font-family:var(--fb);background:var(--bg);color:var(--td);min-height:100vh
 <nav class="topbar">
   <div style="display:flex;align-items:center;">
     <span class="tb-logo">🌾 <span>BH</span> Krishi Samachar</span>
-    <span class="tb-badge">LIVE</span>
+    <span class="tb-badge">DAILY</span>
   </div>
   <div class="live-dot" title="Live"></div>
 </nav>
@@ -186,30 +182,22 @@ body{font-family:var(--fb);background:var(--bg);color:var(--td);min-height:100vh
   <div class="mh-icon">🌾</div>
   <div>
     <div class="mh-title">BH Krishi Samachar</div>
-    <div class="mh-sub" id="mhSub">भारतीय किसानों के लिए — आज की ताज़ा कृषि खबरें</div>
+    <div class="mh-sub" id="mhSub">भारतीय किसानों के लिए AI-Powered कृषि समाचार</div>
   </div>
   <div class="mh-date" id="mhDate"></div>
-</div>
-
-<!-- LIVE STATUS BAR -->
-<div class="live-bar">
-  <span class="live-tag">LIVE</span>
-  <span class="live-info" id="liveInfo">Google News से आज की खबरें लोड हो रही हैं...</span>
-  <span class="live-updated" id="liveUpdated"></span>
 </div>
 
 <!-- ADMIN BAR -->
 <div class="admin-bar">
   <span class="ab-label">⚙ Admin</span>
-  <button class="abtn pri" onclick="refreshNews()">🔄 Refresh करें</button>
-  <button class="abtn" onclick="toggleAiPanel()">🔑 Claude AI Setup</button>
-  <button class="abtn" onclick="window.open('https://github.com','_blank')">📁 GitHub</button>
+  <button class="abtn pri" onclick="refreshNews()">🔄 <span id="refreshLbl">खबरें Refresh करें</span></button>
+  <button class="abtn" onclick="toggleAiPanel()">🔑 AI Setup</button>
 </div>
 
 <!-- AI SETUP PANEL -->
 <div id="aiPanel" style="display:none;background:#fff8e1;border-bottom:1px solid #f9c74f;padding:14px 16px;">
   <div style="font-size:13px;color:#7a5c00;margin-bottom:10px;">
-    <strong>Claude API Key (Optional)</strong> — बिना key के भी खबरें दिखती हैं। Key से बेहतर Hindi summary मिलती है।<br/>
+    <strong>API Key डालें</strong> (optional) — बिना key के भी खबरें दिखती हैं।
     Free key: <a href="https://console.anthropic.com" target="_blank" style="color:var(--blue);">console.anthropic.com</a>
   </div>
   <input id="aiKey" type="password" placeholder="sk-ant-api03-xxxx (optional)" style="width:100%;max-width:400px;border:1px solid #f9c74f;border-radius:6px;padding:7px 10px;font-family:var(--fb);font-size:13px;outline:none;" oninput="saveKey()"/>
@@ -222,20 +210,19 @@ body{font-family:var(--fb);background:var(--bg);color:var(--td);min-height:100vh
 <div class="sec-hdr">
   <h2 id="secTitle">आज की कृषि खबरें</h2>
   <div class="sec-line"></div>
-  <div class="sec-cnt" id="secCnt">लोड हो रहा है...</div>
+  <div class="sec-cnt" id="secCnt">10 खबरें</div>
 </div>
 
 <!-- NEWS GRID -->
 <div class="news-grid" id="newsGrid"></div>
 
 <script>
-// ════════════════════════════════════════════════════════
-// BH KRISHI SAMACHAR — LIVE VERSION
-// Google RSS → news.json → Live Display
-// Visit Source = Real Article URL
-// GitHub Pages + GitHub Actions (Free)
-// ════════════════════════════════════════════════════════
+// ════════════════════════════════════════════════
+// BH KRISHI SAMACHAR — COMPLETE CLEAN VERSION
+// 14 Languages • Daily Auto Rotate • Detail Modal
+// ════════════════════════════════════════════════
 
+// ── LANGUAGES ──
 const LANGS = [
   {code:'hi',label:'हिंदी'},{code:'en',label:'English'},{code:'pa',label:'ਪੰਜਾਬੀ'},
   {code:'mr',label:'मराठी'},{code:'gu',label:'ગુજરાતી'},{code:'ta',label:'தமிழ்'},
@@ -244,44 +231,533 @@ const LANGS = [
   {code:'ur',label:'اردو'},{code:'raj',label:'राजस्थानी'},
 ];
 
-const CATS = ['सभी','Market Price','Government Scheme','Weather Alert','Pest & Disease','AgriTech','Export'];
-const CAT_CLASS = {'Market Price':'t-mp','Government Scheme':'t-gs','Weather Alert':'t-wa','Pest & Disease':'t-pd','AgriTech':'t-at','Export':'t-ex'};
-const CAT_EMOJI = {'Market Price':'💰','Government Scheme':'🏛️','Weather Alert':'🌧️','Pest & Disease':'🐛','AgriTech':'🤖','Export':'🚢'};
+// ── UI TEXT PER LANGUAGE ──
+const UI = {
+  hi: {sub:'भारतीय किसानों के लिए AI-Powered कृषि समाचार',sec:'आज की कृषि खबरें',ref:'खबरें Refresh करें',read:'पूरी खबर',visit:'स्रोत देखें',ai:'🤖 AI विश्लेषण',loading:'AI विवरण लिख रहा है...',fil:['सभी','📈 बाज़ार भाव','🐛 कीट रोग','🏛 सरकारी योजना','🌧 मौसम','💡 AgriTech','🚢 निर्यात'],loc:'hi-IN'},
+  en: {sub:'AI-Powered Agriculture News for Indian Farmers',sec:"Today's Agriculture News",ref:'Refresh News',read:'Read More',visit:'Visit Source',ai:'🤖 AI Analysis',loading:'AI generating details...',fil:['All','📈 Market Price','🐛 Pest & Disease','🏛 Govt Scheme','🌧 Weather','💡 AgriTech','🚢 Export'],loc:'en-IN'},
+  pa: {sub:'ਭਾਰਤੀ ਕਿਸਾਨਾਂ ਲਈ AI-Powered ਖੇਤੀ ਸਮਾਚਾਰ',sec:'ਅੱਜ ਦੀਆਂ ਖੇਤੀ ਖ਼ਬਰਾਂ',ref:'ਖ਼ਬਰਾਂ Refresh',read:'ਪੂਰੀ ਖ਼ਬਰ',visit:'ਸਰੋਤ ਦੇਖੋ',ai:'🤖 AI ਵਿਸ਼ਲੇਸ਼ਣ',loading:'AI ਵੇਰਵਾ ਤਿਆਰ...',fil:['ਸਾਰੀਆਂ','📈 ਮੰਡੀ ਭਾਅ','🐛 ਕੀੜੇ ਰੋਗ','🏛 ਸਰਕਾਰੀ ਯੋਜਨਾ','🌧 ਮੌਸਮ','💡 AgriTech','🚢 ਨਿਰਯਾਤ'],loc:'pa-IN'},
+  mr: {sub:'भारतीय शेतकऱ्यांसाठी AI-Powered कृषी बातम्या',sec:'आजच्या कृषी बातम्या',ref:'बातम्या Refresh',read:'पूर्ण बातमी',visit:'स्रोत पहा',ai:'🤖 AI विश्लेषण',loading:'AI तपशील तयार...',fil:['सर्व','📈 बाजारभाव','🐛 कीड रोग','🏛 सरकारी योजना','🌧 हवामान','💡 AgriTech','🚢 निर्यात'],loc:'mr-IN'},
+  gu: {sub:'ભારતીય ખેડૂતો માટે AI-Powered કૃષિ સમાચાર',sec:'આજના કૃષિ સમાચાર',ref:'સમાચાર Refresh',read:'પૂર્ણ સમાચાર',visit:'સ્ત્રોત જુઓ',ai:'🤖 AI વિશ્લેષણ',loading:'AI વિગત તૈયાર...',fil:['બધા','📈 બજાર ભાવ','🐛 જીવાત','🏛 સરકારી યોજના','🌧 હવામાન','💡 AgriTech','🚢 નિકાસ'],loc:'gu-IN'},
+  ta: {sub:'இந்திய விவசாயிகளுக்கான AI-Powered வேளாண் செய்திகள்',sec:'இன்றைய வேளாண் செய்திகள்',ref:'செய்தி Refresh',read:'முழு செய்தி',visit:'மூலம் பார்க்க',ai:'🤖 AI பகுப்பாய்வு',loading:'AI விவரங்கள் தயார்...',fil:['அனைத்தும்','📈 சந்தை விலை','🐛 பூச்சி நோய்','🏛 அரசு திட்டம்','🌧 வானிலை','💡 AgriTech','🚢 ஏற்றுமதி'],loc:'ta-IN'},
+  te: {sub:'భారతీయ రైతులకు AI-Powered వ్యవసాయ వార్తలు',sec:'నేటి వ్యవసాయ వార్తలు',ref:'వార్తలు Refresh',read:'పూర్తి వార్త',visit:'మూలం చూడండి',ai:'🤖 AI విశ్లేషణ',loading:'AI వివరాలు తయారు...',fil:['అన్నీ','📈 మార్కెట్ ధర','🐛 తెగులు','🏛 ప్రభుత్వ పథకం','🌧 వాతావరణం','💡 AgriTech','🚢 ఎగుమతి'],loc:'te-IN'},
+  kn: {sub:'ಭಾರತೀಯ ರೈತರಿಗೆ AI-Powered ಕೃಷಿ ಸುದ್ದಿ',sec:'ಇಂದಿನ ಕೃಷಿ ಸುದ್ದಿಗಳು',ref:'ಸುದ್ದಿ Refresh',read:'ಪೂರ್ಣ ಸುದ್ದಿ',visit:'ಮೂಲ ನೋಡಿ',ai:'🤖 AI ವಿಶ್ಲೇಷಣೆ',loading:'AI ವಿವರ ತಯಾರು...',fil:['ಎಲ್ಲಾ','📈 ಮಾರುಕಟ್ಟೆ','🐛 ಕೀಟ ರೋಗ','🏛 ಸರ್ಕಾರಿ ಯೋಜನೆ','🌧 ಹವಾಮಾನ','💡 AgriTech','🚢 ರಫ್ತು'],loc:'kn-IN'},
+  ml: {sub:'ഭാരതീയ കർഷകർക്കായി AI-Powered കാർഷിക വാർത്തകൾ',sec:'ഇന്നത്തെ കാർഷിക വാർത്തകൾ',ref:'വാർത്ത Refresh',read:'മുഴുവൻ വാർത്ത',visit:'ഉറവിടം കാണുക',ai:'🤖 AI വിശകലനം',loading:'AI വിവരം തയ്യാർ...',fil:['എല്ലാം','📈 വിപണി വില','🐛 കീട രോഗം','🏛 സർക്കാർ','🌧 കാലാവസ്ഥ','💡 AgriTech','🚢 കയറ്റുമതി'],loc:'ml-IN'},
+  bn: {sub:'ভারতীয় কৃষকদের জন্য AI-Powered কৃষি সংবাদ',sec:'আজকের কৃষি সংবাদ',ref:'সংবাদ Refresh',read:'পূর্ণ সংবাদ',visit:'উৎস দেখুন',ai:'🤖 AI বিশ্লেষণ',loading:'AI বিবরণ তৈরি...',fil:['সব','📈 বাজার দর','🐛 কীটপতঙ্গ','🏛 সরকারি প্রকল্প','🌧 আবহাওয়া','💡 AgriTech','🚢 রপ্তানি'],loc:'bn-IN'},
+  or: {sub:'ଭାରତୀୟ କୃଷକଙ୍କ ପାଇଁ AI-Powered କୃଷି ସମ୍ବାଦ',sec:'ଆଜର କୃଷି ସମ୍ବାଦ',ref:'ସମ୍ବାଦ Refresh',read:'ପୂର୍ଣ ସମ୍ବାଦ',visit:'ଉତ୍ସ ଦେଖନ୍ତୁ',ai:'🤖 AI ବିଶ୍ଲେଷଣ',loading:'AI ବିବରଣ ପ୍ରସ୍ତୁତ...',fil:['ସବୁ','📈 ବଜାର ଦର','🐛 କୀଟ ରୋଗ','🏛 ସରକାରୀ ଯୋଜନା','🌧 ଆବହାୱା','💡 AgriTech','🚢 ରପ୍ତାନି'],loc:'or-IN'},
+  as: {sub:'ভাৰতীয় কৃষকসকলৰ বাবে AI-Powered কৃষি বাতৰি',sec:'আজিৰ কৃষি বাতৰি',ref:'বাতৰি Refresh',read:'সম্পূৰ্ণ বাতৰি',visit:'উৎস চাওক',ai:'🤖 AI বিশ্লেষণ',loading:'AI বিৱৰণ তৈয়াৰ...',fil:['সকলো','📈 বজাৰ মূল্য','🐛 পোক-পতঙ্গ','🏛 চৰকাৰী আঁচনি','🌧 বতৰ','💡 AgriTech','🚢 ৰপ্তানি'],loc:'as-IN'},
+  ur: {sub:'ہندوستانی کسانوں کے لیے AI-Powered زرعی خبریں',sec:'آج کی زرعی خبریں',ref:'خبریں Refresh',read:'پوری خبر',visit:'ذریعہ دیکھیں',ai:'🤖 AI تجزیہ',loading:'AI تفصیل تیار...',fil:['تمام','📈 منڈی بھاؤ','🐛 کیڑے مکوڑے','🏛 سرکاری اسکیم','🌧 موسم','💡 AgriTech','🚢 برآمد'],loc:'ur-IN'},
+  raj:{sub:'भारतीय किसानां रे वास्ते AI-Powered खेती री खबरां',sec:'आज री खेती री खबरां',ref:'खबरां Refresh',read:'पूरी खबर',visit:'स्रोत देखो',ai:'🤖 AI विश्लेषण',loading:'AI विवरण तैयार...',fil:['सगळी','📈 मंडी भाव','🐛 कीड़ा-बीमारी','🏛 सरकारी योजना','🌧 मौसम','💡 AgriTech','🚢 निर्यात'],loc:'hi-IN'},
+};
 
-let curLang = 'hi';
-let curFilter = 'all';
-let curNews = [];
-let curDetail = null;
-let liveData = null; // Live news from news.json
+const CATS = ['Market Price','Pest & Disease','Government Scheme','Weather Alert','AgriTech','Export'];
+const CAT_TAG = {'Market Price':'t-mp','Pest & Disease':'t-pd','Government Scheme':'t-gs','Weather Alert':'t-wa','AgriTech':'t-at','Export':'t-ex'};
+const CAT_IMG = {
+  'Market Price':'https://images.unsplash.com/photo-1574323347407-f5e1ad6d020b?w=600&q=80',
+  'Government Scheme':'https://images.unsplash.com/photo-1543076447-215ad9ba6923?w=600&q=80',
+  'Weather Alert':'https://images.unsplash.com/photo-1504608524841-42584120d693?w=600&q=80',
+  'Pest & Disease':'https://images.unsplash.com/photo-1416879595882-3373a0480b5b?w=600&q=80',
+  'AgriTech':'https://images.unsplash.com/photo-1586771107445-d3ca888129ff?w=600&q=80',
+  'Export':'https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=600&q=80',
+};
+const CAT_FB = {'Market Price':'📈','Government Scheme':'🏛','Weather Alert':'🌧','Pest & Disease':'🐛','AgriTech':'💡','Export':'🚢'};
+const CAT_BG = {'Market Price':'#e8f5ee','Government Scheme':'#eaf4fb','Weather Alert':'#fffbeb','Pest & Disease':'#fdf0ee','AgriTech':'#f3e8ff','Export':'#fff0e0'};
 
-// ── AI KEY ──
-function saveKey(){localStorage.setItem('bh_ai_key',document.getElementById('aiKey').value);}
-function loadKey(){const k=localStorage.getItem('bh_ai_key')||'';const el=document.getElementById('aiKey');if(el)el.value=k;return k;}
-function toggleAiPanel(){const p=document.getElementById('aiPanel');p.style.display=p.style.display==='none'?'block':'none';}
+// ── NEWS DATA ──
+const NEWS = {
+hi:[
+  {cat:'Market Price',t:'गेहूं MSP ₹2,275/क्विंटल — सरकारी खरीद तेज़',s:'रबी 2026 में गेहूं का MSP ₹2,275/क्विंटल। MP और राजस्थान की मंडियों में सक्रिय खरीद। PM-KISAN पोर्टल पर रजिस्ट्रेशन अपडेट रखें।',src:'कृषि मंत्रालय',url:'https://agricoop.gov.in'},
+  {cat:'Market Price',t:'प्याज ₹18-22/kg — नासिक से आवक बढ़ी',s:'नासिक-पुणे से प्याज आवक बढ़ी, दाम स्थिर ₹1,800-2,200/क्विंटल। भंडारण करके बाद में बेचें।',src:'APMC मंडी',url:'https://agmarknet.gov.in'},
+  {cat:'Market Price',t:'धान ₹2,183/क्विंटल — खरीद केंद्र खुले',s:'खरीफ धान खरीद केंद्र पंजाब, हरियाणा और UP में शुरू। मेरी फसल मेरा ब्यौरा पोर्टल पर रजिस्ट्रेशन अनिवार्य।',src:'FCI',url:'https://fci.gov.in'},
+  {cat:'Market Price',t:'सोयाबीन ₹4,600/क्विंटल — MP में तेज़ी',s:'MP की मंडियों में सोयाबीन ₹4,500-4,700/क्विंटल। निर्यात मांग बढ़ रही है।',src:'NCDEX',url:'https://agmarknet.gov.in'},
+  {cat:'Market Price',t:'सरसों ₹5,650/क्विंटल — तेल मिलों की मांग',s:'राजस्थान-UP में सरसों ₹5,500-5,700। तेल मिलों की सक्रिय खरीद।',src:'NCDEX',url:'https://agmarknet.gov.in'},
+  {cat:'Government Scheme',t:'PM-KISAN 17वीं किस्त — ₹2,000 अप्रैल में',s:'PM-KISAN 17वीं किस्त अप्रैल अंत तक। e-KYC 30 अप्रैल तक अनिवार्य। pmkisan.gov.in पर जांचें।',src:'PM-KISAN',url:'https://pmkisan.gov.in'},
+  {cat:'Government Scheme',t:'KCC — ₹3 लाख 4% ब्याज पर लोन',s:'KCC पर ₹3 लाख तक 4% सालाना ब्याज। आधार, जमाबंदी लेकर बैंक जाएं। 15 दिन में मिलेगा।',src:'NABARD',url:'https://nabard.org'},
+  {cat:'Government Scheme',t:'कृषि यंत्र सब्सिडी — ट्रैक्टर पर 50% छूट',s:'ट्रैक्टर, रोटावेटर, थ्रेशर पर 25-50% सब्सिडी। SC/ST को 10% अतिरिक्त।',src:'कृषि विभाग',url:'https://agricoop.gov.in'},
+  {cat:'Government Scheme',t:'PM फसल बीमा — 31 अप्रैल अंतिम तारीख',s:'PM फसल बीमा खरीफ 2026 के लिए। प्रीमियम सिर्फ 2%। बैंक या CSC से आवेदन करें।',src:'PMFBY',url:'https://pmfby.gov.in'},
+  {cat:'Government Scheme',t:'सोलर पंप — 90% सब्सिडी PM-KUSUM',s:'PM-KUSUM में सोलर पंप पर 90% सब्सिडी। बिजली बिल शून्य। राज्य पोर्टल पर आवेदन करें।',src:'MNRE',url:'https://mnre.gov.in'},
+  {cat:'Weather Alert',t:'मानसून 3-5 दिन जल्दी — IMD',s:'2026 मानसून 3-5 दिन पहले। केरल में 28 मई तक। खरीफ बुवाई की तैयारी जल्दी शुरू करें।',src:'IMD',url:'https://mausam.imd.gov.in'},
+  {cat:'Weather Alert',t:'हीटवेव — राजस्थान MP में 43°C',s:'72 घंटे में राजस्थान-MP में 43°C। दोपहर 11-4 बजे खेत में न जाएं। सुबह-शाम सिंचाई करें।',src:'IMD',url:'https://mausam.imd.gov.in'},
+  {cat:'Weather Alert',t:'पश्चिमी विक्षोभ — उत्तर भारत में बारिश',s:'पंजाब, हरियाणा, UP में 3 दिन बारिश। कटी फसल तुरंत सुरक्षित करें।',src:'IMD',url:'https://mausam.imd.gov.in'},
+  {cat:'Pest & Disease',t:'टिड्डी अलर्ट — राजस्थान 4 ज़िले',s:'बाड़मेर, जैसलमेर, जोधपुर, बीकानेर में टिड्डी। Malathion छिड़काव करें। हेल्पलाइन: 1800-180-1551।',src:'कृषि विभाग',url:'https://ppqs.gov.in'},
+  {cat:'Pest & Disease',t:'गेहूं पीला रतुआ — पंजाब हरियाणा',s:'Yellow Rust का प्रकोप। Propiconazole 25% EC 200ml/एकड़ छिड़काव करें।',src:'ICAR',url:'https://icar.org.in'},
+  {cat:'AgriTech',t:'ड्रोन छिड़काव — 40% सब्सिडी',s:'कृषि ड्रोन पर 40-50% सब्सिडी। Digital Agri Mission में 1 लाख ड्रोन।',src:'Digital Agri',url:'https://agricoop.gov.in'},
+  {cat:'AgriTech',t:'AI मिट्टी जांच — 5 मिनट में',s:'AI से 5 मिनट में मिट्टी जांच। ICAR validated। किसानों के लिए मुफ्त।',src:'ICAR',url:'https://icar.org.in'},
+  {cat:'AgriTech',t:'नैनो यूरिया — 50% कम लागत',s:'IFFCO नैनो यूरिया से 50% खाद बचत। 500ml बोतल 1 एकड़ के लिए।',src:'IFFCO',url:'https://iffco.in'},
+  {cat:'Export',t:'बासमती निर्यात 22% बढ़ा — रिकॉर्ड',s:'बासमती निर्यात ₹48,000 करोड़ का रिकॉर्ड। APEDA से रजिस्ट्रेशन कराएं।',src:'APEDA',url:'https://apeda.gov.in'},
+  {cat:'Export',t:'मसाले निर्यात 18% — अमेरिका यूरोप मांग',s:'लाल मिर्च, हल्दी, जीरे की भारी मांग। Spices Board से जानकारी लें।',src:'Spices Board',url:'https://indianspices.com'},
+],
+en:[
+  {cat:'Market Price',t:'Wheat MSP ₹2,275/Quintal — Procurement Active',s:'Rabi 2026 wheat MSP fixed at ₹2,275/quintal. Active procurement in MP and Rajasthan mandis.',src:'Agriculture Ministry',url:'https://agricoop.gov.in'},
+  {cat:'Market Price',t:'Onion ₹18-22/kg — Nashik Supply Rises',s:'Nashik-Pune arrivals stabilise onion prices at ₹1,800-2,200/quintal. Store and sell later.',src:'APMC Mandi',url:'https://agmarknet.gov.in'},
+  {cat:'Market Price',t:'Paddy ₹2,183/Quintal — Procurement Open',s:'Kharif paddy procurement open in Punjab, Haryana, UP. Register on Meri Fasal portal.',src:'FCI',url:'https://fci.gov.in'},
+  {cat:'Market Price',t:'Soybean ₹4,600/Quintal — Surge in MP',s:'Soybean at ₹4,500-4,700 in MP mandis. Export demand rising.',src:'NCDEX',url:'https://agmarknet.gov.in'},
+  {cat:'Market Price',t:'Mustard ₹5,650/Quintal — Oil Mills Buying',s:'Mustard at ₹5,500-5,700 in Rajasthan-UP. Active oil mill purchases.',src:'NCDEX',url:'https://agmarknet.gov.in'},
+  {cat:'Government Scheme',t:'PM-KISAN 17th Installment — ₹2,000 in April',s:'17th PM-KISAN installment expected by April end. e-KYC mandatory by April 30.',src:'PM-KISAN',url:'https://pmkisan.gov.in'},
+  {cat:'Government Scheme',t:'KCC — Loans up to ₹3 Lakh at 4% Interest',s:'Kisan Credit Card: ₹3 lakh at 4% annual interest. Visit bank with Aadhaar and land records.',src:'NABARD',url:'https://nabard.org'},
+  {cat:'Government Scheme',t:'Farm Machinery Subsidy — 50% Off on Tractors',s:'25-50% subsidy on tractors, rotavators and threshers. SC/ST farmers get extra 10%.',src:'Agriculture Dept',url:'https://agricoop.gov.in'},
+  {cat:'Government Scheme',t:'Crop Insurance — Last Date April 31',s:'PM Fasal Bima open for Kharif 2026. Premium only 2%. Apply at bank or CSC center.',src:'PMFBY',url:'https://pmfby.gov.in'},
+  {cat:'Government Scheme',t:'Solar Pump — 90% Subsidy PM-KUSUM',s:'PM-KUSUM: 90% subsidy on solar pumps. Zero electricity bill.',src:'MNRE',url:'https://mnre.gov.in'},
+  {cat:'Weather Alert',t:'Monsoon 3-5 Days Early — IMD Forecast',s:'2026 monsoon expected 3-5 days early. Kerala landfall by May 28.',src:'IMD',url:'https://mausam.imd.gov.in'},
+  {cat:'Weather Alert',t:'Heatwave — Rajasthan MP to Cross 43°C',s:'Temperatures exceeding 43°C in 72 hours. Avoid working 11am-4pm.',src:'IMD',url:'https://mausam.imd.gov.in'},
+  {cat:'Weather Alert',t:'Western Disturbance — Rain in North India',s:'Rain in Punjab, Haryana, UP over 3 days. Protect harvested crops immediately.',src:'IMD',url:'https://mausam.imd.gov.in'},
+  {cat:'Pest & Disease',t:'Locust Alert — 4 Rajasthan Districts',s:'Locust swarms in Barmer, Jaisalmer, Jodhpur, Bikaner. Spray Malathion. Helpline: 1800-180-1551.',src:'Agriculture Dept',url:'https://ppqs.gov.in'},
+  {cat:'Pest & Disease',t:'Wheat Yellow Rust — Punjab Haryana Alert',s:'Yellow Rust outbreak. Spray Propiconazole 25% EC at 200ml/acre immediately.',src:'ICAR',url:'https://icar.org.in'},
+  {cat:'AgriTech',t:'Drone Spraying — 40% Subsidy Available',s:'40-50% subsidy on agri drones. 1 lakh drones under Digital Agriculture Mission.',src:'Digital Agri Mission',url:'https://agricoop.gov.in'},
+  {cat:'AgriTech',t:'AI Soil Testing — Results in 5 Minutes',s:'AI-based soil testing app: results in 5 minutes. ICAR validated. Free for farmers.',src:'ICAR',url:'https://icar.org.in'},
+  {cat:'AgriTech',t:'Nano Urea — 50% Cost Saving',s:'IFFCO Nano Urea: 500ml bottle covers 1 acre. 50% fertilizer saving.',src:'IFFCO',url:'https://iffco.in'},
+  {cat:'Export',t:'Basmati Exports Rise 22% — Record Set',s:'Basmati exports hit record ₹48,000 crore. Register with APEDA.',src:'APEDA',url:'https://apeda.gov.in'},
+  {cat:'Export',t:'Spice Exports Up 18% — US Europe Demand',s:'Strong demand for red chili, turmeric, cumin. Contact Spices Board.',src:'Spices Board',url:'https://indianspices.com'},
+],
+pa:[
+  {cat:'Market Price',t:'ਕਣਕ MSP ₹2,275/ਕੁਇੰਟਲ — ਸਰਕਾਰੀ ਖ਼ਰੀਦ ਜਾਰੀ',s:'ਰਬੀ 2026 ਲਈ ਕਣਕ MSP ₹2,275/ਕੁਇੰਟਲ। MP ਅਤੇ ਰਾਜਸਥਾਨ ਵਿੱਚ ਖ਼ਰੀਦ ਜਾਰੀ।',src:'ਖੇਤੀਬਾੜੀ ਮੰਤਰਾਲਾ',url:'https://agricoop.gov.in'},
+  {cat:'Market Price',t:'ਪਿਆਜ਼ ₹18-22/kg — ਨਾਸਿਕ ਆਮਦ ਵਧੀ',s:'ਨਾਸਿਕ-ਪੁਣੇ ਤੋਂ ਆਮਦ ਵਧੀ, ਦਾਮ ਸਥਿਰ।',src:'APMC',url:'https://agmarknet.gov.in'},
+  {cat:'Market Price',t:'ਝੋਨਾ ₹2,183/ਕੁਇੰਟਲ — ਖ਼ਰੀਦ ਕੇਂਦਰ ਖੁੱਲ੍ਹੇ',s:'ਖ਼ਰੀਫ਼ ਝੋਨੇ ਦੀ ਖ਼ਰੀਦ ਪੰਜਾਬ, ਹਰਿਆਣਾ, UP ਵਿੱਚ।',src:'FCI',url:'https://fci.gov.in'},
+  {cat:'Market Price',t:'ਸਰ੍ਹੋਂ ₹5,650/ਕੁਇੰਟਲ — ਤੇਲ ਮਿੱਲ ਮੰਗ',s:'ਰਾਜਸਥਾਨ-UP ਵਿੱਚ ਸਰ੍ਹੋਂ ₹5,500-5,700।',src:'NCDEX',url:'https://agmarknet.gov.in'},
+  {cat:'Market Price',t:'ਸੋਇਆਬੀਨ ₹4,600/ਕੁਇੰਟਲ — MP ਤੇਜ਼ੀ',s:'MP ਦੀਆਂ ਮੰਡੀਆਂ ਵਿੱਚ ₹4,500-4,700।',src:'NCDEX',url:'https://agmarknet.gov.in'},
+  {cat:'Government Scheme',t:'PM-KISAN 17ਵੀਂ ਕਿਸ਼ਤ — ₹2,000 ਅਪ੍ਰੈਲ',s:'e-KYC 30 ਅਪ੍ਰੈਲ ਤੱਕ ਲਾਜ਼ਮੀ।',src:'PM-KISAN',url:'https://pmkisan.gov.in'},
+  {cat:'Government Scheme',t:'KCC — ₹3 ਲੱਖ 4% ਵਿਆਜ',s:'KCC ਉੱਤੇ ₹3 ਲੱਖ 4% ਵਿਆਜ।',src:'NABARD',url:'https://nabard.org'},
+  {cat:'Government Scheme',t:'ਖੇਤੀ ਮਸ਼ੀਨਰੀ — 50% ਛੋਟ',s:'ਟ੍ਰੈਕਟਰ, ਰੋਟਾਵੇਟਰ 25-50% ਸਬਸਿਡੀ।',src:'ਖੇਤੀਬਾੜੀ ਵਿਭਾਗ',url:'https://agricoop.gov.in'},
+  {cat:'Weather Alert',t:'ਮਾਨਸੂਨ 3-5 ਦਿਨ ਜਲਦੀ — IMD',s:'2026 ਮਾਨਸੂਨ 3-5 ਦਿਨ ਪਹਿਲਾਂ। ਖ਼ਰੀਫ਼ ਤਿਆਰੀ ਕਰੋ।',src:'IMD',url:'https://mausam.imd.gov.in'},
+  {cat:'Weather Alert',t:'ਗਰਮੀ ਲਹਿਰ — 43°C ਅਲਰਟ',s:'ਰਾਜਸਥਾਨ-MP ਵਿੱਚ 43°C। ਸਵੇਰੇ-ਸ਼ਾਮ ਸਿੰਚਾਈ।',src:'IMD',url:'https://mausam.imd.gov.in'},
+  {cat:'Pest & Disease',t:'ਟਿੱਡੀ ਦਲ — ਰਾਜਸਥਾਨ ਅਲਰਟ',s:'ਬਾੜਮੇਰ, ਜੈਸਲਮੇਰ ਵਿੱਚ ਟਿੱਡੀ। Malathion ਛਿੜਕੋ।',src:'ਖੇਤੀਬਾੜੀ ਵਿਭਾਗ',url:'https://ppqs.gov.in'},
+  {cat:'Pest & Disease',t:'ਕਣਕ ਪੀਲੀ ਕੁੰਗੀ — ਪੰਜਾਬ ਹਰਿਆਣਾ',s:'Yellow Rust। Propiconazole 200ml/ਏਕੜ।',src:'ICAR',url:'https://icar.org.in'},
+  {cat:'AgriTech',t:'ਡਰੋਨ ਛਿੜਕਾਅ — 40% ਸਬਸਿਡੀ',s:'ਖੇਤੀ ਡਰੋਨ 40-50% ਸਬਸਿਡੀ।',src:'Digital Agri',url:'https://agricoop.gov.in'},
+  {cat:'AgriTech',t:'AI ਮਿੱਟੀ ਜਾਂਚ — 5 ਮਿੰਟ',s:'AI ਨਾਲ 5 ਮਿੰਟ ਵਿੱਚ ਮਿੱਟੀ ਜਾਂਚ।',src:'ICAR',url:'https://icar.org.in'},
+  {cat:'Export',t:'ਬਾਸਮਤੀ ਨਿਰਯਾਤ 22% ਵਧਿਆ',s:'ਬਾਸਮਤੀ ₹48,000 ਕਰੋੜ ਰਿਕਾਰਡ।',src:'APEDA',url:'https://apeda.gov.in'},
+],
+mr:[
+  {cat:'Market Price',t:'गहू MSP ₹2,275/क्विंटल — खरेदी सुरू',s:'रब्बी 2026 साठी गव्हाचा MSP ₹2,275. मंडईत सक्रिय खरेदी.',src:'कृषी मंत्रालय',url:'https://agricoop.gov.in'},
+  {cat:'Market Price',t:'कांदा ₹18-22/kg — नाशिक आवक वाढली',s:'नाशिक-पुण्यातून आवक वाढली, दर स्थिर.',src:'APMC',url:'https://agmarknet.gov.in'},
+  {cat:'Market Price',t:'भात ₹2,183/क्विंटल — खरेदी केंद्रे',s:'खरीप भाताची खरेदी पंजाब, हरियाणा, UP मध्ये.',src:'FCI',url:'https://fci.gov.in'},
+  {cat:'Market Price',t:'सोयाबीन ₹4,600 — MP तेजी',s:'MP मंडईत सोयाबीन ₹4,500-4,700.',src:'NCDEX',url:'https://agmarknet.gov.in'},
+  {cat:'Market Price',t:'कापूस ₹6,800 — गुजरात',s:'गुजरातमध्ये कापूस ₹6,700-6,900.',src:'CCI',url:'https://cotcorp.gov.in'},
+  {cat:'Government Scheme',t:'PM-KISAN 17वा हप्ता — ₹2,000',s:'e-KYC 30 एप्रिलपूर्वी अनिवार्य.',src:'PM-KISAN',url:'https://pmkisan.gov.in'},
+  {cat:'Government Scheme',t:'KCC — ₹3 लाख 4% व्याज',s:'KCC वर ₹3 लाख 4% व्याज.',src:'NABARD',url:'https://nabard.org'},
+  {cat:'Government Scheme',t:'यंत्र अनुदान — 50% सूट',s:'ट्रॅक्टर, रोटाव्हेटर 25-50% अनुदान.',src:'कृषी विभाग',url:'https://agricoop.gov.in'},
+  {cat:'Weather Alert',t:'मान्सून 3-5 दिवस लवकर',s:'2026 मान्सून लवकर. खरीप पेरणी तयारी करा.',src:'IMD',url:'https://mausam.imd.gov.in'},
+  {cat:'Pest & Disease',t:'टोळधाड सतर्कता — राजस्थान',s:'बाडमेर, जैसलमेरमध्ये टोळधाड. Malathion फवारा.',src:'कृषी विभाग',url:'https://ppqs.gov.in'},
+  {cat:'AgriTech',t:'ड्रोन फवारणी — 40% अनुदान',s:'कृषी ड्रोन 40-50% अनुदान.',src:'Digital Agri',url:'https://agricoop.gov.in'},
+  {cat:'Export',t:'बासमती निर्यात 22% — विक्रम',s:'बासमती ₹48,000 कोटी विक्रम.',src:'APEDA',url:'https://apeda.gov.in'},
+],
+gu:[
+  {cat:'Market Price',t:'ઘઉં MSP ₹2,275/ક્વિન્ટલ — ખરીદ ચાલુ',s:'રવિ 2026 ઘઉં MSP ₹2,275. મંડીઓમાં ખરીદ.',src:'કૃષિ મંત્રાલય',url:'https://agricoop.gov.in'},
+  {cat:'Market Price',t:'ડુંગળી ₹18-22/kg — નાસિક',s:'નાસિક-પુણે આવક ₹1,800-2,200/ક્વિન્ટલ.',src:'APMC',url:'https://agmarknet.gov.in'},
+  {cat:'Market Price',t:'ડાંગર ₹2,183 — ખરીદ કેન્દ્ર',s:'ખરીફ ડાંગર ખરીદ ચાલુ.',src:'FCI',url:'https://fci.gov.in'},
+  {cat:'Market Price',t:'સોયાબીન ₹4,600 — MP',s:'MP મંડી ₹4,500-4,700.',src:'NCDEX',url:'https://agmarknet.gov.in'},
+  {cat:'Market Price',t:'કપાસ ₹6,800 — ગુજરાત',s:'ગુજરાત ₹6,700-6,900.',src:'CCI',url:'https://cotcorp.gov.in'},
+  {cat:'Government Scheme',t:'PM-KISAN 17મો ₹2,000',s:'e-KYC 30 એપ્રિલ.',src:'PM-KISAN',url:'https://pmkisan.gov.in'},
+  {cat:'Government Scheme',t:'KCC ₹3 લાખ 4%',s:'KCC ₹3 લાખ 4% વ્યાજ.',src:'NABARD',url:'https://nabard.org'},
+  {cat:'Government Scheme',t:'યંત્ર સબસિડી 50%',s:'ટ્રેક્ટર 25-50% સબસિડી.',src:'કૃષિ',url:'https://agricoop.gov.in'},
+  {cat:'Weather Alert',t:'ચોમાસું 3-5 દિવસ વહેલું',s:'2026 ચોમાસું વહેલું. ખરીફ તૈયારી.',src:'IMD',url:'https://mausam.imd.gov.in'},
+  {cat:'Pest & Disease',t:'તીડ ચેતવણી — રાજસ્થાન',s:'બાડમેર, જેસલમેરમાં તીડ.',src:'કૃષિ',url:'https://ppqs.gov.in'},
+  {cat:'AgriTech',t:'ડ્રોન 40% સબસિડી',s:'ડ્રોન 40-50%.',src:'Digital Agri',url:'https://agricoop.gov.in'},
+  {cat:'Export',t:'બાસમતી 22% — રેકોર્ડ',s:'₹48,000 કરોડ.',src:'APEDA',url:'https://apeda.gov.in'},
+],
+ta:[
+  {cat:'Market Price',t:'கோதுமை MSP ₹2,275 — கொள்முதல்',s:'ரபி 2026 கோதுமை MSP ₹2,275.',src:'விவசாய அமைச்சகம்',url:'https://agricoop.gov.in'},
+  {cat:'Market Price',t:'வெங்காயம் ₹18-22/kg — நாசிக்',s:'நாசிக் வரவு அதிகரிப்பு.',src:'APMC',url:'https://agmarknet.gov.in'},
+  {cat:'Market Price',t:'நெல் ₹2,183 — கொள்முதல் மையம்',s:'கரீஃப் நெல் கொள்முதல் தொடங்கியது.',src:'FCI',url:'https://fci.gov.in'},
+  {cat:'Market Price',t:'சோயாபீன் ₹4,600 — MP',s:'MP ₹4,500-4,700.',src:'NCDEX',url:'https://agmarknet.gov.in'},
+  {cat:'Government Scheme',t:'PM-KISAN 17 ₹2,000',s:'e-KYC ஏப்ரல் 30.',src:'PM-KISAN',url:'https://pmkisan.gov.in'},
+  {cat:'Government Scheme',t:'KCC ₹3 லட்சம் 4%',s:'KCC ₹3 லட்சம் 4%.',src:'NABARD',url:'https://nabard.org'},
+  {cat:'Government Scheme',t:'இயந்திர மானியம் 50%',s:'டிராக்டர் 25-50%.',src:'விவசாய துறை',url:'https://agricoop.gov.in'},
+  {cat:'Weather Alert',t:'பருவமழை 3-5 நாட்கள் முன்',s:'2026 பருவமழை முன்னதாக.',src:'IMD',url:'https://mausam.imd.gov.in'},
+  {cat:'Pest & Disease',t:'வெட்டுக்கிளி ராஜஸ்தான்',s:'பார்மர், ஜைசல்மேர் வெட்டுக்கிளி.',src:'விவசாய துறை',url:'https://ppqs.gov.in'},
+  {cat:'AgriTech',t:'ட்ரோன் 40% மானியம்',s:'ட்ரோன் 40-50%.',src:'Digital Agri',url:'https://agricoop.gov.in'},
+  {cat:'Export',t:'பாஸ்மதி 22% — சாதனை',s:'₹48,000 கோடி.',src:'APEDA',url:'https://apeda.gov.in'},
+],
+te:[
+  {cat:'Market Price',t:'గోధుమ MSP ₹2,275 — కొనుగోలు',s:'రబీ 2026 గోధుమ MSP ₹2,275.',src:'వ్యవసాయ మంత్రిత్వ',url:'https://agricoop.gov.in'},
+  {cat:'Market Price',t:'ఉల్లిపాయలు ₹18-22/kg — నాసిక్',s:'నాసిక్ సరఫరా పెరిగింది.',src:'APMC',url:'https://agmarknet.gov.in'},
+  {cat:'Market Price',t:'ధాన్యం ₹2,183 — కొనుగోలు',s:'ఖరీఫ్ ధాన్యం కొనుగోలు.',src:'FCI',url:'https://fci.gov.in'},
+  {cat:'Market Price',t:'సోయాబీన్ ₹4,600 — MP',s:'MP ₹4,500-4,700.',src:'NCDEX',url:'https://agmarknet.gov.in'},
+  {cat:'Government Scheme',t:'PM-KISAN 17 ₹2,000',s:'e-KYC ఏప్రిల్ 30.',src:'PM-KISAN',url:'https://pmkisan.gov.in'},
+  {cat:'Government Scheme',t:'KCC ₹3 లక్షలు 4%',s:'KCC ₹3 లక్షలు 4%.',src:'NABARD',url:'https://nabard.org'},
+  {cat:'Weather Alert',t:'రుతుపవనాలు 3-5 రోజులు ముందు',s:'2026 రుతుపవనాలు ముందుగా.',src:'IMD',url:'https://mausam.imd.gov.in'},
+  {cat:'Pest & Disease',t:'మిడుత హెచ్చరిక రాజస్థాన్',s:'బార్మెర్, జైసల్మేర్ మిడుత.',src:'వ్యవసాయ శాఖ',url:'https://ppqs.gov.in'},
+  {cat:'AgriTech',t:'డ్రోన్ 40% సబ్సిడీ',s:'డ్రోన్ 40-50%.',src:'Digital Agri',url:'https://agricoop.gov.in'},
+  {cat:'Export',t:'బాస్మతి 22% — రికార్డు',s:'₹48,000 కోట్లు.',src:'APEDA',url:'https://apeda.gov.in'},
+],
+kn:[
+  {cat:'Market Price',t:'ಗೋಧಿ MSP ₹2,275 — ಖರೀದಿ',s:'ರಬಿ 2026 ಗೋಧಿ MSP ₹2,275.',src:'ಕೃಷಿ ಸಚಿವಾಲಯ',url:'https://agricoop.gov.in'},
+  {cat:'Market Price',t:'ಈರುಳ್ಳಿ ₹18-22/kg — ನಾಸಿಕ್',s:'ನಾಸಿಕ್ ಪೂರೈಕೆ ₹1,800-2,200.',src:'APMC',url:'https://agmarknet.gov.in'},
+  {cat:'Market Price',t:'ಭತ್ತ ₹2,183 — ಖರೀದಿ',s:'ಖರೀಫ್ ಭತ್ತ ಖರೀದಿ.',src:'FCI',url:'https://fci.gov.in'},
+  {cat:'Government Scheme',t:'PM-KISAN 17 ₹2,000',s:'e-KYC ಏಪ್ರಿಲ್ 30.',src:'PM-KISAN',url:'https://pmkisan.gov.in'},
+  {cat:'Government Scheme',t:'KCC ₹3 ಲಕ್ಷ 4%',s:'KCC ₹3 ಲಕ್ಷ.',src:'NABARD',url:'https://nabard.org'},
+  {cat:'Weather Alert',t:'ಮಾನ್ಸೂನ್ 3-5 ದಿನ ಮೊದಲು',s:'2026 ಮಾನ್ಸೂನ್ ಮೊದಲು.',src:'IMD',url:'https://mausam.imd.gov.in'},
+  {cat:'Pest & Disease',t:'ಮಿಡತ ರಾಜಸ್ಥಾನ',s:'ಬಾರ್ಮೆರ್ ಮಿಡತ.',src:'ಕೃಷಿ',url:'https://ppqs.gov.in'},
+  {cat:'AgriTech',t:'ಡ್ರೋನ್ 40% ಸಹಾಯಧನ',s:'ಡ್ರೋನ್ 40-50%.',src:'Digital Agri',url:'https://agricoop.gov.in'},
+  {cat:'Export',t:'ಬಾಸ್ಮತಿ 22% — ದಾಖಲೆ',s:'₹48,000 ಕೋಟಿ.',src:'APEDA',url:'https://apeda.gov.in'},
+],
+ml:[
+  {cat:'Market Price',t:'ഗോതമ്പ് MSP ₹2,275 — സംഭരണം',s:'റബി 2026 ഗോതമ്പ് MSP ₹2,275.',src:'കൃഷി മന്ത്രാലയം',url:'https://agricoop.gov.in'},
+  {cat:'Market Price',t:'ഉള്ളി ₹18-22/kg — നാസിക്',s:'നാസിക് ₹1,800-2,200.',src:'APMC',url:'https://agmarknet.gov.in'},
+  {cat:'Market Price',t:'നെൽ ₹2,183 — സംഭരണം',s:'ഖരീഫ് നെൽ സംഭരണം.',src:'FCI',url:'https://fci.gov.in'},
+  {cat:'Government Scheme',t:'PM-KISAN 17 ₹2,000',s:'e-KYC ഏപ്രിൽ 30.',src:'PM-KISAN',url:'https://pmkisan.gov.in'},
+  {cat:'Government Scheme',t:'KCC ₹3 ലക്ഷം 4%',s:'KCC ₹3 ലക്ഷം.',src:'NABARD',url:'https://nabard.org'},
+  {cat:'Weather Alert',t:'മൺസൂൺ 3-5 ദിവസം',s:'2026 മൺസൂൺ നേരത്തെ.',src:'IMD',url:'https://mausam.imd.gov.in'},
+  {cat:'Pest & Disease',t:'വെട്ടുക്കിളി ചെതവണ',s:'ബാർമർ, ജൈസൽമർ.',src:'കൃഷി',url:'https://ppqs.gov.in'},
+  {cat:'AgriTech',t:'ഡ്രോൺ 40%',s:'ഡ്രോൺ 40-50%.',src:'Digital Agri',url:'https://agricoop.gov.in'},
+  {cat:'Export',t:'ബാസ്മതി 22% — റെക്കോർഡ്',s:'₹48,000 കോടി.',src:'APEDA',url:'https://apeda.gov.in'},
+],
+bn:[
+  {cat:'Market Price',t:'গম MSP ₹2,275 — ক্রয়',s:'রবি 2026 গম MSP ₹2,275.',src:'কৃষি',url:'https://agricoop.gov.in'},
+  {cat:'Market Price',t:'পেঁয়াজ ₹18-22/kg — নাসিক',s:'নাসিক ₹1,800-2,200।',src:'APMC',url:'https://agmarknet.gov.in'},
+  {cat:'Market Price',t:'ধান ₹2,183 — ক্রয়',s:'ধান ক্রয় চলছে।',src:'FCI',url:'https://fci.gov.in'},
+  {cat:'Government Scheme',t:'PM-KISAN ১৭তম ₹2,000',s:'e-KYC ৩০ এপ্রিল।',src:'PM-KISAN',url:'https://pmkisan.gov.in'},
+  {cat:'Government Scheme',t:'KCC ₹3 লাখ 4%',s:'KCC ৪%।',src:'NABARD',url:'https://nabard.org'},
+  {cat:'Weather Alert',t:'বর্ষা 3-5 দিন আগে',s:'2026 বর্ষা আগে।',src:'IMD',url:'https://mausam.imd.gov.in'},
+  {cat:'Pest & Disease',t:'পঙ্গপাল রাজস্থান',s:'বার্মার পঙ্গপাল।',src:'কৃষি',url:'https://ppqs.gov.in'},
+  {cat:'AgriTech',t:'ড্রোন 40%',s:'ড্রোন 40-50%।',src:'Digital Agri',url:'https://agricoop.gov.in'},
+  {cat:'Export',t:'বাসমতি 22%',s:'₹48,000 কোটি।',src:'APEDA',url:'https://apeda.gov.in'},
+],
+or:[
+  {cat:'Market Price',t:'ଗହମ MSP ₹2,275 — ଖରୀଦ',s:'ରବି 2026 ଗହମ MSP ₹2,275.',src:'କୃଷି',url:'https://agricoop.gov.in'},
+  {cat:'Market Price',t:'ଧାନ ₹2,183 — ଖରୀଦ',s:'ଖାରିଫ ଧାନ ଖରୀଦ।',src:'FCI',url:'https://fci.gov.in'},
+  {cat:'Government Scheme',t:'PM-KISAN 17 ₹2,000',s:'e-KYC 30 ଏପ୍ରିଲ।',src:'PM-KISAN',url:'https://pmkisan.gov.in'},
+  {cat:'Government Scheme',t:'KCC ₹3 ଲକ୍ଷ 4%',s:'KCC 4%.',src:'NABARD',url:'https://nabard.org'},
+  {cat:'Weather Alert',t:'ମୌସୁମୀ 3-5 ଦିନ ଆଗୁ',s:'2026 ମୌସୁମୀ ଆଗୁ।',src:'IMD',url:'https://mausam.imd.gov.in'},
+  {cat:'Pest & Disease',t:'ଫଡ଼ିଙ୍ଗ ଚେତାବନୀ',s:'ଟିଡ଼ ଆଲର୍ଟ।',src:'କୃଷି',url:'https://ppqs.gov.in'},
+  {cat:'AgriTech',t:'ଡ୍ରୋନ 40%',s:'ଡ୍ରୋନ 40-50%।',src:'Digital Agri',url:'https://agricoop.gov.in'},
+  {cat:'Export',t:'ବାସ୍ମତି 22%',s:'₹48,000 କୋଟି।',src:'APEDA',url:'https://apeda.gov.in'},
+],
+as:[
+  {cat:'Market Price',t:'ঘেঁহু MSP ₹2,275 — ক্ৰয়',s:'ৰবি 2026 ঘেঁহু MSP ₹2,275.',src:'কৃষি',url:'https://agricoop.gov.in'},
+  {cat:'Market Price',t:'ধান ₹2,183 — ক্ৰয়',s:'ধান ক্ৰয় চলিছে।',src:'FCI',url:'https://fci.gov.in'},
+  {cat:'Government Scheme',t:'PM-KISAN ১৭তম ₹2,000',s:'e-KYC ৩০ এপ্ৰিল।',src:'PM-KISAN',url:'https://pmkisan.gov.in'},
+  {cat:'Government Scheme',t:'KCC ₹3 লাখ 4%',s:'KCC 4%।',src:'NABARD',url:'https://nabard.org'},
+  {cat:'Weather Alert',t:'বৰষুণ 3-5 দিন আগতীয়া',s:'2026 বৰষুণ আগতীয়া।',src:'IMD',url:'https://mausam.imd.gov.in'},
+  {cat:'Pest & Disease',t:'পতংগ ৰাজস্থান',s:'টিড আলাৰ্ট।',src:'কৃষি',url:'https://ppqs.gov.in'},
+  {cat:'AgriTech',t:'ড্ৰোন 40%',s:'ড্ৰোন 40-50%।',src:'Digital Agri',url:'https://agricoop.gov.in'},
+  {cat:'Export',t:'বাছমতি 22%',s:'₹48,000 কোটি।',src:'APEDA',url:'https://apeda.gov.in'},
+],
+ur:[
+  {cat:'Market Price',t:'گندم MSP ₹2,275 — خریداری',s:'ربیع 2026 گندم MSP ₹2,275.',src:'زرعی وزارت',url:'https://agricoop.gov.in'},
+  {cat:'Market Price',t:'پیاز ₹18-22/kg — ناسک',s:'ناسک آمد بڑھی۔',src:'APMC',url:'https://agmarknet.gov.in'},
+  {cat:'Market Price',t:'چاول ₹2,183 — خریداری',s:'خریف چاول خریداری۔',src:'FCI',url:'https://fci.gov.in'},
+  {cat:'Government Scheme',t:'PM-KISAN 17 ₹2,000',s:'e-KYC 30 اپریل۔',src:'PM-KISAN',url:'https://pmkisan.gov.in'},
+  {cat:'Government Scheme',t:'KCC ₹3 لاکھ 4%',s:'KCC 4%۔',src:'NABARD',url:'https://nabard.org'},
+  {cat:'Weather Alert',t:'مانسون 3-5 دن جلدی',s:'2026 مانسون جلدی۔',src:'IMD',url:'https://mausam.imd.gov.in'},
+  {cat:'Pest & Disease',t:'ٹڈی دل راجستھان',s:'ٹڈی الرٹ۔',src:'زرعی',url:'https://ppqs.gov.in'},
+  {cat:'AgriTech',t:'ڈرون 40%',s:'ڈرون 40-50%۔',src:'Digital Agri',url:'https://agricoop.gov.in'},
+  {cat:'Export',t:'باسمتی 22% — ریکارڈ',s:'₹48,000 کروڑ۔',src:'APEDA',url:'https://apeda.gov.in'},
+],
+raj:[
+  {cat:'Market Price',t:'गेहूं MSP ₹2,275 — सरकारी खरीद',s:'रबी 2026 खातर गेहूं MSP ₹2,275. मंडियां में खरीद।',src:'खेती मंत्रालय',url:'https://agricoop.gov.in'},
+  {cat:'Market Price',t:'प्याज ₹18-22/kg — नासिक',s:'नासिक सूं आवक बढ़ी।',src:'APMC',url:'https://agmarknet.gov.in'},
+  {cat:'Market Price',t:'धान ₹2,183 — खरीद',s:'खरीफ धान खरीद चालू।',src:'FCI',url:'https://fci.gov.in'},
+  {cat:'Market Price',t:'सरसों ₹5,650 — तेल मिल',s:'राजस्थान सरसों ₹5,500-5,700।',src:'NCDEX',url:'https://agmarknet.gov.in'},
+  {cat:'Government Scheme',t:'PM-KISAN 17वीं ₹2,000',s:'e-KYC 30 अप्रैल सूं पहला।',src:'PM-KISAN',url:'https://pmkisan.gov.in'},
+  {cat:'Government Scheme',t:'KCC ₹3 लाख 4%',s:'KCC 4% ब्याज।',src:'NABARD',url:'https://nabard.org'},
+  {cat:'Government Scheme',t:'यंत्र सब्सिडी 50%',s:'ट्रैक्टर 25-50%।',src:'खेती',url:'https://agricoop.gov.in'},
+  {cat:'Weather Alert',t:'मानसून 3-5 दिन जल्दी',s:'2026 मानसून आगी।',src:'IMD',url:'https://mausam.imd.gov.in'},
+  {cat:'Pest & Disease',t:'टिड्डी दल राजस्थान',s:'बाड़मेर, जैसलमेर टिड्डी।',src:'खेती',url:'https://ppqs.gov.in'},
+  {cat:'AgriTech',t:'ड्रोन 40% सब्सिडी',s:'ड्रोन 40-50%।',src:'Digital Agri',url:'https://agricoop.gov.in'},
+  {cat:'Export',t:'बासमती 22% — रिकॉर्ड',s:'₹48,000 करोड़।',src:'APEDA',url:'https://apeda.gov.in'},
+],
+};
 
-// ── TOAST ──
-function toast(msg, err=false){
-  const t=document.getElementById('toast');
-  t.textContent=msg; t.className='toast'+(err?' err':'');
-  t.classList.add('show');
-  setTimeout(()=>t.classList.remove('show'),3000);
+// ── STATE ──
+let curLang    = 'hi';
+let curFilter  = 'all';
+let curNews    = [];
+let curDetail  = null;
+let aiPanelOpen= false;
+
+// ── UTILS ──
+function fmtDate(loc){try{return new Date().toLocaleDateString(loc||'hi-IN',{weekday:'long',year:'numeric',month:'long',day:'numeric'});}catch(e){return new Date().toLocaleDateString('en-IN',{weekday:'long',year:'numeric',month:'long',day:'numeric'});}}
+function toast(msg,err){const t=document.getElementById('toast');t.textContent=msg;t.className='toast show'+(err?' err':'');clearTimeout(t._t);t._t=setTimeout(()=>t.classList.remove('show'),3000);}
+function saveKey(){try{localStorage.setItem('bh_key',document.getElementById('aiKey').value);}catch(e){}}
+function loadKey(){try{const k=localStorage.getItem('bh_key');if(k&&document.getElementById('aiKey'))document.getElementById('aiKey').value=k;return k||'';}catch(e){return '';}}
+function toggleAiPanel(){aiPanelOpen=!aiPanelOpen;document.getElementById('aiPanel').style.display=aiPanelOpen?'block':'none';}
+
+// ── DAILY SEED (auto rotate) ──
+function seed(lang){const d=new Date();return(d.getFullYear()*10000+(d.getMonth()+1)*100+d.getDate())+(lang||'hi').split('').reduce((a,c)=>a+c.charCodeAt(0),0)*7;}
+function shuffle(arr,s){const a=[...arr];let x=s;for(let i=a.length-1;i>0;i--){x=(x*1664525+1013904223)&0xffffffff;const j=Math.abs(x)%(i+1);[a[i],a[j]]=[a[j],a[i]];}return a;}
+function getTodaysNews(lang){
+  // Use language pool, fill gaps from Hindi if needed
+  const pool=(NEWS[lang]&&NEWS[lang].length>=6)?NEWS[lang]:NEWS.hi;
+  const hiPool=NEWS.hi;
+  const sh=shuffle(pool,seed(lang));
+  const picked=[];
+  // Try to get one from each category
+  CATS.forEach(cat=>{
+    const f=sh.find(n=>n.cat===cat&&!picked.includes(n));
+    if(f)picked.push(f);
+    else{
+      // fallback to Hindi for missing category
+      const hf=hiPool.find(n=>n.cat===cat&&!picked.some(p=>p.t===n.t));
+      if(hf)picked.push({...hf});
+    }
+  });
+  // Fill remaining slots up to 10
+  sh.forEach(n=>{if(picked.length<10&&!picked.includes(n))picked.push(n);});
+  if(picked.length<10){
+    shuffle(hiPool,seed(lang)+1).forEach(n=>{
+      if(picked.length<10&&!picked.some(p=>p.t===n.t))picked.push({...n});
+    });
+  }
+  return picked.slice(0,10).map((n,i)=>({...n,id:i+1,img:CAT_IMG[n.cat]||CAT_IMG['Market Price'],fb:CAT_FB[n.cat]||'📰',bg:CAT_BG[n.cat]||'#e8f5ee'}));
 }
 
-// ── DATE ──
-function fmtDate(locale='hi-IN'){
-  return new Date().toLocaleDateString(locale,{weekday:'long',year:'numeric',month:'long',day:'numeric'});
+// ── BUILD LANG BAR ──
+function buildLangBar(){
+  const bar=document.getElementById('langBar');
+  bar.innerHTML=LANGS.map(l=>`<button class="lang-btn${l.code===curLang?' active':''}" onclick="switchLang('${l.code}')">${l.label}</button>`).join('');
 }
 
-// ── SKELETON ──
-function skeletonHTML(){
-  return Array(6).fill(0).map(()=>`<div class="news-card"><div class="card-img sk sk-img"></div><div class="card-body"><div class="sk sk-line sk-w80"></div><div class="sk sk-line sk-w60"></div><div class="sk sk-line sk-w40"></div></div></div>`).join('');
+// ── BUILD FILTERS ──
+function buildFilters(){
+  const t=UI[curLang]||UI.hi;
+  const cats=['all','Market Price','Pest & Disease','Government Scheme','Weather Alert','AgriTech','Export'];
+  document.getElementById('filterBar').innerHTML=cats.map((c,i)=>`<button class="fbtn${curFilter===c?' active':''}" onclick="setFilter('${c}',this)">${t.fil[i]||c}</button>`).join('');
 }
 
-// ── DETECT CATEGORY from title ──
+// ── SET FILTER ──
+function setFilter(cat,btn){
+  curFilter=cat;
+  const t=UI[curLang]||UI.hi;
+  const cats=['all','Market Price','Pest & Disease','Government Scheme','Weather Alert','AgriTech','Export'];
+  document.getElementById('filterBar').innerHTML=cats.map((c,i)=>`<button class="fbtn${curFilter===c?' active':''}" onclick="setFilter('${c}',this)">${t.fil[i]||c}</button>`).join('');
+  renderNews();
+}
+
+// ── RENDER NEWS ──
+function renderNews(){
+  const t=UI[curLang]||UI.hi;
+  const grid=document.getElementById('newsGrid');
+  const list=curFilter==='all'?curNews:curNews.filter(n=>n.cat===curFilter);
+  document.getElementById('secCnt').textContent=list.length+' '+(t.fil[0]||'खबरें');
+  if(!list.length){grid.innerHTML='<div style="grid-column:1/-1;text-align:center;padding:40px;color:#6b7a70;font-size:14px;">इस category में खबरें नहीं हैं।</div>';return;}
+  grid.innerHTML=list.map(n=>{
+    const hasImg=n.img&&n.img.length>10&&n.img.startsWith('http');
+    const fallbackImg=CAT_IMG[n.cat]||CAT_IMG['Market Price'];
+    return `
+    <div class="news-card" onclick="openDetail(${n.id})">
+      <div class="card-img">
+        ${hasImg
+          ? `<img src="${n.img}" alt="${n.t}" loading="lazy" onerror="this.src='${fallbackImg}';this.onerror=null;"/>`
+          : `<img src="${fallbackImg}" alt="${n.t}" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"/>
+             <div class="fallback" style="display:none;background:${n.bg};">${n.fb}</div>`
+        }
+      </div>
+      <div class="card-body">
+        <span class="card-tag ${CAT_TAG[n.cat]||'t-mp'}">${n.cat}</span>
+        <div class="card-title">${n.t}</div>
+        <div class="card-sum">${(n.s||'').substring(0,120)}${(n.s||'').length>120?'...':''}</div>
+        <div class="card-footer">
+          <span class="card-src">📰 ${n.src}</span>
+          <button class="read-btn" onclick="event.stopPropagation();openDetail(${n.id})">${t.read||'पूरी खबर'}</button>
+        </div>
+      </div>
+    </div>`}).join('');
+}
+
+// ── SWITCH LANGUAGE ──
+async function switchLang(code){
+  curLang=code;
+  curFilter='all';
+  const t=UI[code]||UI.hi;
+  document.getElementById('mhSub').textContent=t.sub;
+  document.getElementById('secTitle').textContent=t.sec;
+  document.getElementById('mhDate').textContent=fmtDate(t.loc);
+  document.getElementById('refreshLbl').textContent=t.ref;
+  buildLangBar();
+  buildFilters();
+  const grid=document.getElementById('newsGrid');
+  grid.innerHTML=Array(6).fill(0).map(()=>`<div class="news-card"><div class="card-img sk sk-img"></div><div class="card-body"><div class="sk sk-line sk-w80"></div><div class="sk sk-line sk-w60"></div><div class="sk sk-line sk-w40"></div></div></div>`).join('');
+  const lname=LANGS.find(l=>l.code===code)?.label||code;
+
+  // Agar Hindi ya English hai — seedha load karo
+  if(code==='hi'||code==='en'){
+    setTimeout(()=>{
+      if(liveArticles.length>0){
+        curNews=liveArticles.map((a,i)=>({...a,id:i+1}));
+      } else {
+        curNews=getTodaysNews(code);
+      }
+      renderNews();
+      toast('✅ '+lname+' mein update hua!');
+    },300);
+    return;
+  }
+
+  // Dusri languages ke liye — Claude AI se translate karo
+  const apiKey=loadKey().trim();
+  if(apiKey && apiKey.startsWith('sk-ant') && liveArticles.length>0){
+    toast('🌐 '+lname+' mein translate ho raha hai...');
+    try{
+      const langNames={pa:'Punjabi',mr:'Marathi',gu:'Gujarati',ta:'Tamil',te:'Telugu',kn:'Kannada',ml:'Malayalam',bn:'Bengali',or:'Odia',as:'Assamese',ur:'Urdu',raj:'Rajasthani'};
+      const articles=liveArticles.slice(0,10);
+      const titlesForTranslation=articles.map((a,i)=>`${i+1}. ${a.title}`).join('\n');
+      const resp=await fetch('https://api.anthropic.com/v1/messages',{
+        method:'POST',
+        headers:{'Content-Type':'application/json','x-api-key':apiKey,'anthropic-version':'2023-06-01'},
+        body:JSON.stringify({
+          model:'claude-sonnet-4-20250514',
+          max_tokens:2000,
+          messages:[{role:'user',content:`Translate these agriculture news headlines to ${langNames[code]||code} language. Keep numbers, names and places same. Return ONLY numbered translations, nothing else:\n\n${titlesForTranslation}`}]
+        })
+      });
+      const data=await resp.json();
+      if(!data.error){
+        const translated=data.content.map(b=>b.text||'').join('').trim().split('\n').filter(l=>l.trim());
+        curNews=articles.map((a,i)=>{
+          const tLine=translated.find(l=>l.startsWith((i+1)+'.'));
+          const tTitle=tLine?tLine.replace(/^\d+\.\s*/,'').trim():a.title;
+          return {...a,id:i+1,t:tTitle,s:a.description||a.s||''};
+        });
+        renderNews();
+        toast('✅ '+lname+' mein translate hua!');
+        return;
+      }
+    }catch(e){console.log('Translation error:',e);}
+  }
+
+  // Fallback — static data
+  setTimeout(()=>{
+    curNews=getTodaysNews(code);
+    renderNews();
+    toast('✅ '+lname+' mein update hua!');
+  },300);
+}
+
+// ── REFRESH ──
+function refreshNews(){
+  const grid=document.getElementById('newsGrid');
+  grid.innerHTML=Array(6).fill(0).map(()=>`<div class="news-card"><div class="card-img sk sk-img"></div><div class="card-body"><div class="sk sk-line sk-w80"></div><div class="sk sk-line sk-w60"></div><div class="sk sk-line sk-w40"></div></div></div>`).join('');
+  loadLiveNews();
+}
+
+// ── DETAIL MODAL ──
+function openDetail(id){
+  const n=curNews.find(x=>x.id===id); if(!n) return;
+  curDetail=n;
+  const t=UI[curLang]||UI.hi;
+  const overlay=document.getElementById('ndOverlay');
+  // Set content
+  const img=document.getElementById('ndHeroImg');
+  const fb=document.getElementById('ndFb');
+  img.src=n.img; img.style.display='block';
+  fb.style.display='none'; fb.textContent=n.fb; fb.style.background=n.bg;
+  document.getElementById('ndBadge').textContent=n.cat;
+  document.getElementById('ndTitle').textContent=n.t;
+  document.getElementById('ndSrc').textContent='📰 '+n.src;
+  document.getElementById('ndDate').textContent='📅 '+fmtDate((UI[curLang]||UI.hi).loc);
+  document.getElementById('ndSum').textContent=n.s;
+  document.getElementById('ndAiLbl').textContent=t.ai||'🤖 AI विश्लेषण';
+  document.getElementById('ndAiTxt').innerHTML='<span class="nd-spin">⟳</span> '+(t.loading||'लोड हो रहा है...');
+  document.getElementById('ndVisitLbl').textContent=t.visit||'स्रोत देखें';
+  overlay.classList.add('open');
+  document.body.style.overflow='hidden';
+  // Generate AI detail
+  genAiDetail(n,curLang);
+}
+
+async function genAiDetail(n,lang){
+  const aiTxt=document.getElementById('ndAiTxt');
+  const apiKey=loadKey().trim();
+  const langNames={hi:'Hindi',en:'English',pa:'Punjabi',mr:'Marathi',gu:'Gujarati',ta:'Tamil',te:'Telugu',kn:'Kannada',ml:'Malayalam',bn:'Bengali',or:'Odia',as:'Assamese',ur:'Urdu',raj:'Rajasthani'};
+
+  // Without API — smart fallback in chosen language
+  if(!apiKey||!apiKey.startsWith('sk-ant')){
+    await new Promise(r=>setTimeout(r,400));
+    const fallback={
+      hi:`${n.src} के अनुसार, ${n.s} किसानों को इस जानकारी का उपयोग अपनी खेती की योजना में करना चाहिए। अधिक जानकारी के लिए नीचे स्रोत बटन पर click करें।`,
+      en:`According to ${n.src}, ${n.s} Farmers should use this information for planning their agricultural activities. Click the source button below for more details.`,
+      pa:`${n.src} ਮੁਤਾਬਕ, ${n.s} ਕਿਸਾਨਾਂ ਨੂੰ ਇਸ ਜਾਣਕਾਰੀ ਦੀ ਵਰਤੋਂ ਕਰਨੀ ਚਾਹੀਦੀ ਹੈ।`,
+      mr:`${n.src} नुसार, ${n.s} शेतकऱ्यांनी ही माहिती वापरावी.`,
+      gu:`${n.src} અનુસાર, ${n.s} ખેડૂતો આ માહિતીનો ઉપયોગ કરે.`,
+      ta:`${n.src} படி, ${n.s} விவசாயிகள் இதை பயன்படுத்துங்கள்.`,
+      te:`${n.src} ప్రకారం, ${n.s} రైతులు ఈ సమాచారాన్ని ఉపయోగించుకోండి.`,
+      kn:`${n.src} ಪ್ರಕಾರ, ${n.s} ರೈತರು ಈ ಮಾಹಿತಿ ಬಳಸಿ.`,
+      ml:`${n.src} അനുസരിച്ച്, ${n.s} കർഷകർ ഈ വിവരം ഉപയോഗിക്കണം.`,
+      bn:`${n.src} অনুসারে, ${n.s} কৃষকরা এই তথ্য ব্যবহার করুন।`,
+      or:`${n.src} ଅନୁଯାୟୀ, ${n.s}`,
+      as:`${n.src} অনুযায়ী, ${n.s}`,
+      ur:`${n.src} کے مطابق، ${n.s} کسان اس معلومات سے فائدہ اٹھائیں۔`,
+      raj:`${n.src} रे अनुसार, ${n.s} किसानां नें यो जानकारी काम लेणी चाईजे।`,
+    };
+    aiTxt.textContent=fallback[lang]||fallback.hi;
+    return;
+  }
+
+  // With API key — real Claude AI
+  try{
+    const resp=await fetch('https://api.anthropic.com/v1/messages',{
+      method:'POST',
+      headers:{'Content-Type':'application/json','x-api-key':apiKey,'anthropic-version':'2023-06-01'},
+      body:JSON.stringify({model:'claude-sonnet-4-20250514',max_tokens:400,messages:[{role:'user',content:`Write a 3-4 sentence detailed explanation in ${langNames[lang]||'Hindi'} language about this agriculture news for Indian farmers:\n\nHeadline: "${n.t}"\nSummary: "${n.s}"\nSource: ${n.src}\n\nInclude practical advice and key numbers. Write ONLY the explanation, nothing else.`}]})
+    });
+    const data=await resp.json();
+    if(data.error)throw new Error(data.error.message);
+    aiTxt.textContent=data.content.map(b=>b.text||'').join('').trim();
+  }catch(err){
+    aiTxt.textContent=(UI[lang]||UI.hi).ai+': '+n.s;
+  }
+}
+
+function closeDetail(){document.getElementById('ndOverlay').classList.remove('open');document.body.style.overflow='';}
+document.getElementById('ndOverlay').addEventListener('click',function(e){if(e.target===this)closeDetail();});
+function visitSource(){if(curDetail?.url&&curDetail.url!=='#')window.open(curDetail.url,'_blank');}
+function shareItem(){
+  if(!curDetail)return;
+  const txt=curDetail.t+'\n'+curDetail.s+'\n\nSource: '+curDetail.src;
+  if(navigator.share)navigator.share({title:curDetail.t,text:txt,url:curDetail.url});
+  else if(navigator.clipboard){navigator.clipboard.writeText(txt);toast('📋 Copied!');}
+}
+document.addEventListener('keydown',e=>{if(e.key==='Escape')closeDetail();});
+
+// ── LIVE ARTICLES STORE ──
+let liveArticles = [];
+
+// ── LOAD LIVE NEWS from news.json ──
+async function loadLiveNews(){
+  const grid=document.getElementById('newsGrid');
+  grid.innerHTML=Array(6).fill(0).map(()=>`<div class="news-card"><div class="card-img sk sk-img"></div><div class="card-body"><div class="sk sk-line sk-w80"></div><div class="sk sk-line sk-w60"></div><div class="sk sk-line sk-w40"></div></div></div>`).join('');
+  try{
+    const res=await fetch('news.json?t='+Date.now());
+    if(!res.ok) throw new Error('not found');
+    const data=await res.json();
+    if(!data.articles||data.articles.length===0) throw new Error('empty');
+
+    // Store live articles globally
+    liveArticles=data.articles.map((a,i)=>({
+      id:i+1,
+      t:a.title||'',
+      s:a.description||a.title||'',
+      img:a.image||'',           // Real article image
+      url:a.url||'#',            // Real article URL
+      src:a.source||'News',
+      cat:detectCat(a.title),
+      fb:CAT_FB[detectCat(a.title)]||'📰',
+      bg:CAT_BG[detectCat(a.title)]||'#e8f5ee',
+      pubDate:a.pubDate||'',
+    }));
+
+    curNews=[...liveArticles];
+    document.getElementById('secCnt').textContent=curNews.length+' खबरें';
+
+    if(data.updated){
+      try{
+        const upd=new Date(data.updated);
+        document.getElementById('mhDate').textContent='अंतिम अपडेट: '+upd.toLocaleString('hi-IN');
+      }catch(e){}
+    }
+    renderNews();
+    toast('✅ आज की '+curNews.length+' ताज़ा खबरें लोड हुईं!');
+  }catch(err){
+    console.warn('news.json not found, using static data');
+    curNews=getTodaysNews(curLang);
+    renderNews();
+  }
+}
+
+// ── DETECT CATEGORY ──
 function detectCat(title){
-  const t = (title||'').toLowerCase();
-  if(/msp|mandi|bhav|price|दाम|मंडी|भाव|quintal|क्विंटल|market|बाज़ार|rate/.test(t)) return 'Market Price';
-  if(/yojana|scheme|subsidy|pm-kisan|pm kisan|सब्सिडी|योजना|सरकार|government|nabard|kcc|किसान क्रेडिट/.test(t)) return 'Government Scheme';
+  const t=(title||'').toLowerCase();
+  if(/msp|mandi|bhav|price|दाम|मंडी|भाव|quintal|क्विंटल|market|बाज़ार|rate|crop price/.test(t)) return 'Market Price';
+  if(/yojana|scheme|subsidy|pm-kisan|pm kisan|सब्सिडी|योजना|सरकार|government|nabard|kcc/.test(t)) return 'Government Scheme';
   if(/monsoon|rain|weather|मानसून|बारिश|drought|flood|heatwave|imd|तूफान|cyclone/.test(t)) return 'Weather Alert';
   if(/pest|disease|locust|टिड्डी|कीट|रोग|fungus|blight|rust|worm/.test(t)) return 'Pest & Disease';
   if(/drone|ai |tech|technology|digital|nano|app|satellite|sensor/.test(t)) return 'AgriTech';
@@ -289,293 +765,23 @@ function detectCat(title){
   return 'Market Price';
 }
 
-// ── DETECT CATEGORY FALLBACK ICON ──
-function catFallback(cat){
-  return CAT_EMOJI[cat] || '📰';
-}
-
-// ════════════════════════════════════════════════════
-// LIVE NEWS LOADING — from news.json (GitHub Actions)
-// ════════════════════════════════════════════════════
-async function loadLiveNews(){
-  const grid = document.getElementById('newsGrid');
-  grid.innerHTML = skeletonHTML();
-  document.getElementById('liveInfo').textContent = 'Google News से खबरें लोड हो रही हैं...';
-
-  try {
-    // news.json fetch करो (GitHub Actions हर दिन इसे update करता है)
-    const res = await fetch('news.json?t=' + Date.now());
-    if (!res.ok) throw new Error('news.json not found');
-    const data = await res.json();
-    liveData = data;
-
-    // Updated time दिखाओ
-    if(data.updated){
-      const upd = new Date(data.updated);
-      document.getElementById('liveUpdated').textContent =
-        'अंतिम अपडेट: ' + upd.toLocaleString('hi-IN');
-    }
-
-    // Articles को curNews format में convert करो
-    const articles = data.articles || [];
-    curNews = articles.map((a, i) => ({
-      id: i,
-      t: a.title || 'कृषि समाचार',
-      s: a.description || a.title || '',
-      img: a.image || '',           // अगर image है तो दिखाओ
-      url: a.url,                   // ← REAL ARTICLE URL! यही "Visit Source" में जाएगा
-      src: a.source || 'News',
-      cat: detectCat(a.title),
-      fb: catFallback(detectCat(a.title)),
-      bg: '#e8f5ee',
-      pubDate: a.pubDate || '',
-    }));
-
-    document.getElementById('liveInfo').textContent =
-      'आज की ' + curNews.length + ' ताज़ा कृषि खबरें — Google News से LIVE';
-    document.getElementById('secCnt').textContent = curNews.length + ' खबरें';
-
-    buildFilters();
-    renderNews();
-    toast('✅ आज की ' + curNews.length + ' खबरें लोड हुईं!');
-
-  } catch(err) {
-    // Fallback: news.json नहीं मिली मतलब अभी GitHub Actions setup नहीं हुई
-    console.warn('news.json not found, showing setup message:', err);
-    document.getElementById('liveInfo').textContent =
-      '⚠️ news.json नहीं मिली — नीचे setup instructions देखें';
-    showSetupMessage(grid);
-  }
-}
-
-function showSetupMessage(grid){
-  grid.innerHTML = `
-    <div class="error-state" style="grid-column:1/-1">
-      <div class="e-icon">⚙️</div>
-      <p style="font-size:16px;font-weight:600;color:var(--gd);margin-bottom:12px;">
-        GitHub Actions Setup बाकी है
-      </p>
-      <p style="margin-bottom:16px;">
-        <strong>fetch-news.js</strong> और <strong>update-news.yml</strong> files<br/>
-        अपने GitHub repository में upload करें।<br/>
-        उसके बाद हर दिन खबरें auto-update होंगी।
-      </p>
-      <p style="font-size:12px;color:var(--tmut);">
-        Setup files इस project के साथ मिली हैं:<br/>
-        <code style="background:#f0f0f0;padding:2px 6px;border-radius:4px;">fetch-news.js</code> &nbsp;
-        <code style="background:#f0f0f0;padding:2px 6px;border-radius:4px;">.github/workflows/update-news.yml</code>
-      </p>
-      <button onclick="loadLiveNews()" class="abtn pri" style="margin-top:16px;padding:10px 24px;font-size:13px;">
-        🔄 फिर से Try करें
-      </button>
-    </div>`;
-}
-
-// ── REFRESH ──
-function refreshNews(){
-  toast('🔄 Refresh हो रहा है...');
-  loadLiveNews();
-}
-
-// ── LANGUAGE BAR ──
-function buildLangBar(){
-  document.getElementById('langBar').innerHTML = LANGS.map(l =>
-    `<button class="lang-btn${l.code===curLang?' active':''}" onclick="switchLang('${l.code}')">${l.label}</button>`
-  ).join('');
-}
-
-// ── FILTERS ──
-function buildFilters(){
-  const cats = ['सभी', ...new Set(curNews.map(n => n.cat))];
-  document.getElementById('filterBar').innerHTML = cats.map(c =>
-    `<button class="fbtn${(c==='सभी'&&curFilter==='all')||(c===curFilter)?' active':''}"
-      onclick="setFilter('${c==='सभी'?'all':c}')">${c}</button>`
-  ).join('');
-}
-
-function setFilter(f){
-  curFilter = f;
-  buildFilters();
-  renderNews();
-}
-
-// ── RENDER ──
-function renderNews(){
-  const filtered = curFilter==='all' ? curNews : curNews.filter(n=>n.cat===curFilter);
-  document.getElementById('secCnt').textContent = filtered.length + ' खबरें';
-
-  if(!filtered.length){
-    document.getElementById('newsGrid').innerHTML =
-      `<div class="error-state" style="grid-column:1/-1">
-        <div class="e-icon">🔍</div>
-        <p>इस category में आज कोई खबर नहीं।<br/>दूसरी category चुनें।</p>
-      </div>`;
-    return;
-  }
-
-  document.getElementById('newsGrid').innerHTML = filtered.map(n => {
-    const tagCls = CAT_CLASS[n.cat] || 't-mp';
-    const hasImg = n.img && n.img.length > 5;
-    return `<div class="news-card" onclick="openDetail(${n.id})">
-      <div class="card-img">
-        ${hasImg
-          ? `<img src="${n.img}" alt="${n.t}" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"/>
-             <div class="fallback" style="display:none;background:#e8f5ee;">${n.fb}</div>`
-          : `<div class="fallback" style="background:#e8f5ee;">${n.fb}</div>`
-        }
-      </div>
-      <div class="card-body">
-        <span class="card-tag ${tagCls}">${n.cat}</span>
-        <div class="card-title">${n.t}</div>
-        <div class="card-sum">${(n.s||'').substring(0,120)}${(n.s||'').length>120?'...':''}</div>
-        <div class="card-footer">
-          <span class="card-src">📰 ${n.src}</span>
-          <button class="read-btn" onclick="event.stopPropagation();openDetail(${n.id})">पूरी खबर ›</button>
-        </div>
-      </div>
-    </div>`;
-  }).join('');
-}
-
-// ── SWITCH LANGUAGE ──
-function switchLang(code){
-  curLang = code;
-  buildLangBar();
-  // Language के according Google News RSS का query change होगा अगले GitHub Actions run में
-  // अभी same articles दिखाते हैं
-  toast('✅ भाषा बदली! अगले update से ' + (LANGS.find(l=>l.code===code)?.label||code) + ' में खबरें आएंगी।');
-}
-
-// ── DETAIL MODAL ──
-function openDetail(id){
-  const n = curNews.find(x=>x.id===id);
-  if(!n) return;
-  curDetail = n;
-
-  const overlay = document.getElementById('ndOverlay');
-  const img = document.getElementById('ndHeroImg');
-  const fb = document.getElementById('ndFb');
-
-  // Image
-  if(n.img && n.img.length > 5){
-    img.src = n.img;
-    img.style.display = 'block';
-    fb.style.display = 'none';
-  } else {
-    img.style.display = 'none';
-    fb.style.display = 'flex';
-    fb.textContent = n.fb;
-    fb.style.background = '#e8f5ee';
-  }
-
-  document.getElementById('ndBadge').textContent = n.cat;
-  document.getElementById('ndTitle').textContent = n.t;
-  document.getElementById('ndSourceBadge').textContent = '📰 ' + n.src;
-  document.getElementById('ndSrc').textContent = '📰 ' + n.src;
-  document.getElementById('ndDate').textContent = '📅 ' + fmtDate();
-  document.getElementById('ndSum').textContent = n.s || n.t;
-  document.getElementById('ndAiLbl').textContent = '🤖 AI विश्लेषण';
-  document.getElementById('ndAiTxt').textContent = 'लोड हो रहा है...';
-
-  overlay.classList.add('open');
-  document.body.style.overflow = 'hidden';
-
-  genAiDetail(n);
-}
-
-// ── AI DETAIL GENERATION ──
-async function genAiDetail(n){
-  const aiTxt = document.getElementById('ndAiTxt');
-  const apiKey = loadKey().trim();
-
-  // Without API key — smart contextual fallback
-  if(!apiKey || !apiKey.startsWith('sk-ant')){
-    await new Promise(r=>setTimeout(r,400));
-    const tips = {
-      'Market Price': `${n.src} के अनुसार यह खबर मंडी भाव से जुड़ी है। किसान भाई इस जानकारी का उपयोग फसल बेचने के सही समय के निर्णय में कर सकते हैं। अधिक जानकारी के लिए नीचे "स्रोत देखें" पर click करें।`,
-      'Government Scheme': `${n.src} के अनुसार यह सरकारी योजना से जुड़ी खबर है। किसान भाई अपने नज़दीकी CSC केंद्र या बैंक से इस योजना का लाभ उठा सकते हैं। पूरी जानकारी के लिए असली खबर पढ़ें।`,
-      'Weather Alert': `${n.src} के अनुसार यह मौसम संबंधी अलर्ट है। किसान भाई IMD की सलाह मानें और फसल सुरक्षा के उचित कदम उठाएं। अधिक जानकारी के लिए असली खबर पढ़ें।`,
-      'Pest & Disease': `${n.src} के अनुसार यह कीट या बीमारी की खबर है। तुरंत अपने कृषि विभाग से संपर्क करें और सही दवाई का छिड़काव करें। विस्तार से पढ़ने के लिए स्रोत देखें।`,
-      'AgriTech': `${n.src} के अनुसार यह नई तकनीक से जुड़ी खबर है। किसान भाई इस तकनीक के बारे में अपने कृषि विभाग से जानकारी लें। पूरी खबर के लिए स्रोत देखें।`,
-      'Export': `${n.src} के अनुसार यह कृषि निर्यात से जुड़ी खबर है। APEDA से रजिस्ट्रेशन करके किसान भाई निर्यात का लाभ उठा सकते हैं। विस्तार के लिए स्रोत देखें।`,
-    };
-    aiTxt.textContent = tips[n.cat] || `${n.src} की यह खबर किसानों के लिए महत्वपूर्ण है। अधिक जानकारी के लिए "स्रोत देखें" पर click करें।`;
-    return;
-  }
-
-  // With Claude API key — real AI analysis
-  try {
-    const resp = await fetch('https://api.anthropic.com/v1/messages', {
-      method:'POST',
-      headers:{
-        'Content-Type':'application/json',
-        'x-api-key': apiKey,
-        'anthropic-version':'2023-06-01'
-      },
-      body: JSON.stringify({
-        model:'claude-sonnet-4-20250514',
-        max_tokens:400,
-        messages:[{
-          role:'user',
-          content:`नीचे दी गई agriculture news को Hindi में भारतीय किसानों के लिए 3-4 sentences में explain करो। Practical advice दो। Numbers और facts include करो।\n\nHeadline: "${n.t}"\nSummary: "${n.s}"\nSource: ${n.src}\n\nSirf explanation likho, koi heading mat likho.`
-        }]
-      })
-    });
-    const data = await resp.json();
-    if(data.error) throw new Error(data.error.message);
-    aiTxt.textContent = data.content.map(b=>b.text||'').join('').trim();
-  } catch(err) {
-    aiTxt.textContent = n.s || n.t;
-  }
-}
-
-function closeDetail(){
-  document.getElementById('ndOverlay').classList.remove('open');
-  document.body.style.overflow = '';
-}
-
-// ══════════════════════════════════════════════════════
-// VISIT SOURCE — यही सबसे important feature है!
-// curDetail.url = Google News से आया REAL article URL
-// Click करने पर directly उस newspaper के article पर जाएगा
-// ══════════════════════════════════════════════════════
-function visitSource(){
-  if(curDetail && curDetail.url && curDetail.url !== '#'){
-    window.open(curDetail.url, '_blank');
-  } else {
-    toast('⚠️ इस खबर का source URL उपलब्ध नहीं है', true);
-  }
-}
-
-function shareItem(){
-  if(!curDetail) return;
-  const txt = curDetail.t + '\n\n' + (curDetail.s||'') + '\n\nSource: ' + curDetail.src + '\n' + (curDetail.url||'');
-  if(navigator.share){
-    navigator.share({title:curDetail.t, text:txt, url:curDetail.url});
-  } else if(navigator.clipboard){
-    navigator.clipboard.writeText(txt);
-    toast('📋 खबर copy हो गई!');
-  }
-}
-
-document.getElementById('ndOverlay').addEventListener('click', function(e){
-  if(e.target === this) closeDetail();
-});
-document.addEventListener('keydown', e=>{if(e.key==='Escape') closeDetail();});
+// ── AUTO DAILY REFRESH (every hour) ──
+setInterval(()=>{
+  const today=new Date().toDateString();
+  const last=localStorage.getItem('bh_date_'+curLang);
+  if(last!==today){localStorage.setItem('bh_date_'+curLang,today);loadLiveNews();toast('🌅 नया दिन — खबरें auto-update हुईं!');}
+},3600000);
 
 // ── INIT ──
-document.addEventListener('DOMContentLoaded', function(){
-  document.getElementById('mhDate').textContent = fmtDate('hi-IN');
+document.addEventListener('DOMContentLoaded',function(){
   loadKey();
   buildLangBar();
+  curLang='hi';
+  curFilter='all';
   buildFilters();
-  loadLiveNews(); // Static news की जगह LIVE news load करो
+  loadLiveNews(); // Live news load karo
+  console.log('BH Krishi Samachar LIVE loaded!');
 });
-
-// Auto-refresh हर 1 घंटे में
-setInterval(()=>{
-  loadLiveNews();
-}, 3600000);
 </script>
 </body>
 </html>
