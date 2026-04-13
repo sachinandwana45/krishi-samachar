@@ -9,20 +9,18 @@ function fetchURL(rawUrl, timeoutMs) {
     try {
       var parsed = new URL(rawUrl);
       var lib = parsed.protocol === 'https:' ? https : http;
-      var options = {
+      var req = lib.get({
         hostname: parsed.hostname,
         path: parsed.pathname + parsed.search,
         headers: {
           'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/121',
           'Accept': 'text/html,application/xhtml+xml,application/xml,*/*',
           'Accept-Language': 'hi-IN,hi;q=0.9,en;q=0.8',
-          'Connection': 'keep-alive'
         },
         timeout: timeoutMs
-      };
-      var req = lib.get(options, function(res) {
-        // Handle redirects
-        if ((res.statusCode === 301 || res.statusCode === 302 || res.statusCode === 307 || res.statusCode === 308) && res.headers.location) {
+      }, function(res) {
+        // Handle redirects — real URL milegi yahan se
+        if ([301,302,303,307,308].includes(res.statusCode) && res.headers.location) {
           var loc = res.headers.location;
           if (!loc.startsWith('http')) loc = parsed.protocol + '//' + parsed.hostname + loc;
           res.resume();
@@ -30,7 +28,41 @@ function fetchURL(rawUrl, timeoutMs) {
         }
         var data = '';
         res.setEncoding('utf8');
-        res.on('data', function(c) { if (data.length < 500000) data += c; });
+        res.on('data', function(c) { if (data.length < 300000) data += c; });
+        res.on('end', function() { resolve({ url: rawUrl, finalUrl: rawUrl, body: data }); });
+        res.on('error', function() { resolve({ url: rawUrl, finalUrl: rawUrl, body: '' }); });
+      });
+      req.on('error', function() { resolve({ url: rawUrl, finalUrl: rawUrl, body: '' }); });
+      req.on('timeout', function() { req.destroy(); resolve({ url: rawUrl, finalUrl: rawUrl, body: '' }); });
+    } catch(e) { resolve({ url: rawUrl, finalUrl: rawUrl, body: '' }); }
+  });
+}
+
+// ── Simple fetch (string only) ──
+function simpleGet(rawUrl, timeoutMs) {
+  timeoutMs = timeoutMs || 15000;
+  return new Promise(function(resolve) {
+    try {
+      var parsed = new URL(rawUrl);
+      var lib = parsed.protocol === 'https:' ? https : http;
+      var req = lib.get({
+        hostname: parsed.hostname,
+        path: parsed.pathname + parsed.search,
+        headers: {
+          'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/121',
+          'Accept': 'text/html,*/*'
+        },
+        timeout: timeoutMs
+      }, function(res) {
+        if ([301,302,303,307,308].includes(res.statusCode) && res.headers.location) {
+          var loc = res.headers.location;
+          if (!loc.startsWith('http')) loc = parsed.protocol + '//' + parsed.hostname + loc;
+          res.resume();
+          return simpleGet(loc, timeoutMs).then(resolve);
+        }
+        var data = '';
+        res.setEncoding('utf8');
+        res.on('data', function(c) { if (data.length < 400000) data += c; });
         res.on('end', function() { resolve(data); });
         res.on('error', function() { resolve(''); });
       });
@@ -40,50 +72,70 @@ function fetchURL(rawUrl, timeoutMs) {
   });
 }
 
-// ── Google News URL ko Real URL mein convert karo ──
-function decodeGoogleNewsUrl(url) {
-  if (!url) return '';
-  if (!url.includes('news.google.com')) return url;
+// ── Google News URL se Real Article URL nikalo ──
+async function resolveGoogleNewsUrl(googleUrl) {
+  if (!googleUrl || !googleUrl.includes('news.google.com')) return googleUrl;
+  
+  try {
+    // Google News HTML page fetch karo
+    var html = await simpleGet(googleUrl, 10000);
+    if (!html) return googleUrl;
+    
+    // Real URL dhundho — Google News page mein hoti hai
+    // Pattern 1: data-url attribute
+    var m1 = html.match(/data-url="(https?:\/\/[^"]+)"/);
+    if (m1 && m1[1] && !m1[1].includes('google.com')) return m1[1];
+    
+    // Pattern 2: jslog URL
+    var m2 = html.match(/"(https?:\/\/(?!.*google\.com)[^"]{20,}?)"/);
+    if (m2 && m2[1]) {
+      var candidateUrl = m2[1];
+      if (!candidateUrl.includes('google') && candidateUrl.startsWith('http')) return candidateUrl;
+    }
+    
+    // Pattern 3: canonical link
+    var m3 = html.match(/<link[^>]+rel=["']canonical["'][^>]+href=["']([^"']+)["']/i);
+    if (m3 && m3[1] && !m3[1].includes('google.com')) return m3[1];
+    
+    // Pattern 4: og:url
+    var m4 = html.match(/<meta[^>]+property=["']og:url["'][^>]+content=["']([^"']+)["']/i);
+    if (m4 && m4[1] && !m4[1].includes('google.com')) return m4[1];
 
-  // Method 1: url= parameter
-  var urlParam = url.match(/[?&]url=([^&]+)/);
-  if (urlParam) {
-    try { return decodeURIComponent(urlParam[1]); } catch(e) {}
+    // Pattern 5: href links se newspaper URL
+    var hrefMatches = html.match(/href="(https?:\/\/(?!.*google\.com)[^"]{30,}?)"/g);
+    if (hrefMatches) {
+      for (var i = 0; i < hrefMatches.length && i < 10; i++) {
+        var hrefUrl = hrefMatches[i].match(/href="([^"]+)"/)[1];
+        if (hrefUrl && !hrefUrl.includes('google') && !hrefUrl.includes('youtube') && 
+            !hrefUrl.includes('gstatic') && hrefUrl.length > 30) {
+          return hrefUrl;
+        }
+      }
+    }
+  } catch(e) {
+    console.log('  URL resolve error:', e.message);
   }
-
-  // Method 2: __i/ pattern (Google News article links)
-  var articleMatch = url.match(/articles\/([^?]+)/);
-  if (articleMatch) {
-    // Ye Google ka encoded URL hai — seedha return karo, browser handle karega
-    return url;
-  }
-
-  return url;
+  
+  return googleUrl; // Fallback — original URL
 }
 
 // ── Article se og:image nikalo ──
 async function getImage(articleUrl) {
   if (!articleUrl || articleUrl === '#' || articleUrl.includes('news.google.com')) return '';
   try {
-    var html = await fetchURL(articleUrl, 8000);
+    var html = await simpleGet(articleUrl, 8000);
     if (!html || html.length < 100) return '';
-
-    // og:image try karo
     var patterns = [
       /<meta[^>]+property=["']og:image["'][^>]+content=["']([^"']+)["']/i,
       /<meta[^>]+content=["']([^"']+)["'][^>]+property=["']og:image["']/i,
       /<meta[^>]+name=["']twitter:image["'][^>]+content=["']([^"']+)["']/i,
       /<meta[^>]+content=["']([^"']+)["'][^>]+name=["']twitter:image["']/i,
-      /<meta[^>]+name=["']twitter:image:src["'][^>]+content=["']([^"']+)["']/i,
     ];
-
     for (var i = 0; i < patterns.length; i++) {
       var match = html.match(patterns[i]);
       if (match && match[1]) {
         var imgUrl = match[1].trim();
-        if (imgUrl.startsWith('http') && !imgUrl.includes('logo') && !imgUrl.includes('icon')) {
-          return imgUrl;
-        }
+        if (imgUrl.startsWith('http') && imgUrl.length > 15) return imgUrl;
       }
     }
   } catch(e) {}
@@ -97,37 +149,29 @@ function parseRSS(xml) {
   var m;
   while ((m = re.exec(xml)) !== null) {
     var x = m[1];
-
-    // Title
     var tm = x.match(/<title><!\[CDATA\[([\s\S]*?)\]\]>/);
-    var tp = x.match(/<title>([^<]*)<\/title>/);
+    var tp = x.match(/<title>([^<]{3,})<\/title>/);
     var title = ((tm ? tm[1] : (tp ? tp[1] : '')) || '').trim();
-    title = title.replace(/&amp;/g,'&').replace(/&lt;/g,'<').replace(/&gt;/g,'>').replace(/&quot;/g,'"').replace(/&#39;/g,"'");
+    title = title.replace(/&amp;/g,'&').replace(/&lt;/g,'<').replace(/&gt;/g,'>').replace(/&quot;/g,'"');
     if (!title || title.length < 5) continue;
 
-    // Link — Google News ke links decode karo
-    var lm = x.match(/<link>([^<]*)<\/link>/);
-    var rawLink = lm ? lm[1].trim() : '';
-    var link = decodeGoogleNewsUrl(rawLink) || rawLink || '#';
+    var lm = x.match(/<link>([^<]+)<\/link>/);
+    var link = (lm ? lm[1].trim() : '') || '#';
 
-    // Description
     var dm = x.match(/<description><!\[CDATA\[([\s\S]*?)\]\]>/);
-    var dp = x.match(/<description>([^<]*)<\/description>/);
-    var desc = ((dm ? dm[1] : (dp ? dp[1] : '')) || '').replace(/<[^>]*>/g,' ').trim();
-    desc = desc.replace(/&amp;/g,'&').replace(/&lt;/g,'<').replace(/&gt;/g,'>').replace(/&nbsp;/g,' ').replace(/\s+/g,' ').trim();
-    if (desc.length > 200) desc = desc.substring(0, 200) + '...';
+    var dp = x.match(/<description>([^<]{5,})<\/description>/);
+    var desc = ((dm ? dm[1] : (dp ? dp[1] : '')) || '').replace(/<[^>]*>/g,' ').replace(/\s+/g,' ').trim();
+    desc = desc.replace(/&amp;/g,'&').replace(/&lt;/g,'<').replace(/&gt;/g,'>').replace(/&nbsp;/g,' ').trim();
+    if (desc.length > 220) desc = desc.substring(0, 220) + '...';
 
-    // Source name
-    var sm = x.match(/<source[^>]*>([^<]*)<\/source>/);
+    var sm = x.match(/<source[^>]*>([^<]+)<\/source>/);
     var source = sm ? sm[1].trim() : '';
     if (!source) {
       try { source = new URL(link).hostname.replace('www.','').split('.')[0]; } catch(e) { source = 'News'; }
     }
 
-    // RSS mein image check karo
     var imgM = x.match(/<media:content[^>]+url=["']([^"']+)["']/i)
-             || x.match(/<media:thumbnail[^>]+url=["']([^"']+)["']/i)
-             || x.match(/<enclosure[^>]+url=["']([^"']+)["'][^>]+type=["']image/i);
+             || x.match(/<media:thumbnail[^>]+url=["']([^"']+)["']/i);
     var rssImage = (imgM && imgM[1] && imgM[1].startsWith('http')) ? imgM[1] : '';
 
     items.push({ title, url: link, description: desc, source, rssImage, pubDate: new Date().toISOString() });
@@ -135,7 +179,7 @@ function parseRSS(xml) {
   return items;
 }
 
-// ── Agriculture keywords check ──
+// ── Agriculture check ──
 function isAgri(title, desc) {
   var text = (title + ' ' + (desc||'')).toLowerCase();
   var kw = [
@@ -145,8 +189,8 @@ function isAgri(title, desc) {
     'irrigation','मानसून','बारिश','fertilizer','pesticide','seed','soil','खाद',
     'बीज','मिट्टी','pm-kisan','pm kisan','kcc','nabard','subsidy','yojana',
     'सब्सिडी','योजना','harvest','sowing','rabi','kharif','pest','disease','locust',
-    'टिड्डी','कीट','रोग','export','apeda','icar','farm law','agmarknet',
-    'agricultural','horticulture','dairy','fishery','livestock'
+    'टिड्डी','कीट','रोग','export','apeda','icar','farm','agmarknet',
+    'agricultural','horticulture','dairy','livestock','budget kisan'
   ];
   return kw.some(function(k) { return text.indexOf(k) !== -1; });
 }
@@ -167,16 +211,17 @@ async function main() {
   for (var i = 0; i < FEEDS.length; i++) {
     console.log('Feed', i+1, '/', FEEDS.length);
     try {
-      var xml = await fetchURL(FEEDS[i], 20000);
+      var result = await fetchURL(FEEDS[i], 20000);
+      var xml = result.body || '';
       if (xml && xml.includes('<item>')) {
         var items = parseRSS(xml);
         console.log('  Items:', items.length);
         all = all.concat(items);
       } else {
-        console.log('  Empty response');
+        console.log('  Empty');
       }
     } catch(e) { console.log('  Error:', e.message); }
-    await new Promise(function(r) { setTimeout(r, 500); });
+    await new Promise(function(r) { setTimeout(r, 600); });
   }
 
   // Step 2: Filter + deduplicate
@@ -189,44 +234,51 @@ async function main() {
     if (!isAgri(a.title, a.description)) continue;
     seen[key] = true;
     filtered.push(a);
-    if (filtered.length >= 20) break;
+    if (filtered.length >= 18) break;
   }
-  console.log('Filtered articles:', filtered.length);
+  console.log('Filtered:', filtered.length, 'articles');
 
   if (filtered.length === 0) {
-    console.log('No articles found!');
     fs.writeFileSync('news.json', JSON.stringify({updated:new Date().toISOString(),count:0,articles:[]},null,2),'utf8');
     return;
   }
 
-  // Step 3: Top 15 ke liye images fetch karo
+  // Step 3: Top 15 — Real URLs + Images fetch karo
   var top = filtered.slice(0, 15);
-  console.log('Fetching images for', top.length, 'articles...');
   var result = [];
 
   for (var k = 0; k < top.length; k++) {
     var art = top[k];
-    var image = art.rssImage || '';
+    console.log('[' + (k+1) + '/' + top.length + ']', art.source, '-', art.title.substring(0,35));
 
-    // Article URL se image fetch karo (agar Google News URL nahi hai)
-    if (!image && art.url && art.url !== '#' && !art.url.includes('news.google.com')) {
-      image = await getImage(art.url);
-      if (image) console.log('  [', k+1, '] Image found:', art.source);
-      else console.log('  [', k+1, '] No image:', art.source);
-    } else if (art.url.includes('news.google.com')) {
-      console.log('  [', k+1, '] Google News URL - no image fetch:', art.title.substring(0,30));
+    // Google News URL ko real URL mein convert karo
+    var realUrl = art.url;
+    if (art.url && art.url.includes('news.google.com')) {
+      realUrl = await resolveGoogleNewsUrl(art.url);
+      if (realUrl !== art.url) {
+        console.log('  Resolved:', realUrl.substring(0,50));
+      } else {
+        console.log('  Could not resolve Google URL');
+      }
+    }
+
+    // Image fetch karo
+    var image = art.rssImage || '';
+    if (!image && realUrl && realUrl !== '#' && !realUrl.includes('news.google.com')) {
+      image = await getImage(realUrl);
+      if (image) console.log('  Image:', image.substring(0,50));
     }
 
     result.push({
       title: art.title,
-      url: art.url,
+      url: realUrl,        // Real article URL — Visit Source yahan jaayega
       description: art.description,
       source: art.source,
-      image: image,
+      image: image,        // Real article image
       pubDate: art.pubDate
     });
 
-    await new Promise(function(r) { setTimeout(r, 400); });
+    await new Promise(function(r) { setTimeout(r, 500); });
   }
 
   // Step 4: Save
@@ -234,7 +286,8 @@ async function main() {
   fs.writeFileSync('news.json', JSON.stringify(output, null, 2), 'utf8');
 
   var imgCount = result.filter(function(a) { return a.image; }).length;
-  console.log('DONE! Articles:', result.length, '| With images:', imgCount);
+  var resolvedCount = result.filter(function(a) { return !a.url.includes('news.google.com'); }).length;
+  console.log('DONE! Articles:', result.length, '| Images:', imgCount, '| Resolved URLs:', resolvedCount);
 }
 
 main().catch(function(e) {
