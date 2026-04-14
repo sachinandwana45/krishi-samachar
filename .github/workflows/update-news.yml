@@ -15,16 +15,20 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
       - name: Node setup
         uses: actions/setup-node@v4
         with:
           node-version: '20'
+
       - name: Fetch News
         run: node fetch-news.js
+
       - name: Save news
         run: |
           git config user.name "NewsBot"
           git config user.email "bot@github.com"
           git add news.json
-          git diff --staged --quiet || git commit -m "Daily update $(date '+%d %b %Y %H:%M')"
-          git push
+          git diff --staged --quiet || (git commit -m "Daily update $(date '+%d %b %Y %H:%M')" && git pull --rebase origin main && git push)
