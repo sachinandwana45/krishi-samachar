@@ -78,8 +78,24 @@ function parse(xml, sourceName, forceLang) {
     desc = desc.replace(/&amp;/g,'&').replace(/&lt;/g,'<').replace(/&gt;/g,'>').replace(/&nbsp;/g,' ').trim();
     if (desc.length > 220) desc = desc.substring(0,220)+'...';
 
+    // Source nikalo — RSS source tag ya title ke end se
     var sm = x.match(/<source[^>]*>([^<]+)<\/source>/);
-    var source = sm ? sm[1].trim() : sourceName;
+    var source = sm ? sm[1].trim() : '';
+    
+    // Google News titles mein newspaper naam hota hai — "News title - Newspaper Name"
+    if (!source || source === 'Google News') {
+      var titleParts = title.split(' - ');
+      if (titleParts.length > 1) {
+        var possibleSource = titleParts[titleParts.length - 1].trim();
+        // Valid newspaper naam check karo — chota hona chahiye
+        if (possibleSource.length > 2 && possibleSource.length < 50) {
+          source = possibleSource;
+          // Title se source naam remove karo
+          title = titleParts.slice(0, -1).join(' - ').trim();
+        }
+      }
+    }
+    if (!source) source = sourceName;
 
     var im = x.match(/<media:content[^>]+url=["']([^"']+)["']/i)
            || x.match(/<media:thumbnail[^>]+url=["']([^"']+)["']/i);
@@ -116,29 +132,29 @@ function isAgri(title, desc) {
 
 // ── HINDI Feeds ──
 var HINDI_FEEDS = [
-  // Direct Hindi agriculture sources
+  // Direct Hindi sources
   { url: 'https://krishakjagat.org/feed/', name: 'Krishak Jagat', lang: 'hi' },
   { url: 'https://kisansamadhan.com/feed/', name: 'Kisan Samadhan', lang: 'hi' },
   { url: 'https://www.gaonconnection.com/feed', name: 'Gaon Connection', lang: 'hi' },
   { url: 'https://hindi.krishijagran.com/feed/', name: 'Krishi Jagran', lang: 'hi' },
-  // Google News Hindi — multiple queries for variety
-  { url: 'https://news.google.com/rss/search?q=kisan+krishi+mandi+fasal+India&hl=hi&gl=IN&ceid=IN:hi', name: 'Patrika', lang: 'hi' },
-  { url: 'https://news.google.com/rss/search?q=MSP+kisan+yojana+subsidy+gehu+dhan&hl=hi&gl=IN&ceid=IN:hi', name: 'Jagran', lang: 'hi' },
-  { url: 'https://news.google.com/rss/search?q=kheti+badi+kisan+samachar+aaj&hl=hi&gl=IN&ceid=IN:hi', name: 'Amar Ujala', lang: 'hi' },
-  { url: 'https://news.google.com/rss/search?q=krishi+vibhag+kisan+loan+nabard&hl=hi&gl=IN&ceid=IN:hi', name: 'Dainik Bhaskar', lang: 'hi' },
+  // Google News Hindi — alag alag topics se news aayegi
+  { url: 'https://news.google.com/rss/search?q=kisan+mandi+fasal+bhav+India&hl=hi&gl=IN&ceid=IN:hi', name: 'Hindi News', lang: 'hi' },
+  { url: 'https://news.google.com/rss/search?q=gehu+dhan+sarson+MSP+kharidi&hl=hi&gl=IN&ceid=IN:hi', name: 'Hindi News', lang: 'hi' },
+  { url: 'https://news.google.com/rss/search?q=pm+kisan+yojana+kheti+subsidy&hl=hi&gl=IN&ceid=IN:hi', name: 'Hindi News', lang: 'hi' },
+  { url: 'https://news.google.com/rss/search?q=krishi+vibhag+kisan+loan+bima&hl=hi&gl=IN&ceid=IN:hi', name: 'Hindi News', lang: 'hi' },
 ];
 
-// ── ENGLISH Feeds ──
+// ── ENGLISH Feeds ──  
 var ENGLISH_FEEDS = [
-  // Google News English — specifically TOI, HT, Economic Times
-  { url: 'https://news.google.com/rss/search?q=agriculture+farmer+India+crop+price&hl=en&gl=IN&ceid=IN:en', name: 'Times of India', lang: 'en' },
-  { url: 'https://news.google.com/rss/search?q=Indian+farmer+MSP+wheat+rice+agriculture&hl=en&gl=IN&ceid=IN:en', name: 'Hindustan Times', lang: 'en' },
-  { url: 'https://news.google.com/rss/search?q=farm+sector+India+agri+budget+subsidy&hl=en&gl=IN&ceid=IN:en', name: 'Economic Times', lang: 'en' },
-  { url: 'https://news.google.com/rss/search?q=kisan+agriculture+scheme+India+news+english&hl=en&gl=IN&ceid=IN:en', name: 'NDTV', lang: 'en' },
-  { url: 'https://news.google.com/rss/search?q=crop+harvest+mandi+price+India+farmers&hl=en&gl=IN&ceid=IN:en', name: 'Business Standard', lang: 'en' },
   // Direct English sources
   { url: 'https://www.downtoearth.org.in/rss/agriculture', name: 'Down to Earth', lang: 'en' },
   { url: 'https://www.agrihunt.com/feed/', name: 'AgriHunt', lang: 'en' },
+  // Google News English — TOI HT ET NDTV ki news aayegi automatically
+  { url: 'https://news.google.com/rss/search?q=agriculture+farmer+India+crop&hl=en&gl=IN&ceid=IN:en', name: 'English News', lang: 'en' },
+  { url: 'https://news.google.com/rss/search?q=Indian+farmer+MSP+wheat+rice+price&hl=en&gl=IN&ceid=IN:en', name: 'English News', lang: 'en' },
+  { url: 'https://news.google.com/rss/search?q=India+agriculture+scheme+subsidy+kisan&hl=en&gl=IN&ceid=IN:en', name: 'English News', lang: 'en' },
+  { url: 'https://news.google.com/rss/search?q=farm+crop+harvest+mandi+India+2025&hl=en&gl=IN&ceid=IN:en', name: 'English News', lang: 'en' },
+  { url: 'https://news.google.com/rss/search?q=India+agri+budget+irrigation+drip+organic&hl=en&gl=IN&ceid=IN:en', name: 'English News', lang: 'en' },
 ];
 
 async function fetchAndFilter(feeds) {
