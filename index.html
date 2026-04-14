@@ -22,7 +22,7 @@
 body{font-family:var(--fb);background:var(--bg);color:var(--td);min-height:100vh;font-size:15px;}
 
 /* TOPBAR */
-.topbar{background:var(--gd);padding:0 20px;display:flex;align-items:center;justify-content:space-between;height:54px;position:sticky;top:0;z-index:1000;}
+.topbar{background:var(--gd);padding:0 20px;display:flex;align-items:center;justify-content:space-between;height:54px;position:sticky;top:0;z-index:9999;}
 .tb-logo{font-family:var(--fd);font-size:18px;color:#fff;}
 .tb-logo span{color:var(--gold);}
 .tb-badge{background:var(--gold);color:#fff;font-size:10px;font-weight:600;padding:2px 7px;border-radius:20px;margin-left:6px;}
@@ -30,7 +30,7 @@ body{font-family:var(--fb);background:var(--bg);color:var(--td);min-height:100vh
 @keyframes blink{0%,100%{opacity:1}50%{opacity:.3}}
 
 /* LANG BAR */
-.lang-bar-wrap{background:#163d24;border-bottom:2px solid var(--gold);padding:0 12px;overflow-x:auto;white-space:nowrap;scrollbar-width:none;}
+.lang-bar-wrap{background:#163d24;border-bottom:2px solid var(--gold);padding:0 12px;overflow-x:auto;white-space:nowrap;scrollbar-width:none;position:sticky;top:54px;z-index:9998;}
 .lang-bar-wrap::-webkit-scrollbar{display:none;}
 .lang-btn{display:inline-block;padding:10px 14px;background:transparent;border:none;border-bottom:3px solid transparent;color:rgba(255,255,255,.65);font-size:13px;font-weight:500;cursor:pointer;transition:all .15s;font-family:var(--fb);margin-bottom:-2px;}
 .lang-btn:hover{color:#fff;}
@@ -52,7 +52,7 @@ body{font-family:var(--fb);background:var(--bg);color:var(--td);min-height:100vh
 .abtn.pri:hover{background:var(--gm);}
 
 /* FILTERS */
-.filters{display:flex;gap:6px;flex-wrap:wrap;padding:14px 14px 0;}
+.filters{display:flex;gap:6px;flex-wrap:wrap;padding:14px 14px 0;background:var(--bg);position:sticky;top:88px;z-index:9997;}
 .fbtn{background:var(--wh);border:1px solid var(--bdr);border-radius:20px;padding:5px 14px;font-family:var(--fb);font-size:12px;font-weight:500;cursor:pointer;color:var(--tm);transition:all .15s;}
 .fbtn:hover{border-color:var(--gm);color:var(--gd);}
 .fbtn.active{background:var(--gd);color:#fff;border-color:var(--gd);}
@@ -67,7 +67,7 @@ body{font-family:var(--fb);background:var(--bg);color:var(--td);min-height:100vh
 .news-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:16px;padding:0 14px 40px;}
 
 /* NEWS CARD */
-.news-card{background:var(--wh);border:1px solid var(--bdr);border-radius:var(--r);overflow:hidden;cursor:pointer;transition:transform .15s,box-shadow .15s;}
+.news-card{background:var(--wh);border:1px solid var(--bdr);border-radius:var(--r);overflow:hidden;cursor:pointer;transition:transform .15s,box-shadow .15s;position:relative;z-index:1;}
 .news-card:hover{transform:translateY(-2px);box-shadow:0 6px 20px rgba(26,92,46,.1);}
 .card-img{height:160px;overflow:hidden;background:#e0e0e0;position:relative;}
 .card-img img{width:100%;height:100%;object-fit:cover;display:block;}
@@ -124,12 +124,34 @@ body{font-family:var(--fb);background:var(--bg);color:var(--td);min-height:100vh
 .toast.show{opacity:1;transform:translateY(0);}
 .toast.err{background:var(--red);}
 
-/* RESPONSIVE */
+/* RESPONSIVE — Mobile, Tablet, Desktop */
+
+/* Tablet (600px - 900px) */
+@media(max-width:900px){
+  .news-grid{grid-template-columns:repeat(2,1fr);gap:12px;padding:0 12px 30px;}
+  .mh-title{font-size:18px;}
+  .lang-btn{padding:8px 10px;font-size:12px;}
+}
+
+/* Mobile (max 600px) */
 @media(max-width:600px){
   .news-grid{grid-template-columns:1fr;padding:0 10px 40px;}
-  .masthead{flex-direction:column;align-items:flex-start;}
-  .mh-date{margin-left:0;}
-  .admin-bar{flex-direction:column;align-items:flex-start;}
+  .masthead{flex-direction:column;align-items:flex-start;padding:16px 14px;}
+  .mh-date{margin-left:0;margin-top:4px;}
+  .mh-icon{font-size:30px;}
+  .mh-title{font-size:18px;}
+  .admin-bar{flex-direction:column;align-items:flex-start;gap:6px;}
+  .topbar{padding:0 14px;}
+  .tb-logo{font-size:15px;}
+  .filters{padding:10px 10px 0;gap:5px;}
+  .fbtn{padding:4px 10px;font-size:11px;}
+  .sec-hdr{padding:10px 10px 8px;}
+  .sec-hdr h2{font-size:16px;}
+  .card-img{height:140px;}
+  .card-title{font-size:13px;}
+  .nd-sheet{border-radius:16px 16px 0 0;}
+  .nd-title{font-size:16px;}
+  .nd-body{padding:14px 14px 24px;}
 }
 </style>
 </head>
@@ -532,22 +554,27 @@ function renderNews(){
   grid.innerHTML=list.map(n=>{
     const hasImg=n.img&&n.img.length>10&&n.img.startsWith('http');
     const fallbackImg=CAT_IMG[n.cat]||CAT_IMG['Market Price'];
+    // English tab par Hindi summary hide karo
+    const hindiRe=/[\u0900-\u097F]/;
+    const summary=n.s||'';
+    const isHindiSummary=hindiRe.test(summary);
+    const displaySummary=(curLang==='en'&&isHindiSummary)?'Click to read full article...':summary;
     return `
     <div class="news-card" onclick="openDetail(${n.id})">
-      <div class="card-img">
+      <div class="card-img" style="height:180px;overflow:hidden;background:#e0e0e0;">
         ${hasImg
-          ? `<img src="${n.img}" alt="${n.t}" loading="lazy" onerror="this.src='${fallbackImg}';this.onerror=null;"/>`
-          : `<img src="${fallbackImg}" alt="${n.t}" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"/>
-             <div class="fallback" style="display:none;background:${n.bg};">${n.fb}</div>`
+          ? `<img src="${n.img}" alt="" loading="lazy" style="width:100%;height:100%;object-fit:cover;display:block;" onerror="this.src='${fallbackImg}';this.onerror=null;"/>`
+          : `<img src="${fallbackImg}" alt="" loading="lazy" style="width:100%;height:100%;object-fit:cover;display:block;" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"/>
+             <div class="fallback" style="display:none;background:${n.bg};width:100%;height:100%;align-items:center;justify-content:center;font-size:48px;">${n.fb}</div>`
         }
       </div>
       <div class="card-body">
         <span class="card-tag ${CAT_TAG[n.cat]||'t-mp'}">${n.cat}</span>
         <div class="card-title">${n.t}</div>
-        <div class="card-sum">${(n.s||'').substring(0,120)}${(n.s||'').length>120?'...':''}</div>
+        <div class="card-sum">${displaySummary.substring(0,120)}${displaySummary.length>120?'...':''}</div>
         <div class="card-footer">
           <span class="card-src">📰 ${n.src}</span>
-          <button class="read-btn" onclick="event.stopPropagation();openDetail(${n.id})">${t.read||'पूरी खबर'}</button>
+          <button class="read-btn" onclick="event.stopPropagation();openDetail(${n.id})">${t.read||'पूरी खबर'} ›</button>
         </div>
       </div>
     </div>`}).join('');
@@ -568,16 +595,37 @@ async function switchLang(code){
   grid.innerHTML=Array(6).fill(0).map(()=>`<div class="news-card"><div class="card-img sk sk-img"></div><div class="card-body"><div class="sk sk-line sk-w80"></div><div class="sk sk-line sk-w60"></div><div class="sk sk-line sk-w40"></div></div></div>`).join('');
   const lname=LANGS.find(l=>l.code===code)?.label||code;
 
-  // Agar Hindi ya English hai — seedha load karo
-  if(code==='hi'||code==='en'){
+  // Hindi — Hindi live articles dikhao
+  if(code==='hi'){
     setTimeout(()=>{
       if(liveArticles.length>0){
         curNews=liveArticles.map((a,i)=>({...a,id:i+1}));
       } else {
-        curNews=getTodaysNews(code);
+        curNews=getTodaysNews('hi');
       }
       renderNews();
-      toast('✅ '+lname+' mein update hua!');
+      toast('✅ हिंदी में खबरें लोड हुईं!');
+    },300);
+    return;
+  }
+
+  // English — SIRF English articles dikhao (alag en_articles se)
+  if(code==='en'){
+    setTimeout(()=>{
+      if(liveArticlesEn.length>0){
+        // English articles seedha load karo — no Hindi mixing!
+        curNews=liveArticlesEn.map((a,i)=>({...a,id:i+1}));
+        document.getElementById('secTitle').textContent="Today's Agriculture News";
+      } else if(liveArticles.length>0){
+        // Fallback — filter Hindi chars
+        const hindiRe=/[ऀ-ॿ]/;
+        const enOnly=liveArticles.filter(a=>!hindiRe.test(a.t||'')&&!hindiRe.test(a.s||''));
+        curNews=(enOnly.length>=3?enOnly:liveArticles).map((a,i)=>({...a,id:i+1}));
+      } else {
+        curNews=getTodaysNews('en');
+      }
+      renderNews();
+      toast('✅ English news loaded!');
     },300);
     return;
   }
@@ -699,7 +747,24 @@ async function genAiDetail(n,lang){
 
 function closeDetail(){document.getElementById('ndOverlay').classList.remove('open');document.body.style.overflow='';}
 document.getElementById('ndOverlay').addEventListener('click',function(e){if(e.target===this)closeDetail();});
-function visitSource(){if(curDetail?.url&&curDetail.url!=='#')window.open(curDetail.url,'_blank');}
+function visitSource(){
+  if(!curDetail||!curDetail.url||curDetail.url==='#') return;
+  var url = curDetail.url;
+  // Hindi aur English mein seedha article kholo
+  if(curLang==='hi'||curLang==='en'){
+    window.open(url,'_blank');
+    return;
+  }
+  // Dusri languages ke liye Google Translate se kholo
+  var langMap={
+    pa:'pa',mr:'mr',gu:'gu',ta:'ta',te:'te',
+    kn:'kn',ml:'ml',bn:'bn',or:'or',as:'as',
+    ur:'ur',raj:'hi'
+  };
+  var tLang = langMap[curLang] || 'hi';
+  var translateUrl = 'https://translate.google.com/translate?sl=auto&tl='+tLang+'&u='+encodeURIComponent(url);
+  window.open(translateUrl,'_blank');
+}
 function shareItem(){
   if(!curDetail)return;
   const txt=curDetail.t+'\n'+curDetail.s+'\n\nSource: '+curDetail.src;
@@ -710,6 +775,7 @@ document.addEventListener('keydown',e=>{if(e.key==='Escape')closeDetail();});
 
 // ── LIVE ARTICLES STORE ──
 let liveArticles = [];
+let liveArticlesEn = []; // English articles alag
 
 // ── LOAD LIVE NEWS from news.json ──
 async function loadLiveNews(){
