@@ -64,15 +64,15 @@ body{font-family:var(--fb);background:var(--bg);color:var(--td);min-height:100vh
 .sec-cnt{background:var(--gp);color:var(--gd);font-size:11px;font-weight:600;padding:2px 10px;border-radius:20px;}
 
 /* NEWS GRID */
-.news-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:16px;padding:0 14px 40px;}
+.news-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:20px;padding:16px 16px 60px;}
 
 /* NEWS CARD */
-.news-card{background:var(--wh);border:1px solid var(--bdr);border-radius:var(--r);overflow:hidden;cursor:pointer;transition:transform .15s,box-shadow .15s;position:relative;z-index:1;}
-.news-card:hover{transform:translateY(-2px);box-shadow:0 6px 20px rgba(26,92,46,.1);}
-.card-img{height:160px;overflow:hidden;background:#e0e0e0;position:relative;}
+.news-card{background:var(--wh);border:1px solid var(--bdr);border-radius:var(--r);overflow:hidden;cursor:pointer;transition:transform .15s,box-shadow .15s;display:flex;flex-direction:column;height:100%;}
+.news-card:hover{transform:translateY(-3px);box-shadow:0 8px 24px rgba(26,92,46,.12);}
+.card-img{height:180px;overflow:hidden;background:#e8f5ee;flex-shrink:0;}
 .card-img img{width:100%;height:100%;object-fit:cover;display:block;}
-.card-img .fallback{width:100%;height:100%;display:flex;align-items:center;justify-content:center;font-size:48px;}
-.card-body{padding:14px;}
+.card-img .fallback{width:100%;height:100%;display:flex;align-items:center;justify-content:center;font-size:52px;}
+.card-body{padding:14px;display:flex;flex-direction:column;flex:1;}
 .card-tag{display:inline-block;font-size:10px;font-weight:600;padding:2px 9px;border-radius:20px;margin-bottom:8px;}
 .t-mp{background:#e8f5ee;color:#1a5c2e;}
 .t-gs{background:#eaf4fb;color:#1a5f8a;}
@@ -82,7 +82,7 @@ body{font-family:var(--fb);background:var(--bg);color:var(--td);min-height:100vh
 .t-ex{background:#fff0e0;color:#9a5000;}
 .card-title{font-family:var(--fd);font-size:14px;font-weight:600;color:var(--td);line-height:1.35;margin-bottom:8px;}
 .card-sum{font-size:12px;color:var(--tmut);line-height:1.55;margin-bottom:10px;}
-.card-footer{display:flex;align-items:center;justify-content:space-between;padding-top:10px;border-top:1px solid var(--bdr);}
+.card-footer{display:flex;align-items:center;justify-content:space-between;padding-top:10px;border-top:1px solid var(--bdr);margin-top:auto;}
 .card-src{font-size:11px;color:var(--tmut);}
 .read-btn{font-size:12px;font-weight:500;color:var(--gd);background:var(--gp);border:none;padding:4px 12px;border-radius:20px;cursor:pointer;font-family:var(--fb);}
 .read-btn:hover{background:#cce8d6;}
@@ -124,34 +124,26 @@ body{font-family:var(--fb);background:var(--bg);color:var(--td);min-height:100vh
 .toast.show{opacity:1;transform:translateY(0);}
 .toast.err{background:var(--red);}
 
-/* RESPONSIVE — Mobile, Tablet, Desktop */
-
-/* Tablet (600px - 900px) */
-@media(max-width:900px){
-  .news-grid{grid-template-columns:repeat(2,1fr);gap:12px;padding:0 12px 30px;}
-  .mh-title{font-size:18px;}
-  .lang-btn{padding:8px 10px;font-size:12px;}
+/* RESPONSIVE */
+@media(max-width:1100px){
+  .news-grid{grid-template-columns:repeat(3,1fr);}
 }
-
-/* Mobile (max 600px) */
-@media(max-width:600px){
-  .news-grid{grid-template-columns:1fr;padding:0 10px 40px;}
-  .masthead{flex-direction:column;align-items:flex-start;padding:16px 14px;}
-  .mh-date{margin-left:0;margin-top:4px;}
-  .mh-icon{font-size:30px;}
+@media(max-width:800px){
+  .news-grid{grid-template-columns:repeat(2,1fr);gap:14px;padding:12px 12px 40px;}
+  .masthead{padding:18px 14px;}
   .mh-title{font-size:18px;}
+}
+@media(max-width:500px){
+  .news-grid{grid-template-columns:1fr;gap:12px;padding:10px 10px 40px;}
+  .masthead{flex-direction:column;align-items:flex-start;padding:14px 12px;}
+  .mh-date{margin-left:0;margin-top:4px;}
+  .mh-icon{font-size:28px;}
+  .mh-title{font-size:16px;}
   .admin-bar{flex-direction:column;align-items:flex-start;gap:6px;}
-  .topbar{padding:0 14px;}
-  .tb-logo{font-size:15px;}
-  .filters{padding:10px 10px 0;gap:5px;}
-  .fbtn{padding:4px 10px;font-size:11px;}
-  .sec-hdr{padding:10px 10px 8px;}
-  .sec-hdr h2{font-size:16px;}
-  .card-img{height:140px;}
+  .topbar{padding:0 12px;}
+  .tb-logo{font-size:14px;}
+  .card-img{height:160px;}
   .card-title{font-size:13px;}
-  .nd-sheet{border-radius:16px 16px 0 0;}
-  .nd-title{font-size:16px;}
-  .nd-body{padding:14px 14px 24px;}
 }
 </style>
 </head>
@@ -787,19 +779,36 @@ async function loadLiveNews(){
     const data=await res.json();
     if(!data.articles||data.articles.length===0) throw new Error('empty');
 
-    // Store live articles globally
-    liveArticles=data.articles.map((a,i)=>({
-      id:i+1,
-      t:a.title||'',
-      s:a.description||a.title||'',
-      img:a.image||'',           // Real article image
-      url:a.url||'#',            // Real article URL
-      src:a.source||'News',
-      cat:detectCat(a.title),
-      fb:CAT_FB[detectCat(a.title)]||'📰',
-      bg:CAT_BG[detectCat(a.title)]||'#e8f5ee',
-      pubDate:a.pubDate||'',
-    }));
+    // Article map function
+    function mapArt(arr){
+      return (arr||[]).map((a,i)=>({
+        id:i+1,
+        t:a.title||'',
+        s:a.description||'',
+        img:a.image||'',
+        url:a.url||'#',
+        src:a.source||'News',
+        lang:a.lang||'hi',
+        cat:detectCat(a.title),
+        fb:CAT_FB[detectCat(a.title)]||'📰',
+        bg:CAT_BG[detectCat(a.title)]||'#e8f5ee',
+        pubDate:a.pubDate||'',
+      }));
+    }
+
+    // Hindi articles store karo
+    var hiRaw = data.hi_articles || data.articles || [];
+    liveArticles = mapArt(hiRaw);
+
+    // English articles store karo — en_articles ya filter se
+    var enRaw = data.en_articles || [];
+    if(enRaw.length > 0){
+      liveArticlesEn = mapArt(enRaw);
+    } else {
+      // Fallback: Hindi chars filter out karo
+      const hRe = /[ऀ-ॿ]/;
+      liveArticlesEn = mapArt((data.articles||[]).filter(a=>!hRe.test(a.title||'')));
+    }
 
     curNews=[...liveArticles];
     document.getElementById('secCnt').textContent=curNews.length+' खबरें';
