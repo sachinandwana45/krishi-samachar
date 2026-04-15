@@ -742,20 +742,33 @@ document.getElementById('ndOverlay').addEventListener('click',function(e){if(e.t
 function visitSource(){
   if(!curDetail||!curDetail.url||curDetail.url==='#') return;
   var url = curDetail.url;
-  // Hindi aur English mein seedha article kholo
-  if(curLang==='hi'||curLang==='en'){
-    window.open(url,'_blank');
-    return;
+  
+  // Sabhi languages mein seedha article kholo
+  // Google News redirect URLs fix karo
+  if(url.includes('news.google.com')){
+    // Google News URL se real URL nikalne ki koshish
+    var urlParam = url.match(/[?&]url=([^&]+)/);
+    if(urlParam){
+      try{ url = decodeURIComponent(urlParam[1]); }catch(e){}
+    }
   }
-  // Dusri languages ke liye Google Translate se kholo
-  var langMap={
-    pa:'pa',mr:'mr',gu:'gu',ta:'ta',te:'te',
-    kn:'kn',ml:'ml',bn:'bn',or:'or',as:'as',
-    ur:'ur',raj:'hi'
+  
+  // Seedha article kholo — browser khud translate karega
+  window.open(url,'_blank');
+  
+  // Toast message dikhao — browser translate ke liye
+  var langNames={
+    hi:'Hindi',en:'English',pa:'Punjabi',mr:'Marathi',
+    gu:'Gujarati',ta:'Tamil',te:'Telugu',kn:'Kannada',
+    ml:'Malayalam',bn:'Bengali',or:'Odia',as:'Assamese',
+    ur:'Urdu',raj:'Rajasthani'
   };
-  var tLang = langMap[curLang] || 'hi';
-  var translateUrl = 'https://translate.google.com/translate?sl=auto&tl='+tLang+'&u='+encodeURIComponent(url);
-  window.open(translateUrl,'_blank');
+  if(curLang!=='hi'&&curLang!=='en'){
+    var lname = langNames[curLang]||curLang;
+    setTimeout(function(){
+      toast('💡 Browser mein Translate option use karo — '+lname+' mein padhne ke liye!');
+    },500);
+  }
 }
 function shareItem(){
   if(!curDetail)return;
