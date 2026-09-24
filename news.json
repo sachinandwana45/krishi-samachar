@@ -1,141 +1,141 @@
 {
-  "updated": "2026-09-24T05:14:40.593Z",
+  "updated": "2026-09-24T12:02:18.753Z",
   "count": 30,
   "hi_articles": [
     {
-      "title": "कम वर्षा को देखते हुए रबी में कम पानी वाली फसलों को दें प्राथमिकता",
-      "url": "https://www.krishakjagat.org/news/given-the-low-rainfall-prioritize-low-water-consuming-crops-for-the-rabi-season-2/",
-      "description": "KRISHAK JAGAT | National Agriculture Hindi Newspaper 23 सितंबर 2026, उज्जैन: कम वर्षा को देखते हुए रबी में कम पानी वाली फसलों को दें प्राथमिकता &#8211; कृषक संगोष्ठी में फार्मर आईडी, ई-टोकन से उर्वरक उठाव और फसल विविधीकर...",
-      "source": "Krishak Jagat",
-      "image": "https://www.krishakjagat.org/wp-content/uploads/2026/09/UJJAIN.jpg",
-      "lang": "hi",
-      "pubDate": "2026-09-24T05:14:03.237Z"
-    },
-    {
-      "title": "बाजरा उत्पादन की आधुनिक तकनीक सीखने 50 किसानों का दल राजस्थान रवाना",
-      "url": "https://www.krishakjagat.org/news/a-group-of-50-farmers-has-left-for-rajasthan-to-learn-modern-techniques-of-pearl-millet-cultivation/",
-      "description": "KRISHAK JAGAT | National Agriculture Hindi Newspaper 23 सितंबर 2026, शिवपुरी: बाजरा उत्पादन की आधुनिक तकनीक सीखने 50 किसानों का दल राजस्थान रवाना &#8211; किसान कल्याण तथा कृषि विकास विभाग द्वारा वर्ष 2026-27 के अंतर्गत स...",
-      "source": "Krishak Jagat",
-      "image": "https://www.krishakjagat.org/wp-content/uploads/2026/09/BG.jpg",
-      "lang": "hi",
-      "pubDate": "2026-09-24T05:14:03.237Z"
-    },
-    {
-      "title": "पारंपरिक विधि की तुलना में एसआरआई पद्धति से धान की रोपाई से मिले दोगुने कल्ले",
-      "url": "https://www.krishakjagat.org/news/transplanting-paddy-using-the-sri-method-yielded-twice-as-many-tillers-compared-to-the-traditional-method/",
-      "description": "KRISHAK JAGAT | National Agriculture Hindi Newspaper 23 सितंबर 2026, जबलपुर: पारंपरिक विधि की तुलना में एसआरआई पद्धति से धान की रोपाई से मिले दोगुने कल्ले &#8211; किसान कल्याण तथा कृषि विकास विभाग की आत्मा परियोजना के अं...",
-      "source": "Krishak Jagat",
-      "image": "https://www.krishakjagat.org/wp-content/uploads/2026/09/mp-7.jpg",
-      "lang": "hi",
-      "pubDate": "2026-09-24T05:14:03.237Z"
-    },
-    {
-      "title": "आज का सोयाबीन मंडी रेट (23 सितंबर 2026)",
-      "url": "https://www.krishakjagat.org/mandi-rate/todays-soybean-mandi-rate-23-september-2026/",
-      "description": "KRISHAK JAGAT | National Agriculture Hindi Newspaper 23 सितंबर 2026, नई दिल्ली: आज का सोयाबीन मंडी रेट (23 सितंबर 2026) – नीचे दी गई तालिका में पूरे भारत में गेहूँ की मंडी दरें हैं। इसमें गेहूँ की न्यूनतम, अधिकतम और मोडल...",
-      "source": "Krishak Jagat",
-      "image": "https://www.krishakjagat.org/wp-content/uploads/2026/09/SRE.jpg",
-      "lang": "hi",
-      "pubDate": "2026-09-24T05:14:03.237Z"
-    },
-    {
-      "title": "आज का धान मंडी रेट (23 सितंबर 2026)",
-      "url": "https://www.krishakjagat.org/mandi-rate/todays-paddy-mandi-rate-23-september-2026/",
-      "description": "KRISHAK JAGAT | National Agriculture Hindi Newspaper 23 सितंबर 2026, नई दिल्ली: आज का धान मंडी रेट (23 सितंबर 2026) – नीचे दी गई तालिका में पूरे भारत में धान की मंडी दरें हैं। इसमें धान की न्यूनतम, अधिकतम और मोडल दर का उ...",
-      "source": "Krishak Jagat",
-      "image": "https://www.krishakjagat.org/wp-content/uploads/2026/09/PADDY-43.jpg",
-      "lang": "hi",
-      "pubDate": "2026-09-24T05:14:03.237Z"
-    },
-    {
-      "title": "आज का मक्का मंडी रेट (23 सितंबर 2026)",
-      "url": "https://www.krishakjagat.org/mandi-rate/todays-maize-mandi-rate-23-september-2026/",
-      "description": "KRISHAK JAGAT | National Agriculture Hindi Newspaper 23 सितंबर 2026, नई दिल्ली: आज का मक्का मंडी रेट (23 सितंबर 2026) – नीचे दी गई तालिका में पूरे भारत में मक्का की मंडी दरें हैं। इसमें मक्का की न्यूनतम, अधिकतम और मोडल द...",
-      "source": "Krishak Jagat",
-      "image": "https://www.krishakjagat.org/wp-content/uploads/2026/09/MAIZE-27.jpg",
-      "lang": "hi",
-      "pubDate": "2026-09-24T05:14:03.237Z"
-    },
-    {
-      "title": "आज का गेहूं मंडी रेट (23 सितंबर 2026)",
-      "url": "https://www.krishakjagat.org/mandi-rate/todays-wheat-market-rate-23-september-2026/",
-      "description": "KRISHAK JAGAT | National Agriculture Hindi Newspaper 22 सितंबर 2026, विदिशा: आज का गेहूं मंडी रेट (23 सितंबर 2026) – नीचे दी गई तालिका में पूरे भारत में गेहूँ की मंडी दरें हैं। इसमें गेहूँ की न्यूनतम, अधिकतम और मोडल दर क...",
-      "source": "Krishak Jagat",
-      "image": "https://www.krishakjagat.org/wp-content/uploads/2026/09/WHEAT-18.jpg",
-      "lang": "hi",
-      "pubDate": "2026-09-24T05:14:03.237Z"
-    },
-    {
-      "title": "इफको अध्यक्ष श्री संघानी ग्लोबल बोर्ड के निर्देशक निर्वाचित",
-      "url": "https://www.krishakjagat.org/national-news/iffco-chairman-mr-sanghani-elected-as-director-of-the-global-board/",
-      "description": "KRISHAK JAGAT | National Agriculture Hindi Newspaper 23 सितंबर 2026, नई दिल्ली: इफको अध्यक्ष श्री संघानी ग्लोबल बोर्ड के निर्देशक निर्वाचित &#8211; अंतरराष्ट्रीय सहकारिता आंदोलन के लिए एक महत्वपूर्ण उपलब्धि के रूप में इफ...",
-      "source": "Krishak Jagat",
-      "image": "https://www.krishakjagat.org/wp-content/uploads/2026/09/sdd.jpg",
-      "lang": "hi",
-      "pubDate": "2026-09-24T05:14:03.237Z"
-    },
-    {
-      "title": "समृद्ध किसान-समृद्ध प्रदेश की थीम पर मनाया जाएगा मध्यप्रदेश स्थापना दिवस: सीएम डॉ. यादव",
-      "url": "https://www.krishakjagat.org/news/madhya-pradesh-foundation-day-to-be-celebrated-with-the-theme-prosperous-farmers-prosperous-state-cm-dr-yadav/",
-      "description": "KRISHAK JAGAT | National Agriculture Hindi Newspaper 23 सितंबर 2026, भोपाल: समृद्ध किसान-समृद्ध प्रदेश की थीम पर मनाया जाएगा मध्यप्रदेश स्थापना दिवस: सीएम डॉ. यादव &#8211; मुख्यमंत्री डॉ. मोहन यादव ने कहा है कि वर्ष 2026...",
-      "source": "Krishak Jagat",
-      "image": "https://www.krishakjagat.org/wp-content/uploads/2026/09/ydv.jpg",
-      "lang": "hi",
-      "pubDate": "2026-09-24T05:14:03.237Z"
-    },
-    {
-      "title": "दतिया : किसान सम्मान निधि बनी खेती का मजबूत सहारा",
-      "url": "https://www.krishakjagat.org/news/datia-kisan-samman-nidhi-becomes-a-strong-support-for-farming/",
-      "description": "KRISHAK JAGAT | National Agriculture Hindi Newspaper 23 सितंबर 2026, दतिया: दतिया : किसान सम्मान निधि बनी खेती का मजबूत सहारा &#8211; दतिया जिले के ग्राम थरेट निवासी किसान श्री दिलीप कुमार शर्मा के लिए प्रधानमंत्री किसान...",
-      "source": "Krishak Jagat",
-      "image": "https://www.krishakjagat.org/wp-content/uploads/2026/09/farmerr.jpg",
-      "lang": "hi",
-      "pubDate": "2026-09-24T05:14:03.237Z"
-    },
-    {
-      "title": "मध्य प्रदेश में खरीफ धान, ज्वार और बाजरा उपार्जन के लिए पंजीयन शुरू, 10 अक्टूबर तक का मौका; जानें पूरी प्रक्रिया और नियम",
-      "url": "https://kisansamadhan.com/mp-kharif-paddy-jowar-bajra-procurement-registration-2026-last-date-e-uparjan/",
-      "description": "खरीफ विपणन वर्ष 2026-27 में न्यूनतम समर्थन मूल्य (MSP) पर धान, ज्वार एवं बाजरा उपार्जन के लिए मध्य प्रदेश में किसान पंजीयन की प्रक्रिया सुचारू रूप से जारी है। अब तक राज्य के 13 हजार 508 किसान अपना पंजीयन करा चुके हैं। कि...",
-      "source": "Kisan Samadhan",
+      "title": "बासमती धान के भाव में क्या आएगा बदलाव? नई फसल से पहले निर्यात और ग्लोबल ट्रेड का असर - Tractor Junction",
+      "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxNcjA2VWVLTEZ3dmU1UkthaUpKZFMzMXJCcXM5Uzl2Y2FLVng3OXUxZDYxckVOd2U2dzd0MlltUlF2aVR6MllhQS1KcWhyeGM2alRFWkprWG1FWDVoNzJPMlAzdjhwZ3JNS3VFa0stNndndGpVb3llUnlWQTNqOVpZY01VUlhzdUtUcWs2T29QN2xOaFQ5anAwRUZiOFEwSzZKd2QyOTg0STVNSk5HWlVqMXRIWHpFbkJ0TldVcG9XYVdsZExMZ3FZbTQwOHBhQ2pvLUHSAdoBQVVfeXFMUHY5alhvOWc4S2t6b054Tk5HLWZMcUlxNS1ZWXNkU19ZVDdEbFZ1d2NqcFRwWkItVXpYOG5LcHIzX0tndDN6dG5vWEJWRXkzUW1DRWlpa1dCcnJ6VXpjbklvVWdQQXlPd3hEdHR1V3VkRkZZcEI5TVBseElVaWg2UjZJcVEtS2FESlNzSHpNQ0Q4a2lTMEZscE1lZ0pTejlIVDM5d3VuZHd1VXprbkxnVzFQSFB6SENUcElXNVBwZ0JwVHlfMEtlVFZoQUR3MXZycDU1V244MVJWR0E?oc=5",
+      "description": "<a href=\"https://news.google.com/rss/articles/CBMi0gFBVV95cUxNcjA2VWVLTEZ3dmU1UkthaUpKZFMzMXJCcXM5Uzl2Y2FLVng3OXUxZDYxckVOd2U2dzd0MlltUlF2aVR6MllhQS1KcWhyeGM2alRFWkprWG1FWDVoNzJPMlAzdjhwZ3JNS3VFa0stNndndGpVb3llUnlWQTNqOV...",
+      "source": "Tractor Junction",
       "image": "",
       "lang": "hi",
-      "pubDate": "2026-09-24T05:14:04.723Z"
+      "pubDate": "2026-09-24T12:02:01.262Z"
     },
     {
-      "title": "Bihar Krishi Input Anudan 2026: बाढ़ से फसल नुकसान पर किसानों को मिलेगा ₹22,500 तक मुआवजा, 29 सितंबर तक करें ऑनलाइन आवेदन",
-      "url": "https://kisansamadhan.com/bihar-crop-input-subsidy-2026-online-application-flood-damage/",
-      "description": "बिहार में अगस्त 2026 के अंतिम सप्ताह में अतिवृष्टि और बाढ़ से क्षतिग्रस्त फसलों के लिए कृषि इनपुट अनुदान की ऑनलाइन आवेदन प्रक्रिया शुरू हो गई है। प्रभावित किसान 29 सितंबर 2026 तक आवेदन कर सकते हैं। कृषि इनपुट अनुदान के त...",
-      "source": "Kisan Samadhan",
+      "title": "Mandi Bhav: मंडी में AI का बढ़ता इस्तेमाल, किसानों को मिलेगी सटीक जानकारी और बेहतर दाम - Gaon Connection",
+      "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxPbmJCYWtBUXVZOTVPRXMwTlBRamJ1TzJpYi1aR1g2d3l1d2lGTFZ5d0hZUmFjdGpQdUhJNUJLM3o1MHNETUZ1cjBaR29FZWlwVEVRMWdlb0w4ejJPb0oxbXRUVFprR2JiRjJVUHY3WkE4NWdxOXgyd1J0MEtNVkRaR3E0Um1fdnhOM0Q4bDdZWVhDUVViVm5ib1ZOUVk2UkZzVFZtTDJxV2J6VW56T245b0tXUmp5Sm5NVHQ3TFdIdnc0MThGd2E3RnpkZ1J2UG1nYjBTQ0pmU2Vqc1lmVEln0gHkAUFVX3lxTE1zdVN1bzRjYXpjY0YxckYyQlgxdFFXWjJVSnZ4UHdZTk56SXpWV1B3Wmg0dlpjTldMOElPZERKLXd3dHJfbDNuWFc4Z1hoY002RXBhbEdzaGRiYTVtcjcyVzd0ZHoxR2JSR1RvMVdZLUl4Wnl5NzFXX3NFeWE5Um53M2VJdmkxYW1rc0RTLXRGWlVHaFBnZ2RFNXBaSm9MRWZZY2pnSU5zbjl4WjdsQVVUTUFLZ3h0b0Q0MDNqRjkxVUhaZjVqdGhnQ1VhQnVIdHdXUkhhSGh2eGw4eEd6aU1CdktHMQ?oc=5",
+      "description": "<a href=\"https://news.google.com/rss/articles/CBMi3wFBVV95cUxPbmJCYWtBUXVZOTVPRXMwTlBRamJ1TzJpYi1aR1g2d3l1d2lGTFZ5d0hZUmFjdGpQdUhJNUJLM3o1MHNETUZ1cjBaR29FZWlwVEVRMWdlb0w4ejJPb0oxbXRUVFprR2JiRjJVUHY3WkE4NWdxOXgyd1J0MEtNVk...",
+      "source": "Gaon Connection",
       "image": "",
       "lang": "hi",
-      "pubDate": "2026-09-24T05:14:04.723Z"
+      "pubDate": "2026-09-24T12:02:01.262Z"
     },
     {
-      "title": "बिहार में एलोवेरा, अश्वगंधा, ब्राह्मी और शतावरी की खेती पर मिलेगा 36,000 रुपए प्रति हेक्टेयर का अनुदान",
-      "url": "https://kisansamadhan.com/bihar-medicinal-plants-cultivation-subsidy-aloe-vera-ashwagandha-shatavari-vijay-sinha/",
-      "description": "राज्य में परंपरागत फसलों के अलावा किसानों की आमदनी बढ़ाने और फसल विविधीकरण (Crop Diversification) को प्रोत्साहन देने के लिए बिहार सरकार ने एक बड़ा कदम उठाया है। केंद्र प्रायोजित एकीकृत बागवानी विकास मिशन (MIDH) के तहत वि...",
-      "source": "Kisan Samadhan",
+      "title": "देश की अनोखी हर्बल मंडी: यहां बिकते हैं फूल, पत्ती, जड़, छाल और कांटे भी; किसानों को मिलते हैं मुंह मांगे दाम - ndtv.in",
+      "url": "https://news.google.com/rss/articles/CBMi9wFBVV95cUxPVGVpby1YcGtOS2RHdjZ6d1lHSXNUVW9UVWxSMEs0TzRiUVBxU1BiR25hNXdYYktGLVY3cjNpTFd4OFM5dVdWSmpleHFrN1VNbnhTcldYX3pJcWJmcExTNVhGQ2xBYmNQd0dIUFlBS3FYR3hSQ1ZOQ0J5SUZWRXQ3aldZMEZjM2h3Nm5qVm5Cb3hKQW5fMFZob3hOcENPVWxRaVI3MkFfcGVudkZlLTlWSXlBZjVfWHFaOXNWeUxQb1Fack91RzZESXFZUXVPcE1ncmk4S1NEUmp6MVJ3WU0tdHllVVhrREN4clFDRmtacTJrdUMwUHhV?oc=5",
+      "description": "<a href=\"https://news.google.com/rss/articles/CBMi9wFBVV95cUxPVGVpby1YcGtOS2RHdjZ6d1lHSXNUVW9UVWxSMEs0TzRiUVBxU1BiR25hNXdYYktGLVY3cjNpTFd4OFM5dVdWSmpleHFrN1VNbnhTcldYX3pJcWJmcExTNVhGQ2xBYmNQd0dIUFlBS3FYR3hSQ1ZOQ0J5SUZWRX...",
+      "source": "ndtv.in",
       "image": "",
       "lang": "hi",
-      "pubDate": "2026-09-24T05:14:04.723Z"
+      "pubDate": "2026-09-24T12:02:01.262Z"
     },
     {
-      "title": "धान की SRI विधि में निकले 17-19 कल्ले, पारंपरिक रोपाई में केवल 10-12; किसान को दोगुना उत्पादन होने की उम्मीद",
-      "url": "https://kisansamadhan.com/sri-paddy-transplanting-17-19-tillers-traditional-method-comparison/",
-      "description": "धान की खेती में एस.आर.आई यानि श्री विधि और पारंपरिक रोपाई के बीच स्पष्ट अंतर दिखाई दिया है। पनागर विकासखंड के ग्राम कुशनेर में किसान कुलदीप पटेल के खेत पर किए गए प्रदर्शन में एसआरआई (SRI) विधि से लगाए गए धान के पौधों में...",
-      "source": "Kisan Samadhan",
+      "title": "5 काम जो किसानों के लिए भारत-विस्तार प्लेटफॉर्म से आसान हो जाएंगे? ये काम कैसे करेगा - News18 Hindi",
+      "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxPUmhaNnRSQkIzQWtLWDVWaWZzd1FmUURXZFdWNjFyMmVicGpaajYzTXpWaUdXd2dvMHNJNVU5bmhvOG1md3N5SEw5WEVzdEhCR0JnM0stSTFCLTZSVVVCYi05SVo2Ykd0NElQU1AyR2U3NU1uREtpMERlbmgxbVRLOWwyUUR5S2Q5VGFEeldMSjF4WDVoQ2NrTFYtUmxoMmkyWGU1cmpGcGYwUmw0Szl6bXlENkxEUHNSQW1nenptLWFfdWJOckgyWVlqaFAzR3Zmczlqd9IB2gFBVV95cUxObk1Kem5nY1pVbDI3blZWRjR1a2xFQU83NTJoYXJNQ0J5TXZBNEI0QnlfR1V0dVduODN6d2N4XzR5eWdfeW1DR3o3Z21IZUUwd3JPb0NJdm9kcFg1eVFlUFhacmFkZFg1UWh4Z2Q1UWpCUU5Ba21VT2g2TGgzci1uc2xsSFhqMjVwbThKbjRnSGpNRU9rRU05VVE5NU1WcW1tUldsV2JQWWZJWUlSOER6S2lRMU9xOG5QZjJLQ210Uy1wZWwzQXNTQ3dyOGJZWWdKbWx1bUtGLTNIUQ?oc=5",
+      "description": "<a href=\"https://news.google.com/rss/articles/CBMi1AFBVV95cUxPUmhaNnRSQkIzQWtLWDVWaWZzd1FmUURXZFdWNjFyMmVicGpaajYzTXpWaUdXd2dvMHNJNVU5bmhvOG1md3N5SEw5WEVzdEhCR0JnM0stSTFCLTZSVVVCYi05SVo2Ykd0NElQU1AyR2U3NU1uREtpMERlbmgxbV...",
+      "source": "News18 Hindi",
       "image": "",
       "lang": "hi",
-      "pubDate": "2026-09-24T05:14:04.723Z"
+      "pubDate": "2026-09-24T12:02:01.262Z"
     },
     {
-      "title": "MP Cabinet Decisions: 4,967 करोड़ की सिंचाई परियोजनाएं मंजूर, 88 हजार हेक्टेयर खेतों को मिलेगा पानी",
-      "url": "https://kisansamadhan.com/mp-cabinet-approves-irrigation-projects-88000-hectare-farm-land/",
-      "description": "मध्यप्रदेश में किसानों के खेतों तक सिंचाई का पानी पहुंचाने और कृषि उत्पादन बढ़ाने के लिए तीन बड़ी सिंचाई परियोजनाओं को मंजूरी दी गई है। मुख्यमंत्री डॉ. मोहन यादव की अध्यक्षता में हुई मंत्रि-परिषद की बैठक में नीमच और राजग...",
-      "source": "Kisan Samadhan",
+      "title": "300 रुपये कुंतल पर आलू 20 रुपये किलो पर बिक्री, उत्तर भारत की मंडियों में औंधे गिरे दाम, लागत निकालने को जूझ रहे किसान - Jansatta",
+      "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxQQnFXTzNfZk1DMTd5dUE3WHByNU9YbnBoSUhzLUplYzVQcld1LU9YUXNIZHNtUHJoSlRTY3JtOXRxVzQwU3BYR2xJcVFlOUt2X282aXBFQXFGRU9mTjhIOHNwckJsUDRmSWxJdXVsMmFyQjVLQWs1eFdrQW9aQk1vTlVTWFpGd3didFRqVU83Y1g1TmdGVGZvMFByenZVUUZyZmNuX2FVck5nNUExQl9ORGszOXlEcXhHdmwzckhnN3ZPNFFCYVBmUjlhLXoxZ9IB1AFBVV95cUxQZGUta2Jnb3VEN3A3WlU0R0l2eWhaNUtrNXNNbVo2Wm5SbWRtTWN6S01IOG5OY250VUZTT0ZqakMya2ZudVgxZ19NLWt0YmpsYTFKdThhMFVpUUs1N0VZNmlkRjllcTBIeFhjT2dnYUY5TjNqT0xvM2dyTTI5NUR3R1RxXzVocWdtUmRTRW0welZFUFBhRWdmajNsa1UwMzJEN2dCQjlIMFZEWktqZEtMWHh6ZGZJRVlleXFkazhMYWVuU3lBREtJX1lMd3hxMmh1WC1Odg?oc=5",
+      "description": "<a href=\"https://news.google.com/rss/articles/CBMizgFBVV95cUxQQnFXTzNfZk1DMTd5dUE3WHByNU9YbnBoSUhzLUplYzVQcld1LU9YUXNIZHNtUHJoSlRTY3JtOXRxVzQwU3BYR2xJcVFlOUt2X282aXBFQXFGRU9mTjhIOHNwckJsUDRmSWxJdXVsMmFyQjVLQWs1eFdrQW9aQk...",
+      "source": "Jansatta",
       "image": "",
       "lang": "hi",
-      "pubDate": "2026-09-24T05:14:04.723Z"
+      "pubDate": "2026-09-24T12:02:01.262Z"
+    },
+    {
+      "title": "Explained: अब AI से खेती का होगा समाधान, किसानों के लिए 'भारत-विस्तार' लॉन्च, जानिए क्या - क्या होंगे काम - Livemint",
+      "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxNWUFMYWlLUzdjeDY0V0hlWkhHLTFjVmdIVDdMNV9WRzhsNEdaS3FZdDZjYjJjcHRVQTZzWHh2XzBsaDJ5bDJyZFVjdlZaZEdnT2xaWEgxNUxKV3ZsdEd4SFIxLTJaQUlKdVgtWHFmZFlIcDBhMEpRSlBpVUx2WHNqOTdpN3g1emE2Sk1qUWViYVFiMXdBaHJwQV9rZ090d2pEYm96NVhudVNldVhJWDY4Nkg0Rkp3Ql93R1pOU3VxSFNKOEpnNUp5clk5SGpYVV9VQU9Uc1c3TnlxZkVR0gHiAUFVX3lxTE00UXdZem5zNm03bU9DZjNNQkg3RGJMaG1yLXBjbTNEWmo1Y1lYMnRoN1N1NUttcGUxQ0RPMmxrVFFNYzZodlc3enVpU2tFamVyOTJGOFkxbVEtYnpiYUdEbHhUbU5PU0ZVSEdNTU1OVV9STGJCSHMwRFREdk1PYS1GX1M5bnc1U0lra0NQaEZwVFN3dFJuY2VaTlRnV1pLa0xJdHNzbkI1aFBiU2hfV0Fub2ZNbkk0S0o3Vm1QUFlEZXZjcVA5TmRtd2xTcDl1UGlIWUEwb1FhUkUtME80aHNscVE?oc=5",
+      "description": "<a href=\"https://news.google.com/rss/articles/CBMi3AFBVV95cUxNWUFMYWlLUzdjeDY0V0hlWkhHLTFjVmdIVDdMNV9WRzhsNEdaS3FZdDZjYjJjcHRVQTZzWHh2XzBsaDJ5bDJyZFVjdlZaZEdnT2xaWEgxNUxKV3ZsdEd4SFIxLTJaQUlKdVgtWHFmZFlIcDBhMEpRSlBpVUx2WH...",
+      "source": "Livemint",
+      "image": "",
+      "lang": "hi",
+      "pubDate": "2026-09-24T12:02:01.262Z"
+    },
+    {
+      "title": "साप्ताहिक मंडी भाव और क्रॉप प्राइस विश्लेषण: अनाज, दालों और तेलहन फसलों के भाव में उतार-चढ़ाव - Tractor Junction",
+      "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxOSnliRVM3ZmlnTXpmS3FldERza0JSM3FFOW1pSHlEdDdYVjVudEN4Sm1LY3NWNEhzbVJ2blJ0VmU5dnBITURQYkw5TnJBa2hQb0o5RmRPRmJCTEx3QVVLcVB2bGlBV0d2N3hUc3kyVDF3SG1GelZzWC05cnk4Rkt4eWdQbHVsckdIWFNnVlFZZWlMajB5dTFucmhKc9IBowFBVV95cUxQRnBFUTF6Mm8xTjF1RGhYcXN5QVJVTlMxdFdtMlFEZEQzQm11RFlGcEtLSHdIVk5CUlpPMF9CZkRuSTN5NGh4OG80dTZVRmlvNzBNbUtlZzJiWVVuWHYwREtlTjd5RUhFMGM1Nkx0Y3QxeHB4LVZYZGtwVFdWOE9KUTVTWjJfMUpJZkhKYmlCVWYwOXoyR25MYjVFMVI3elFvZTZF?oc=5",
+      "description": "<a href=\"https://news.google.com/rss/articles/CBMimwFBVV95cUxOSnliRVM3ZmlnTXpmS3FldERza0JSM3FFOW1pSHlEdDdYVjVudEN4Sm1LY3NWNEhzbVJ2blJ0VmU5dnBITURQYkw5TnJBa2hQb0o5RmRPRmJCTEx3QVVLcVB2bGlBV0d2N3hUc3kyVDF3SG1GelZzWC05cnk4Rk...",
+      "source": "Tractor Junction",
+      "image": "",
+      "lang": "hi",
+      "pubDate": "2026-09-24T12:02:01.262Z"
+    },
+    {
+      "title": "155261 पर किसान कल से करें कॉल, AI बताएगा मौसम, सरकारी योजनाओं, मंडी भाव, फसल का हाल - ndtv.in",
+      "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxPWnUxRkp2SkpibzdraWdQQWltZEloSjdDbEF6VHZmU1BEcU1BbERJSUI1ZVo1MUlkejVYX3lNY1o5QVpsNTRUSTN1YllaaHdnUS1TQk16aEpMRG0zME1NSkUzY0c4NjNJWlJsOEtCdGpib3phOFlsMENrQzJSMVRuNV92WTllYS1TOEwtRkgweDZfMzFDZFVqQ0wxTzU4N3BYN0MyRFR4ZW1waWJDdVJkYUY1T3ItQllRa1l3M0JWNXhfT3Jm?oc=5",
+      "description": "<a href=\"https://news.google.com/rss/articles/CBMixAFBVV95cUxPWnUxRkp2SkpibzdraWdQQWltZEloSjdDbEF6VHZmU1BEcU1BbERJSUI1ZVo1MUlkejVYX3lNY1o5QVpsNTRUSTN1YllaaHdnUS1TQk16aEpMRG0zME1NSkUzY0c4NjNJWlJsOEtCdGpib3phOFlsMENrQzJSMV...",
+      "source": "ndtv.in",
+      "image": "",
+      "lang": "hi",
+      "pubDate": "2026-09-24T12:02:01.262Z"
+    },
+    {
+      "title": "यूपी के आलू किसानों के लिए अच्छी खबर: पंजाब में फसल में देरी से मुनाफा की उम्मीद! दिवाली से पहले रेट बढ़ने के आसार - Agra Potato Farmers Hopeful as Punjab Crop Delay Boosts Local Demand - jagran.com",
+      "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxQRlAxbTNkVTNHMGpoRnlWVVFRS3pGR2g3eVFNd25GNzdyVGFVTWV1SUF6azgxVzV5VU5yQmhXTGxqRlZzeUdWa1VUaXJCTmgzVnhnWk50aHBqaFQ4YWZTMGtCZHJ3UE1iU3ZtdUVHZGpKX29PU045QllTNURfZ01kbFNIUmFzVkh5SHBDTnZBemdvcU5LXy1zYmpKZmFPNmVOTzdaYWs2ZTFSdFB0WDZ0VllRRm51Q3FCdUtmWlhEQXFXNmVrOTZKUw?oc=5",
+      "description": "<a href=\"https://news.google.com/rss/articles/CBMiyAFBVV95cUxQRlAxbTNkVTNHMGpoRnlWVVFRS3pGR2g3eVFNd25GNzdyVGFVTWV1SUF6azgxVzV5VU5yQmhXTGxqRlZzeUdWa1VUaXJCTmgzVnhnWk50aHBqaFQ4YWZTMGtCZHJ3UE1iU3ZtdUVHZGpKX29PU045QllTNURfZ0...",
+      "source": "jagran.com",
+      "image": "",
+      "lang": "hi",
+      "pubDate": "2026-09-24T12:02:01.263Z"
+    },
+    {
+      "title": "बीकानेर कृषि मंडी में मूंग का कारोबार शुरू, रोजाना आ रही 400 बोरी, भाव में 1500 रुपए तेजी - ETV Bharat",
+      "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxONTJuZTR6b25QUjE2TFNCeU12NFJFSVhfckJEVFhwMHRiYUZYeUNWVDFfZlBHaUMxSjZBN0N0YkhXNW1RX2F2OHRXN2RtMGhDcWdVb3hrVEs4dkFzMlV4VTQ2b2pvUmpPSFNCVi1jS3Bod2FqNk9jSUV0R3JBd19FekhuaTZSQjk0RmdEUjVGSnVaOFlMaHUtd1NOM1RMSE9WVVFQZ1AtLTRBclhfMGlwaFdOcnhCZXU0SFBtRkpVRW0yVEtpS0psMlZJMEl6TUNaYXdlempLRHRHWkXSAdsBQVVfeXFMTjUybmU0em9uUFIxNkxTQnlNdjRSRUlYX3JCRFRYcDB0YmFGWHlDVlQxX2ZQR2lDMUo2QTdDdGJIVzVtUV9hdjh0VzdkbTBoQ3FnVW94a1RLOHZBczJVeFU0Nm9qb1JqT0hTQlYtY0twaHdhajZPY0lFdEdyQXdfRXpIbmk2UkI5NEZnRFI1Rkp1WjhZTGh1LXdTTjNUTEhPVlVRUGdQLS00QXJYXzBpcGhXTnJ4QmV1NEhQbUZKVUVtMlRLaUtKbDJWSTBJek1DWmF3ZXpqS0R0R1pF?oc=5",
+      "description": "<a href=\"https://news.google.com/rss/articles/CBMi2wFBVV95cUxONTJuZTR6b25QUjE2TFNCeU12NFJFSVhfckJEVFhwMHRiYUZYeUNWVDFfZlBHaUMxSjZBN0N0YkhXNW1RX2F2OHRXN2RtMGhDcWdVb3hrVEs4dkFzMlV4VTQ2b2pvUmpPSFNCVi1jS3Bod2FqNk9jSUV0R3JBd1...",
+      "source": "ETV Bharat",
+      "image": "",
+      "lang": "hi",
+      "pubDate": "2026-09-24T12:02:01.263Z"
+    },
+    {
+      "title": "क्या भारत-अमेरिका ट्रेड डील से हर किसान को होगा फायदा? जानिए किन फसलों को मिलेगी नई उड़ान - Gaon Connection",
+      "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNY256M2FtUEV4UWQwZk5EdFZWc0RPcnVqRW9PaU9OOGVqSGRzUkVIa2FrTGt0UVJhTVBHOFF3OXNxeFk3RWhlMkRhNFpRb3RZWlFESjFLNkpmNmNuZGVYelcyOE54Y1VCTXo1VXAwSlF2cUVfV2s2d0NBSUxQWjd1LXpRREI5MjYyTE40T3hkUzlrNkFVZlBvN3RiVkpIVU1aT1Q3QVF0bHpoWkh3QkpvZGRaV0c3QlpPaEHSAb8BQVVfeXFMTml0anItRWZUQld2Z0poR29lYURGeVlnNjZnMTd1Z1N4bzZNQTlLOC1RLVZpRHFFajVMRi03ZV9RSUVFX0Ffa1ZsdS1FMGRobmVFQVYzSC1ZeEx4aGtSMC00RW9ReGdyWlMtd2hWS25lX1dGMUxiUklWb3huY2JDNlB4RXlKZDhKSm9oWWFYQUxGdml1NjctVFJhNGk3XzZGMDRDVlJFQVRXNXRBV1pvWlF4LUVLdnJGcENyQmVuWnc?oc=5",
+      "description": "<a href=\"https://news.google.com/rss/articles/CBMiugFBVV95cUxNY256M2FtUEV4UWQwZk5EdFZWc0RPcnVqRW9PaU9OOGVqSGRzUkVIa2FrTGt0UVJhTVBHOFF3OXNxeFk3RWhlMkRhNFpRb3RZWlFESjFLNkpmNmNuZGVYelcyOE54Y1VCTXo1VXAwSlF2cUVfV2s2d0NBSUxQWj...",
+      "source": "Gaon Connection",
+      "image": "",
+      "lang": "hi",
+      "pubDate": "2026-09-24T12:02:01.263Z"
+    },
+    {
+      "title": "Wheat Price: रिकॉर्ड उत्पादन और सरकारी खरीद से मंडियों में टूटा गेहूं का भाव, किसानों की आमदनी पर संकट गहराया - Amar Ujala",
+      "url": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxOb2lXelhKdVdhS3NOTkxmeGp3RDdVd1hBaWZndUl3SC03QXFFZTBFeXlkNVJxS0c4ekdpYVl2aUVKZUlnR2JQajFHOTlFdUNkdURTdDlVRGozTHdkdGY4LVlZc2tJUVEyWTlSbGdTeGEyNjk5NnJ2cXNWbmRTRC1YMy1aUlJnUlE1NXdDTk5RLVpKMDkwaWdVWWZESFR0ZG5RNzl1T0dCWkg0VUptWVlNMjdDcmJ3Znl5VW11cVdobnNvNmxoMnlOTlR1T1ZrWVQzaElsNGlhS3gwRjFKcXcyNlEzZmk5azDSAewBQVVfeXFMTl9GUFNWUE9SUXZGZ2FsbThoU2pLUTc0VkRIb1RpSnJaa2ZyYWdzXzRfTEVnaGgzdlpvZXM0VU5TVC1uX09QaEhwSGsyRnJRUVdtSzg2enNYZ2FfZHVtYWg0a3lrYlJMd0NVYnVNd18yX29PVjkyUW5SOVhNa3g3eGdBakF4bm00cTZxaWU1RVFBTVBTVk8xRHJ1WkNWS2dsZDFmVTB5LUR5UjA0WmkzSWhUVVVFY2FLSFpEZkpwc0cwUmRpM3lsU2Z4blJzTFlIWmsyX1VTcjdXRkRPN0Jac2dlcTRENk1iaS1oQ2Y?oc=5",
+      "description": "<a href=\"https://news.google.com/rss/articles/CBMi5wFBVV95cUxOb2lXelhKdVdhS3NOTkxmeGp3RDdVd1hBaWZndUl3SC03QXFFZTBFeXlkNVJxS0c4ekdpYVl2aUVKZUlnR2JQajFHOTlFdUNkdURTdDlVRGozTHdkdGY4LVlZc2tJUVEyWTlSbGdTeGEyNjk5NnJ2cXNWbmRTRC...",
+      "source": "Amar Ujala",
+      "image": "",
+      "lang": "hi",
+      "pubDate": "2026-09-24T12:02:01.263Z"
+    },
+    {
+      "title": "किसान मंडी में फसल बेचने के आसान तरीके - Kisaan Helpline",
+      "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPcUNPbk0ySHFzQ05scy10dUgtQllXazd3cXZOQmVlTy1xQ0k3MDIxUjBJdndsZDZGRWVjTG13aTV0S2tqTS1kSlEtMG5tNE1oY1I2Z090cEM5d01JY3NsOWt2a1Rxc01sdDRBUEFzeVdCNjJRRXdhaGY2Y3RULW1IWmFaY0FwQ1p6bTVEdk02SXhCMVVXVHdz?oc=5",
+      "description": "<a href=\"https://news.google.com/rss/articles/CBMilwFBVV95cUxPcUNPbk0ySHFzQ05scy10dUgtQllXazd3cXZOQmVlTy1xQ0k3MDIxUjBJdndsZDZGRWVjTG13aTV0S2tqTS1kSlEtMG5tNE1oY1I2Z090cEM5d01JY3NsOWt2a1Rxc01sdDRBUEFzeVdCNjJRRXdhaGY2Y3RULW...",
+      "source": "Kisaan Helpline",
+      "image": "",
+      "lang": "hi",
+      "pubDate": "2026-09-24T12:02:01.263Z"
+    },
+    {
+      "title": "चीनी-प्याज के बाद महंगा हुआ गेहूं, ₹150 तक बढ़े भाव! खुदरा बाजारों में कैसी रहेगी कीमत और सप्लाई? - jagran.com",
+      "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQLXZtUWN4UG5PdDVzSHRSanBjTmtXT3hnSEZMUS0wR1J5MjVpbml2d2wyWGtyMnFpUm5TV240bEpTc2cxREc1S2tEZGFpZlpmTE95TXZ5V0tsUkMzVlZMWkRIU2RxV2lYUF9XaFcydTk0VVNpVXJKa2syN2tCQ0dlVmdodl9PSXhsSmtSZ2MxREVOM0J0bUdoTXRNTVBPaEVxVXlfNk5iSkpaWGowbVZfekdHZURIdw?oc=5",
+      "description": "<a href=\"https://news.google.com/rss/articles/CBMitgFBVV95cUxQLXZtUWN4UG5PdDVzSHRSanBjTmtXT3hnSEZMUS0wR1J5MjVpbml2d2wyWGtyMnFpUm5TV240bEpTc2cxREc1S2tEZGFpZlpmTE95TXZ5V0tsUkMzVlZMWkRIU2RxV2lYUF9XaFcydTk0VVNpVXJKa2syN2tCQ0...",
+      "source": "jagran.com",
+      "image": "",
+      "lang": "hi",
+      "pubDate": "2026-09-24T12:02:01.263Z"
+    },
+    {
+      "title": "मक्का बाजार में तेजी बरकरार, दक्षिण भारत की मजबूत खरीद से किसानों को मिल रहे बेहतर भाव - Tractor Junction",
+      "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQSVdXZ25UaWthU1ZJbDJhbU0zTVZ4UXhyWGF4Z3o1Qmx1a29JRnNKZHlpYjBoN3NSRnZwVkR5V19DNHBVV2pfUlBYaVV2YVlGS3V5dnJuWExUaE8zRHVlcnhla3dCR2x2UGpEdGs1RkZ3QXo0aVJRLU5BQTJkaGszZ0RkMG1CSjZLUnZuNjh1ZkE2bVl4M2ktUWFEZXJxWFVQMk9TSWZLRjR4WHJrMVVqZ2xYZXlEZ9IBvgFBVV95cUxQSF9wQ2x4b2dUS09JaTVsUUFGSzJPUFRRWlRxVzhuZ3ktRDZGNjl1RTFnMWt5U25iOEhuUkMzRHFZU0tXR2RsMTdQWkpVa0w5a2dFN0FiS1F1VDVYdmhpZ2ZucFI4bDJUeWhKLVl5dDB0SUFqeUxpY2ZxQ01jS25BMHprWmVValZHTEdWSG1LbzNkQTFJOHR6cWpfQ3dtS2VjUjcweUJkYlVPRlJDZHdWNGl4dFVwQ2FjbGpyeURB?oc=5",
+      "description": "<a href=\"https://news.google.com/rss/articles/CBMitgFBVV95cUxQSVdXZ25UaWthU1ZJbDJhbU0zTVZ4UXhyWGF4Z3o1Qmx1a29JRnNKZHlpYjBoN3NSRnZwVkR5V19DNHBVV2pfUlBYaVV2YVlGS3V5dnJuWExUaE8zRHVlcnhla3dCR2x2UGpEdGs1RkZ3QXo0aVJRLU5BQTJkaG...",
+      "source": "Tractor Junction",
+      "image": "",
+      "lang": "hi",
+      "pubDate": "2026-09-24T12:02:01.263Z"
     }
   ],
   "en_articles": [
@@ -146,7 +146,16 @@
       "source": "Indian Council Of Agricultural Research",
       "image": "",
       "lang": "en",
-      "pubDate": "2026-09-24T05:14:12.036Z"
+      "pubDate": "2026-09-24T12:02:06.052Z"
+    },
+    {
+      "title": "ICAR develops 386 improved crop varieties in a year, majority climate-resilient: Shivraj Singh Chouhan - DD News",
+      "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxPR0M3T3pmZVh6NHVOcXA3R2VjNmZGemhQMnFsWDZDUGp3NWhoM2t6cTNja09EMUs5ZGtEQ2IzUDNRM2RiSVJ5ZHlDNzJaUERmWUxrcktldkQ3SmdUdDRKZlZBTFFzWFVvVjRyV05ScmhEQndYLXRKN3hBUnV6bmJDamdqLXJFQTZ5XzRwZldHclpRNXo0Nlk3TGoyY3czeGRxVXhEV2RuVWw5MHlTVWc4TndIbHctQmY2Rms4REFYWjV2WEVZ?oc=5",
+      "description": "<a href=\"https://news.google.com/rss/articles/CBMixAFBVV95cUxPR0M3T3pmZVh6NHVOcXA3R2VjNmZGemhQMnFsWDZDUGp3NWhoM2t6cTNja09EMUs5ZGtEQ2IzUDNRM2RiSVJ5ZHlDNzJaUERmWUxrcktldkQ3SmdUdDRKZlZBTFFzWFVvVjRyV05ScmhEQndYLXRKN3hBUnV6bm...",
+      "source": "DD News",
+      "image": "",
+      "lang": "en",
+      "pubDate": "2026-09-24T12:02:06.052Z"
     },
     {
       "title": "India needs a human- and farmer-centred model of agricultural AI - Down To Earth",
@@ -155,7 +164,7 @@
       "source": "Down To Earth",
       "image": "",
       "lang": "en",
-      "pubDate": "2026-09-24T05:14:12.036Z"
+      "pubDate": "2026-09-24T12:02:06.052Z"
     },
     {
       "title": "CropLife India Flags Narrowing Crop Protection Options for Farmers - Global Agriculture",
@@ -164,34 +173,7 @@
       "source": "Global Agriculture",
       "image": "",
       "lang": "en",
-      "pubDate": "2026-09-24T05:14:12.036Z"
-    },
-    {
-      "title": "Empowering Indian farmers with smart, sustainable crop solutions: Dileep Sanghani, Chairman, IFFCO & IFFCO-MC - Indian Chemical News",
-      "url": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxPeTh1M0dGeE4wejZEQmZyNTdRM2VEVkFDZEc2cEVPVVg5a203UUhKejhMRlRVb2E3alJZWUxlZkZIYUl5UzVWWWxBWEhVcnVxQnU3a19qSXpyTzZ2LUl0VWhrVkdrVkxCUjJ4TXdTdHRmdmoxUEZOY3N2Smx3M2hSWnJDLU5UeVBXNl9vYzVwRHFXaEd0dG90MDU3Y1VvaExYdUhpcm1jOTJmZUVLdjdhaWF0MzZnOHFKdTFQVHdXNEstNjRiLVI4OHlreVl6TGV0eFNPZVBwa1Zsd19HWl9JMjJsbW4wTGdo0gHvAUFVX3lxTE1yT3pmX0lqS0thZ1NTZXFiLWtvbXFTWVpQMUExMFJTSXNzZkRPaGtoOTNYZUFfbTFMRHJ6MnY1UFliTWNuVUpoUHRrdWVDSFVZM3RNa1gzTkdCYTdCQXl3UTR4cmE3bzZuYzhTa284WFEyb3h3VjUzMWZROFdFN0trYkVIa1Jfb1llcklSeXI3TFg1WEtwU1NqeHpnejFMdVlJQllxSk9ROEFLanBCZ2REeWY5WXJ5a1NUeXAyT2RUU2c1YW1Vd2c1WkluSFExRW54eEF5alZxRG9RbFRDX1pCakN1aERGS1NYeThnZ2JN?oc=5",
-      "description": "<a href=\"https://news.google.com/rss/articles/CBMi6AFBVV95cUxPeTh1M0dGeE4wejZEQmZyNTdRM2VEVkFDZEc2cEVPVVg5a203UUhKejhMRlRVb2E3alJZWUxlZkZIYUl5UzVWWWxBWEhVcnVxQnU3a19qSXpyTzZ2LUl0VWhrVkdrVkxCUjJ4TXdTdHRmdmoxUEZOY3N2Smx3M2...",
-      "source": "Indian Chemical News",
-      "image": "",
-      "lang": "en",
-      "pubDate": "2026-09-24T05:14:12.036Z"
-    },
-    {
-      "title": "How FarmerChat Is Putting Instant Crop Diagnosis and Local Language Advice Into Every Farmer’s Pocket - The Better India",
-      "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxPTTNEcU02LXAzZDFyNDZlQU9UWTBFMGVtREtDOGhXR1FPZkhWd1M2c1lVZ1gyckZ3a0djbFl5ZE1mUDA3cFhiZWFPczZMaWs2NS03Y0JEMm96b2doRkZqdWNyanhnRTNiSl81TTRSWXNxTkZ2OUFpbkIyckxUX05SWjU0Y1h1VmFKR0NmNk5IaTY3Tzl0anVfbXFWWU9nclFkRHhIQTZTTlBIT2NVVUxwQWhZVGtBOGNkWktINkdxRkFaQkpKemRuVmQ4TEN5cHh5WnY1Tm5Rb9IB3AFBVV95cUxPc1BDbGJWUExobUg5QVBzV1pSaDBoeTBpR0xkTDF5X3dxdnc5V3VtTGtWRUw5QUtXQVdtT1FVcjdob3VneUZKcjd5N3RHNk5iUjQ1UXhqRDhXei1lenlPZnA4RU4wVHZWeHVnMW83aU1tRjBUM3VoVGFGVU8zSlVuVkRDb2NfeW5lZU8yNlU4dFNJQUdnQkkyc2JER1d3TXhzcHZuaVBxMlp4YS00ZDA0SXpMaTJuOGZaY0tENW01SnVfZ1Y4ODRzZzhIOFkzQy1pV0pvcnM5WFNOU1o2?oc=5",
-      "description": "<a href=\"https://news.google.com/rss/articles/CBMi1wFBVV95cUxPTTNEcU02LXAzZDFyNDZlQU9UWTBFMGVtREtDOGhXR1FPZkhWd1M2c1lVZ1gyckZ3a0djbFl5ZE1mUDA3cFhiZWFPczZMaWs2NS03Y0JEMm96b2doRkZqdWNyanhnRTNiSl81TTRSWXNxTkZ2OUFpbkIyckxUX0...",
-      "source": "The Better India",
-      "image": "",
-      "lang": "en",
-      "pubDate": "2026-09-24T05:14:12.036Z"
-    },
-    {
-      "title": "From Traditional Fields to Thriving Herbal Farms: How Farmers in Dehradun Unlocked the Potential of Herbal Cultivation - Indian Council Of Agricultural Research",
-      "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxOam5GQVd4LVpmSUVtVmV4ZWJIUWUwdS0xTVQxc3RRZlBXSHEzdk9NVl8xV0Vaa3hrdzUtNlp6OUFjNTI0R3pjOHpLcndmOTdYekk5WW1lWkpBSEg2ZENJdjVCejQ5SmVJcjBqVzJqSzRXMEhOR2M0NlJBbFUzdC1uaDBNOUY4LVZxS0pHT3pSTERfcTNOcFY5VnVaU3JYTWZFbG5ab2c3V09LRC16RHdUbFBBdzRhN3IzamJGdlgwMA?oc=5",
-      "description": "<a href=\"https://news.google.com/rss/articles/CBMivwFBVV95cUxOam5GQVd4LVpmSUVtVmV4ZWJIUWUwdS0xTVQxc3RRZlBXSHEzdk9NVl8xV0Vaa3hrdzUtNlp6OUFjNTI0R3pjOHpLcndmOTdYekk5WW1lWkpBSEg2ZENJdjVCejQ5SmVJcjBqVzJqSzRXMEhOR2M0NlJBbFUzdC...",
-      "source": "Indian Council Of Agricultural Research",
-      "image": "",
-      "lang": "en",
-      "pubDate": "2026-09-24T05:14:12.036Z"
+      "pubDate": "2026-09-24T12:02:06.052Z"
     },
     {
       "title": "Scaling Agri Resilience: From India to the World - blog.google",
@@ -200,25 +182,43 @@
       "source": "blog.google",
       "image": "",
       "lang": "en",
-      "pubDate": "2026-09-24T05:14:12.036Z"
+      "pubDate": "2026-09-24T12:02:06.052Z"
     },
     {
-      "title": "India’s crops face rising heat stress. Europe’s earlier harvests offer a warning - Firstpost",
-      "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPY1VjWGlBR1l4RGUwR1h4dEUxajhsVGppMXg0WnJZYTB1ZG1LOXJGU0JzX3VSeEhESW9KWjl3NDR4OE5wSVNtdUVrRUJHQUlXajFoRWdzMy1pei11MmgyczZReDJYSjVJYWN1SlFmQ2I2U3ZHcV9MVnhLekVYZl8xMGZxT2xPTUF5STFsX0hGZlBjMDIxZ3VubWdyTDBrV1JZVVQwbWtn0gGrAUFVX3lxTE5hWXZUVWpWWTREU3htQVBibUxCM0RSa2xxVXhxRy04QU1LSTJTUkNRclJJZ1RsekFUU1BXNUplcTRRbEdRRWs2Ry1XTWJVVXc2aThucFhSSkFQRVNKNU85Mkc5dFNwZWZaeTBTa2twZHBoRndIV2U5WE1PQlR2bGNyQ1hMM3NPUEFfOEtnZThTajQ4dnh3SktxQmJkSzhSOHVIYnpNak5xSU1DSQ?oc=5",
-      "description": "<a href=\"https://news.google.com/rss/articles/CBMipgFBVV95cUxPY1VjWGlBR1l4RGUwR1h4dEUxajhsVGppMXg0WnJZYTB1ZG1LOXJGU0JzX3VSeEhESW9KWjl3NDR4OE5wSVNtdUVrRUJHQUlXajFoRWdzMy1pei11MmgyczZReDJYSjVJYWN1SlFmQ2I2U3ZHcV9MVnhLekVYZl...",
-      "source": "Firstpost",
+      "title": "Empowering Indian farmers with smart, sustainable crop solutions: Dileep Sanghani, Chairman, IFFCO & IFFCO-MC - Indian Chemical News",
+      "url": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxPeTh1M0dGeE4wejZEQmZyNTdRM2VEVkFDZEc2cEVPVVg5a203UUhKejhMRlRVb2E3alJZWUxlZkZIYUl5UzVWWWxBWEhVcnVxQnU3a19qSXpyTzZ2LUl0VWhrVkdrVkxCUjJ4TXdTdHRmdmoxUEZOY3N2Smx3M2hSWnJDLU5UeVBXNl9vYzVwRHFXaEd0dG90MDU3Y1VvaExYdUhpcm1jOTJmZUVLdjdhaWF0MzZnOHFKdTFQVHdXNEstNjRiLVI4OHlreVl6TGV0eFNPZVBwa1Zsd19HWl9JMjJsbW4wTGdo0gHvAUFVX3lxTE1yT3pmX0lqS0thZ1NTZXFiLWtvbXFTWVpQMUExMFJTSXNzZkRPaGtoOTNYZUFfbTFMRHJ6MnY1UFliTWNuVUpoUHRrdWVDSFVZM3RNa1gzTkdCYTdCQXl3UTR4cmE3bzZuYzhTa284WFEyb3h3VjUzMWZROFdFN0trYkVIa1Jfb1llcklSeXI3TFg1WEtwU1NqeHpnejFMdVlJQllxSk9ROEFLanBCZ2REeWY5WXJ5a1NUeXAyT2RUU2c1YW1Vd2c1WkluSFExRW54eEF5alZxRG9RbFRDX1pCakN1aERGS1NYeThnZ2JN?oc=5",
+      "description": "<a href=\"https://news.google.com/rss/articles/CBMi6AFBVV95cUxPeTh1M0dGeE4wejZEQmZyNTdRM2VEVkFDZEc2cEVPVVg5a203UUhKejhMRlRVb2E3alJZWUxlZkZIYUl5UzVWWWxBWEhVcnVxQnU3a19qSXpyTzZ2LUl0VWhrVkdrVkxCUjJ4TXdTdHRmdmoxUEZOY3N2Smx3M2...",
+      "source": "Indian Chemical News",
       "image": "",
       "lang": "en",
-      "pubDate": "2026-09-24T05:14:12.036Z"
+      "pubDate": "2026-09-24T12:02:06.052Z"
     },
     {
-      "title": "Interview: What Does A 13% Rainfall Deficit Mean For India’s Kharif Crop? - isignal.in",
-      "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNOEc5QzQ4ZDUxTkN3MTNtQkFNRmhoTDQwY1hiWXNWZW04N3RRQU5tbzhPQURnTS00dnBGWmUyWkJVcHhvMGdBZk5wRFRIVTdLeHVUMk9WVjFKRjRERDFBUmhsWkNZOThtQXhYUFc3ZkJtWWVEM0huTkNRcnBwOVRUNlNfN1VMUjMtRWxpS3hTaVJ4c3M1cFVMV0tqeGQzM0pWU3dVUEtVZkp5SmFtdEVYTlRiSHkzWkNia2c?oc=5",
-      "description": "<a href=\"https://news.google.com/rss/articles/CBMiugFBVV95cUxNOEc5QzQ4ZDUxTkN3MTNtQkFNRmhoTDQwY1hiWXNWZW04N3RRQU5tbzhPQURnTS00dnBGWmUyWkJVcHhvMGdBZk5wRFRIVTdLeHVUMk9WVjFKRjRERDFBUmhsWkNZOThtQXhYUFc3ZkJtWWVEM0huTkNRcnBwOV...",
-      "source": "isignal.in",
+      "title": "How FarmerChat Is Putting Instant Crop Diagnosis and Local Language Advice Into Every Farmer’s Pocket - The Better India",
+      "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxPTTNEcU02LXAzZDFyNDZlQU9UWTBFMGVtREtDOGhXR1FPZkhWd1M2c1lVZ1gyckZ3a0djbFl5ZE1mUDA3cFhiZWFPczZMaWs2NS03Y0JEMm96b2doRkZqdWNyanhnRTNiSl81TTRSWXNxTkZ2OUFpbkIyckxUX05SWjU0Y1h1VmFKR0NmNk5IaTY3Tzl0anVfbXFWWU9nclFkRHhIQTZTTlBIT2NVVUxwQWhZVGtBOGNkWktINkdxRkFaQkpKemRuVmQ4TEN5cHh5WnY1Tm5Rb9IB3AFBVV95cUxPc1BDbGJWUExobUg5QVBzV1pSaDBoeTBpR0xkTDF5X3dxdnc5V3VtTGtWRUw5QUtXQVdtT1FVcjdob3VneUZKcjd5N3RHNk5iUjQ1UXhqRDhXei1lenlPZnA4RU4wVHZWeHVnMW83aU1tRjBUM3VoVGFGVU8zSlVuVkRDb2NfeW5lZU8yNlU4dFNJQUdnQkkyc2JER1d3TXhzcHZuaVBxMlp4YS00ZDA0SXpMaTJuOGZaY0tENW01SnVfZ1Y4ODRzZzhIOFkzQy1pV0pvcnM5WFNOU1o2?oc=5",
+      "description": "<a href=\"https://news.google.com/rss/articles/CBMi1wFBVV95cUxPTTNEcU02LXAzZDFyNDZlQU9UWTBFMGVtREtDOGhXR1FPZkhWd1M2c1lVZ1gyckZ3a0djbFl5ZE1mUDA3cFhiZWFPczZMaWs2NS03Y0JEMm96b2doRkZqdWNyanhnRTNiSl81TTRSWXNxTkZ2OUFpbkIyckxUX0...",
+      "source": "The Better India",
       "image": "",
       "lang": "en",
-      "pubDate": "2026-09-24T05:14:12.036Z"
+      "pubDate": "2026-09-24T12:02:06.052Z"
+    },
+    {
+      "title": "From Traditional Fields to Thriving Herbal Farms: How Farmers in Dehradun Unlocked the Potential of Herbal Cultivation - Indian Council Of Agricultural Research",
+      "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxOam5GQVd4LVpmSUVtVmV4ZWJIUWUwdS0xTVQxc3RRZlBXSHEzdk9NVl8xV0Vaa3hrdzUtNlp6OUFjNTI0R3pjOHpLcndmOTdYekk5WW1lWkpBSEg2ZENJdjVCejQ5SmVJcjBqVzJqSzRXMEhOR2M0NlJBbFUzdC1uaDBNOUY4LVZxS0pHT3pSTERfcTNOcFY5VnVaU3JYTWZFbG5ab2c3V09LRC16RHdUbFBBdzRhN3IzamJGdlgwMA?oc=5",
+      "description": "<a href=\"https://news.google.com/rss/articles/CBMivwFBVV95cUxOam5GQVd4LVpmSUVtVmV4ZWJIUWUwdS0xTVQxc3RRZlBXSHEzdk9NVl8xV0Vaa3hrdzUtNlp6OUFjNTI0R3pjOHpLcndmOTdYekk5WW1lWkpBSEg2ZENJdjVCejQ5SmVJcjBqVzJqSzRXMEhOR2M0NlJBbFUzdC...",
+      "source": "Indian Council Of Agricultural Research",
+      "image": "",
+      "lang": "en",
+      "pubDate": "2026-09-24T12:02:06.052Z"
+    },
+    {
+      "title": "India’s farms do ecological work that no policy has accounted [Commentary] - Mongabay India",
+      "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNQVFuNnRyZjBDaUNVRmZkbU5zVTB6ZGRtaW1WNGp6Y3VrZWM5OWRIbnBTamFGRXF4b25aV1ZxazBQdGp6bHRnTW1IVFdQbEVsSlFhOUszaHpxNzJCVlBJMHNUVkJPRzFsdDdrdW9qZzZPZnBYcHlnU3hnVkpFeGx4WVNvWEtQZlBJOV84MlBxZDkwODg5SzhLMXo0OHJRV3lTeTdpcml3bFlsTjA?oc=5",
+      "description": "<a href=\"https://news.google.com/rss/articles/CBMiqwFBVV95cUxNQVFuNnRyZjBDaUNVRmZkbU5zVTB6ZGRtaW1WNGp6Y3VrZWM5OWRIbnBTamFGRXF4b25aV1ZxazBQdGp6bHRnTW1IVFdQbEVsSlFhOUszaHpxNzJCVlBJMHNUVkJPRzFsdDdrdW9qZzZPZnBYcHlnU3hnVkpFeG...",
+      "source": "Mongabay India",
+      "image": "",
+      "lang": "en",
+      "pubDate": "2026-09-24T12:02:06.052Z"
     },
     {
       "title": "Why Does India’s Agricultural System Keep Farmers Poor? - Countercurrents",
@@ -227,43 +227,25 @@
       "source": "Countercurrents",
       "image": "",
       "lang": "en",
-      "pubDate": "2026-09-24T05:14:12.036Z"
+      "pubDate": "2026-09-24T12:02:06.052Z"
     },
     {
-      "title": "India Agricultural Microbials Market Size, Share,Trends, Growth Analysis Report, 2030 - MarketsandMarkets",
-      "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPTjl2Y2VuQ05WcVBsQVV1T2dLZE8wSTl0V3FxN0tKWE9fU1UwbU1VQnUwUnZqQ3pDQ3JyUTFtM1NxOEk4R1NRMVgxRHBHdkN0V1pqdW0tZ3ZzZU14UURrcUpZbzNCSUJpTUdhZmFKRFF3U0ktemJtZzNwWE1aVTFFWUg0MFdXM19nenpBNldIX0ZuN0EzeXZJalRR?oc=5",
-      "description": "<a href=\"https://news.google.com/rss/articles/CBMimgFBVV95cUxPTjl2Y2VuQ05WcVBsQVV1T2dLZE8wSTl0V3FxN0tKWE9fU1UwbU1VQnUwUnZqQ3pDQ3JyUTFtM1NxOEk4R1NRMVgxRHBHdkN0V1pqdW0tZ3ZzZU14UURrcUpZbzNCSUJpTUdhZmFKRFF3U0ktemJtZzNwWE1aVT...",
-      "source": "MarketsandMarkets",
+      "title": "India’s crops face rising heat stress. Europe’s earlier harvests offer a warning - firstpost.com",
+      "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPY1VjWGlBR1l4RGUwR1h4dEUxajhsVGppMXg0WnJZYTB1ZG1LOXJGU0JzX3VSeEhESW9KWjl3NDR4OE5wSVNtdUVrRUJHQUlXajFoRWdzMy1pei11MmgyczZReDJYSjVJYWN1SlFmQ2I2U3ZHcV9MVnhLekVYZl8xMGZxT2xPTUF5STFsX0hGZlBjMDIxZ3VubWdyTDBrV1JZVVQwbWtn0gGrAUFVX3lxTE5hWXZUVWpWWTREU3htQVBibUxCM0RSa2xxVXhxRy04QU1LSTJTUkNRclJJZ1RsekFUU1BXNUplcTRRbEdRRWs2Ry1XTWJVVXc2aThucFhSSkFQRVNKNU85Mkc5dFNwZWZaeTBTa2twZHBoRndIV2U5WE1PQlR2bGNyQ1hMM3NPUEFfOEtnZThTajQ4dnh3SktxQmJkSzhSOHVIYnpNak5xSU1DSQ?oc=5",
+      "description": "<a href=\"https://news.google.com/rss/articles/CBMipgFBVV95cUxPY1VjWGlBR1l4RGUwR1h4dEUxajhsVGppMXg0WnJZYTB1ZG1LOXJGU0JzX3VSeEhESW9KWjl3NDR4OE5wSVNtdUVrRUJHQUlXajFoRWdzMy1pei11MmgyczZReDJYSjVJYWN1SlFmQ2I2U3ZHcV9MVnhLekVYZl...",
+      "source": "firstpost.com",
       "image": "",
       "lang": "en",
-      "pubDate": "2026-09-24T05:14:12.036Z"
+      "pubDate": "2026-09-24T12:02:06.052Z"
     },
     {
-      "title": "Google DeepMind's India-built AI models for agriculture now support farm credit, crop advisories and UN f - The Times of India",
-      "url": "https://news.google.com/rss/articles/CBMiqwJBVV95cUxOTENPbVF5bERJUlhER0lvRTVSdkNFS0tNOGtQcHBYVU5MQUlMUlBtdFdwcWF2ZUdsNjZNNUF5cDdTU3pFRXpsdnpybGZtbGV5dWd3N1RuT01XMVpIY3lNNkFveFY1WFg4NTZRNS1OSy1wcmk5UXNRVjNfYWstMWt3dGdTVkJqN1M1NmRmbFBUdXlCUlNraVd2Q2IwRVFOU2ZRX2hHX0pKdGYyRW5iakdqN3dnc3BSNlF0LWlqMl8tejJpNUN6YmxKaDE2bmlqR1B6UkpNMElhZ2Nad0dWcE9ES3pzLXVtMkhQWXdWYmFoMmk2dlF0ZmhtdHZrTUNOZ2xoVEROVWRYRDRCdEF5RjhLMHFKbm1CLUtlTXFrVURLam9ONWxhTVN4WXF2Y9IBsAJBVV95cUxQRTRZRGZBVFdZb0g4c0xnRWE1OVFJWEJYTU5QcElZY0I0V3NIamZQQVdmYjkyR21hM0tBR1F2ek14dzhxVlJqZUFoTjN1MmwybVhYSWZDM0NTYVZLQm5Xc0NhY2FnZW9jWHluX09FTW1mNlBja1dmRzhxSTB0cXUyNHdsN2thNWVqMmt2UEpZUXdROFFJZXNJREE1NUJRRTN0VXlEOGtna2RWeDBTaDg4N0xNczFQSV9UbWZxQUVMTC1La3N1ZjVmeXRHczhKcFkwN3E5a0xOU0J2RExhZkswbVVpQWhwZ18yQW9wek81dkN5Y2hmOVdWVlQ3Z2c3X0NzNDE2SHpGMk5FWDlSeWg5U19fMUJzOXQ0aHhtRlRzMDVLMTd1b3FTaHR1WldEWHZi?oc=5",
-      "description": "<a href=\"https://news.google.com/rss/articles/CBMiqwJBVV95cUxOTENPbVF5bERJUlhER0lvRTVSdkNFS0tNOGtQcHBYVU5MQUlMUlBtdFdwcWF2ZUdsNjZNNUF5cDdTU3pFRXpsdnpybGZtbGV5dWd3N1RuT01XMVpIY3lNNkFveFY1WFg4NTZRNS1OSy1wcmk5UXNRVjNfYWstMW...",
-      "source": "The Times of India",
-      "image": "",
-      "lang": "en",
-      "pubDate": "2026-09-24T05:14:12.036Z"
-    },
-    {
-      "title": "Modi Forgets Farmers: Across India, Farmer Groups Rally Against the India-US Trade Deal - TheWire.in",
-      "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxPeF9MMmgwMWdHTU1rQjJnb1NSanVDTE9kMnNnLWxaU0gxTGFydHdMN2pSYmotbnRJdm5XOFBDZ1d5MFVxWHJ5SWNjUHlIcjU0aWYzMU9ZQ2lyaXFrWjVhSmN6OWY3VWVZZ2NSOHdiMENmZ2NGMlI4alFlbWhOcXdNV0lJWDhzTWMtVGU0TkZ1V3dJNmhFQWpaWk1RX2Vla3RmelRNellnMWhvTjRWZENyRTZjT3hoTFNVYWdzdGpDcjluWXZB0gHKAUFVX3lxTE53c25CMm9FY2ZTd01Ja2tLSExDd3RYTXVkczA3UGtpX3BwcEFyOWpnaGdhUTUxc3JSaW9ORjc5LWdfbHZmd0VMTzlFck9udDB6WXg4cjBwZUlLclFXR1VJTERGNzNvZGRObldVY0dEcDdjZkNWejRiTjd2UU9LSXB3bnphLXV2WllKODFRLTFQRVhQLTVNMzlRQ0M5X3BOSVZDX2dWQzNDTllLY1Y2R2k0WkZ1Zk9IdE1JTXllRm92aXJIYUpjeFlWYXc?oc=5",
-      "description": "<a href=\"https://news.google.com/rss/articles/CBMixAFBVV95cUxPeF9MMmgwMWdHTU1rQjJnb1NSanVDTE9kMnNnLWxaU0gxTGFydHdMN2pSYmotbnRJdm5XOFBDZ1d5MFVxWHJ5SWNjUHlIcjU0aWYzMU9ZQ2lyaXFrWjVhSmN6OWY3VWVZZ2NSOHdiMENmZ2NGMlI4alFlbWhOcX...",
-      "source": "TheWire.in",
-      "image": "",
-      "lang": "en",
-      "pubDate": "2026-09-24T05:14:12.036Z"
-    },
-    {
-      "title": "The New Era of Indian Agriculture and Allied Sectors - pib.gov.in",
+      "title": "The New Era of Indian Agriculture and Allied Sectors - PIB",
       "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE45S2pHQ1ZyVHVMR0dkSHdRdXBfNjhUeHBwbjN4RWR0bWpXckZqUVpuaWxRTTB4ZEhYUUVuYW9vNi1wNG9paGwtUW1lN0xnN1c3WUVUVmR2Zlp1QWVSYndMS3JQN3VkbXhI?oc=5",
       "description": "<a href=\"https://news.google.com/rss/articles/CBMiaEFVX3lxTE45S2pHQ1ZyVHVMR0dkSHdRdXBfNjhUeHBwbjN4RWR0bWpXckZqUVpuaWxRTTB4ZEhYUUVuYW9vNi1wNG9paGwtUW1lN0xnN1c3WUVUVmR2Zlp1QWVSYndMS3JQN3VkbXhI?oc=5\" target=\"_blank\">The New...",
-      "source": "pib.gov.in",
+      "source": "PIB",
       "image": "",
       "lang": "en",
-      "pubDate": "2026-09-24T05:14:12.036Z"
+      "pubDate": "2026-09-24T12:02:06.052Z"
     },
     {
       "title": "Half of India’s women farmers recorded as unpaid helpers, report says - Down To Earth",
@@ -272,144 +254,162 @@
       "source": "Down To Earth",
       "image": "",
       "lang": "en",
-      "pubDate": "2026-09-24T05:14:12.036Z"
+      "pubDate": "2026-09-24T12:02:06.052Z"
+    },
+    {
+      "title": "Are India’s official agricultural estimates correct? New report raises worrying questions - Down To Earth",
+      "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxQRFVBcThHX2Q3VndsMzQ3ajhpM0VJQWVNT3J0TUJLZzA4UnlQcWF4bVFqb01LZHRDbmljX3JOdUptNVpMZTdlRXIzS3hnbWN6RXRyUWNDbTFmRm1aRXEzTHc1TlpBN2drbTBfYTBORTNYTDJHWktFX2JiZjhmcUtEZ2pjWjZma2dJNXVGQzZiV0twc0dzQThzV0xxNHpWaC00a3B2UzZiWEFzVkpQeHpwcURsVG0xWGVWcG84Q095ckJqWVlubFJzUkZ30gHXAUFVX3lxTE44MWpCSUxNNWF4cmxxdHFfd3ZlY1p4dkJWbHczcER0VWNVT1pHUFZLQW9HeWtkOXlwdW9FWmlwaWNCUlRwX0hSWm91TEw3NV9fZk9mLXpvdVVJMC1NMDA4M2JqZHBQVzUzUGNMQ3I4MGtLdW1ici16R21xUTdUbHQ5Z3RiNG5RNlktV1ZsaWlaS2hiY0dlYzdaZlNtdzc5eEFUT2pJZUU1Q2pjM0ZIckJHMlIxLVlPTG5mcTAyODI0ZEt4aFBWeUdHaFA4V3VHV2pOSXdJeUNN?oc=5",
+      "description": "<a href=\"https://news.google.com/rss/articles/CBMiygFBVV95cUxQRFVBcThHX2Q3VndsMzQ3ajhpM0VJQWVNT3J0TUJLZzA4UnlQcWF4bVFqb01LZHRDbmljX3JOdUptNVpMZTdlRXIzS3hnbWN6RXRyUWNDbTFmRm1aRXEzTHc1TlpBN2drbTBfYTBORTNYTDJHWktFX2JiZjhmcU...",
+      "source": "Down To Earth",
+      "image": "",
+      "lang": "en",
+      "pubDate": "2026-09-24T12:02:06.052Z"
+    },
+    {
+      "title": "Third Advance Estimates Reflect India’s Agricultural Strength; Union Minister Shri Shivraj Singh Chouhan Approves Record Crop Projections - PIB",
+      "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE9fRTE3RmFiMzcxNzU2dlI1aHpSY3R2eDV4MU9lX0tjaFo4bS1USERoMVktR1I4bGNvdHRKTXEwcS1CYnhobXJIYnp1blQ0SWhVTkRjQk1JeVJwTW1tM09hOVZxRVlzRlM3bmJicjRTOVlaX3JCYndldGJR?oc=5",
+      "description": "<a href=\"https://news.google.com/rss/articles/CBMiekFVX3lxTE9fRTE3RmFiMzcxNzU2dlI1aHpSY3R2eDV4MU9lX0tjaFo4bS1USERoMVktR1I4bGNvdHRKTXEwcS1CYnhobXJIYnp1blQ0SWhVTkRjQk1JeVJwTW1tM09hOVZxRVlzRlM3bmJicjRTOVlaX3JCYndldGJR?oc=5\"...",
+      "source": "PIB",
+      "image": "",
+      "lang": "en",
+      "pubDate": "2026-09-24T12:02:06.052Z"
     }
   ],
   "articles": [
     {
-      "title": "कम वर्षा को देखते हुए रबी में कम पानी वाली फसलों को दें प्राथमिकता",
-      "url": "https://www.krishakjagat.org/news/given-the-low-rainfall-prioritize-low-water-consuming-crops-for-the-rabi-season-2/",
-      "description": "KRISHAK JAGAT | National Agriculture Hindi Newspaper 23 सितंबर 2026, उज्जैन: कम वर्षा को देखते हुए रबी में कम पानी वाली फसलों को दें प्राथमिकता &#8211; कृषक संगोष्ठी में फार्मर आईडी, ई-टोकन से उर्वरक उठाव और फसल विविधीकर...",
-      "source": "Krishak Jagat",
-      "image": "https://www.krishakjagat.org/wp-content/uploads/2026/09/UJJAIN.jpg",
-      "lang": "hi",
-      "pubDate": "2026-09-24T05:14:03.237Z"
-    },
-    {
-      "title": "बाजरा उत्पादन की आधुनिक तकनीक सीखने 50 किसानों का दल राजस्थान रवाना",
-      "url": "https://www.krishakjagat.org/news/a-group-of-50-farmers-has-left-for-rajasthan-to-learn-modern-techniques-of-pearl-millet-cultivation/",
-      "description": "KRISHAK JAGAT | National Agriculture Hindi Newspaper 23 सितंबर 2026, शिवपुरी: बाजरा उत्पादन की आधुनिक तकनीक सीखने 50 किसानों का दल राजस्थान रवाना &#8211; किसान कल्याण तथा कृषि विकास विभाग द्वारा वर्ष 2026-27 के अंतर्गत स...",
-      "source": "Krishak Jagat",
-      "image": "https://www.krishakjagat.org/wp-content/uploads/2026/09/BG.jpg",
-      "lang": "hi",
-      "pubDate": "2026-09-24T05:14:03.237Z"
-    },
-    {
-      "title": "पारंपरिक विधि की तुलना में एसआरआई पद्धति से धान की रोपाई से मिले दोगुने कल्ले",
-      "url": "https://www.krishakjagat.org/news/transplanting-paddy-using-the-sri-method-yielded-twice-as-many-tillers-compared-to-the-traditional-method/",
-      "description": "KRISHAK JAGAT | National Agriculture Hindi Newspaper 23 सितंबर 2026, जबलपुर: पारंपरिक विधि की तुलना में एसआरआई पद्धति से धान की रोपाई से मिले दोगुने कल्ले &#8211; किसान कल्याण तथा कृषि विकास विभाग की आत्मा परियोजना के अं...",
-      "source": "Krishak Jagat",
-      "image": "https://www.krishakjagat.org/wp-content/uploads/2026/09/mp-7.jpg",
-      "lang": "hi",
-      "pubDate": "2026-09-24T05:14:03.237Z"
-    },
-    {
-      "title": "आज का सोयाबीन मंडी रेट (23 सितंबर 2026)",
-      "url": "https://www.krishakjagat.org/mandi-rate/todays-soybean-mandi-rate-23-september-2026/",
-      "description": "KRISHAK JAGAT | National Agriculture Hindi Newspaper 23 सितंबर 2026, नई दिल्ली: आज का सोयाबीन मंडी रेट (23 सितंबर 2026) – नीचे दी गई तालिका में पूरे भारत में गेहूँ की मंडी दरें हैं। इसमें गेहूँ की न्यूनतम, अधिकतम और मोडल...",
-      "source": "Krishak Jagat",
-      "image": "https://www.krishakjagat.org/wp-content/uploads/2026/09/SRE.jpg",
-      "lang": "hi",
-      "pubDate": "2026-09-24T05:14:03.237Z"
-    },
-    {
-      "title": "आज का धान मंडी रेट (23 सितंबर 2026)",
-      "url": "https://www.krishakjagat.org/mandi-rate/todays-paddy-mandi-rate-23-september-2026/",
-      "description": "KRISHAK JAGAT | National Agriculture Hindi Newspaper 23 सितंबर 2026, नई दिल्ली: आज का धान मंडी रेट (23 सितंबर 2026) – नीचे दी गई तालिका में पूरे भारत में धान की मंडी दरें हैं। इसमें धान की न्यूनतम, अधिकतम और मोडल दर का उ...",
-      "source": "Krishak Jagat",
-      "image": "https://www.krishakjagat.org/wp-content/uploads/2026/09/PADDY-43.jpg",
-      "lang": "hi",
-      "pubDate": "2026-09-24T05:14:03.237Z"
-    },
-    {
-      "title": "आज का मक्का मंडी रेट (23 सितंबर 2026)",
-      "url": "https://www.krishakjagat.org/mandi-rate/todays-maize-mandi-rate-23-september-2026/",
-      "description": "KRISHAK JAGAT | National Agriculture Hindi Newspaper 23 सितंबर 2026, नई दिल्ली: आज का मक्का मंडी रेट (23 सितंबर 2026) – नीचे दी गई तालिका में पूरे भारत में मक्का की मंडी दरें हैं। इसमें मक्का की न्यूनतम, अधिकतम और मोडल द...",
-      "source": "Krishak Jagat",
-      "image": "https://www.krishakjagat.org/wp-content/uploads/2026/09/MAIZE-27.jpg",
-      "lang": "hi",
-      "pubDate": "2026-09-24T05:14:03.237Z"
-    },
-    {
-      "title": "आज का गेहूं मंडी रेट (23 सितंबर 2026)",
-      "url": "https://www.krishakjagat.org/mandi-rate/todays-wheat-market-rate-23-september-2026/",
-      "description": "KRISHAK JAGAT | National Agriculture Hindi Newspaper 22 सितंबर 2026, विदिशा: आज का गेहूं मंडी रेट (23 सितंबर 2026) – नीचे दी गई तालिका में पूरे भारत में गेहूँ की मंडी दरें हैं। इसमें गेहूँ की न्यूनतम, अधिकतम और मोडल दर क...",
-      "source": "Krishak Jagat",
-      "image": "https://www.krishakjagat.org/wp-content/uploads/2026/09/WHEAT-18.jpg",
-      "lang": "hi",
-      "pubDate": "2026-09-24T05:14:03.237Z"
-    },
-    {
-      "title": "इफको अध्यक्ष श्री संघानी ग्लोबल बोर्ड के निर्देशक निर्वाचित",
-      "url": "https://www.krishakjagat.org/national-news/iffco-chairman-mr-sanghani-elected-as-director-of-the-global-board/",
-      "description": "KRISHAK JAGAT | National Agriculture Hindi Newspaper 23 सितंबर 2026, नई दिल्ली: इफको अध्यक्ष श्री संघानी ग्लोबल बोर्ड के निर्देशक निर्वाचित &#8211; अंतरराष्ट्रीय सहकारिता आंदोलन के लिए एक महत्वपूर्ण उपलब्धि के रूप में इफ...",
-      "source": "Krishak Jagat",
-      "image": "https://www.krishakjagat.org/wp-content/uploads/2026/09/sdd.jpg",
-      "lang": "hi",
-      "pubDate": "2026-09-24T05:14:03.237Z"
-    },
-    {
-      "title": "समृद्ध किसान-समृद्ध प्रदेश की थीम पर मनाया जाएगा मध्यप्रदेश स्थापना दिवस: सीएम डॉ. यादव",
-      "url": "https://www.krishakjagat.org/news/madhya-pradesh-foundation-day-to-be-celebrated-with-the-theme-prosperous-farmers-prosperous-state-cm-dr-yadav/",
-      "description": "KRISHAK JAGAT | National Agriculture Hindi Newspaper 23 सितंबर 2026, भोपाल: समृद्ध किसान-समृद्ध प्रदेश की थीम पर मनाया जाएगा मध्यप्रदेश स्थापना दिवस: सीएम डॉ. यादव &#8211; मुख्यमंत्री डॉ. मोहन यादव ने कहा है कि वर्ष 2026...",
-      "source": "Krishak Jagat",
-      "image": "https://www.krishakjagat.org/wp-content/uploads/2026/09/ydv.jpg",
-      "lang": "hi",
-      "pubDate": "2026-09-24T05:14:03.237Z"
-    },
-    {
-      "title": "दतिया : किसान सम्मान निधि बनी खेती का मजबूत सहारा",
-      "url": "https://www.krishakjagat.org/news/datia-kisan-samman-nidhi-becomes-a-strong-support-for-farming/",
-      "description": "KRISHAK JAGAT | National Agriculture Hindi Newspaper 23 सितंबर 2026, दतिया: दतिया : किसान सम्मान निधि बनी खेती का मजबूत सहारा &#8211; दतिया जिले के ग्राम थरेट निवासी किसान श्री दिलीप कुमार शर्मा के लिए प्रधानमंत्री किसान...",
-      "source": "Krishak Jagat",
-      "image": "https://www.krishakjagat.org/wp-content/uploads/2026/09/farmerr.jpg",
-      "lang": "hi",
-      "pubDate": "2026-09-24T05:14:03.237Z"
-    },
-    {
-      "title": "मध्य प्रदेश में खरीफ धान, ज्वार और बाजरा उपार्जन के लिए पंजीयन शुरू, 10 अक्टूबर तक का मौका; जानें पूरी प्रक्रिया और नियम",
-      "url": "https://kisansamadhan.com/mp-kharif-paddy-jowar-bajra-procurement-registration-2026-last-date-e-uparjan/",
-      "description": "खरीफ विपणन वर्ष 2026-27 में न्यूनतम समर्थन मूल्य (MSP) पर धान, ज्वार एवं बाजरा उपार्जन के लिए मध्य प्रदेश में किसान पंजीयन की प्रक्रिया सुचारू रूप से जारी है। अब तक राज्य के 13 हजार 508 किसान अपना पंजीयन करा चुके हैं। कि...",
-      "source": "Kisan Samadhan",
+      "title": "बासमती धान के भाव में क्या आएगा बदलाव? नई फसल से पहले निर्यात और ग्लोबल ट्रेड का असर - Tractor Junction",
+      "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxNcjA2VWVLTEZ3dmU1UkthaUpKZFMzMXJCcXM5Uzl2Y2FLVng3OXUxZDYxckVOd2U2dzd0MlltUlF2aVR6MllhQS1KcWhyeGM2alRFWkprWG1FWDVoNzJPMlAzdjhwZ3JNS3VFa0stNndndGpVb3llUnlWQTNqOVpZY01VUlhzdUtUcWs2T29QN2xOaFQ5anAwRUZiOFEwSzZKd2QyOTg0STVNSk5HWlVqMXRIWHpFbkJ0TldVcG9XYVdsZExMZ3FZbTQwOHBhQ2pvLUHSAdoBQVVfeXFMUHY5alhvOWc4S2t6b054Tk5HLWZMcUlxNS1ZWXNkU19ZVDdEbFZ1d2NqcFRwWkItVXpYOG5LcHIzX0tndDN6dG5vWEJWRXkzUW1DRWlpa1dCcnJ6VXpjbklvVWdQQXlPd3hEdHR1V3VkRkZZcEI5TVBseElVaWg2UjZJcVEtS2FESlNzSHpNQ0Q4a2lTMEZscE1lZ0pTejlIVDM5d3VuZHd1VXprbkxnVzFQSFB6SENUcElXNVBwZ0JwVHlfMEtlVFZoQUR3MXZycDU1V244MVJWR0E?oc=5",
+      "description": "<a href=\"https://news.google.com/rss/articles/CBMi0gFBVV95cUxNcjA2VWVLTEZ3dmU1UkthaUpKZFMzMXJCcXM5Uzl2Y2FLVng3OXUxZDYxckVOd2U2dzd0MlltUlF2aVR6MllhQS1KcWhyeGM2alRFWkprWG1FWDVoNzJPMlAzdjhwZ3JNS3VFa0stNndndGpVb3llUnlWQTNqOV...",
+      "source": "Tractor Junction",
       "image": "",
       "lang": "hi",
-      "pubDate": "2026-09-24T05:14:04.723Z"
+      "pubDate": "2026-09-24T12:02:01.262Z"
     },
     {
-      "title": "Bihar Krishi Input Anudan 2026: बाढ़ से फसल नुकसान पर किसानों को मिलेगा ₹22,500 तक मुआवजा, 29 सितंबर तक करें ऑनलाइन आवेदन",
-      "url": "https://kisansamadhan.com/bihar-crop-input-subsidy-2026-online-application-flood-damage/",
-      "description": "बिहार में अगस्त 2026 के अंतिम सप्ताह में अतिवृष्टि और बाढ़ से क्षतिग्रस्त फसलों के लिए कृषि इनपुट अनुदान की ऑनलाइन आवेदन प्रक्रिया शुरू हो गई है। प्रभावित किसान 29 सितंबर 2026 तक आवेदन कर सकते हैं। कृषि इनपुट अनुदान के त...",
-      "source": "Kisan Samadhan",
+      "title": "Mandi Bhav: मंडी में AI का बढ़ता इस्तेमाल, किसानों को मिलेगी सटीक जानकारी और बेहतर दाम - Gaon Connection",
+      "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxPbmJCYWtBUXVZOTVPRXMwTlBRamJ1TzJpYi1aR1g2d3l1d2lGTFZ5d0hZUmFjdGpQdUhJNUJLM3o1MHNETUZ1cjBaR29FZWlwVEVRMWdlb0w4ejJPb0oxbXRUVFprR2JiRjJVUHY3WkE4NWdxOXgyd1J0MEtNVkRaR3E0Um1fdnhOM0Q4bDdZWVhDUVViVm5ib1ZOUVk2UkZzVFZtTDJxV2J6VW56T245b0tXUmp5Sm5NVHQ3TFdIdnc0MThGd2E3RnpkZ1J2UG1nYjBTQ0pmU2Vqc1lmVEln0gHkAUFVX3lxTE1zdVN1bzRjYXpjY0YxckYyQlgxdFFXWjJVSnZ4UHdZTk56SXpWV1B3Wmg0dlpjTldMOElPZERKLXd3dHJfbDNuWFc4Z1hoY002RXBhbEdzaGRiYTVtcjcyVzd0ZHoxR2JSR1RvMVdZLUl4Wnl5NzFXX3NFeWE5Um53M2VJdmkxYW1rc0RTLXRGWlVHaFBnZ2RFNXBaSm9MRWZZY2pnSU5zbjl4WjdsQVVUTUFLZ3h0b0Q0MDNqRjkxVUhaZjVqdGhnQ1VhQnVIdHdXUkhhSGh2eGw4eEd6aU1CdktHMQ?oc=5",
+      "description": "<a href=\"https://news.google.com/rss/articles/CBMi3wFBVV95cUxPbmJCYWtBUXVZOTVPRXMwTlBRamJ1TzJpYi1aR1g2d3l1d2lGTFZ5d0hZUmFjdGpQdUhJNUJLM3o1MHNETUZ1cjBaR29FZWlwVEVRMWdlb0w4ejJPb0oxbXRUVFprR2JiRjJVUHY3WkE4NWdxOXgyd1J0MEtNVk...",
+      "source": "Gaon Connection",
       "image": "",
       "lang": "hi",
-      "pubDate": "2026-09-24T05:14:04.723Z"
+      "pubDate": "2026-09-24T12:02:01.262Z"
     },
     {
-      "title": "बिहार में एलोवेरा, अश्वगंधा, ब्राह्मी और शतावरी की खेती पर मिलेगा 36,000 रुपए प्रति हेक्टेयर का अनुदान",
-      "url": "https://kisansamadhan.com/bihar-medicinal-plants-cultivation-subsidy-aloe-vera-ashwagandha-shatavari-vijay-sinha/",
-      "description": "राज्य में परंपरागत फसलों के अलावा किसानों की आमदनी बढ़ाने और फसल विविधीकरण (Crop Diversification) को प्रोत्साहन देने के लिए बिहार सरकार ने एक बड़ा कदम उठाया है। केंद्र प्रायोजित एकीकृत बागवानी विकास मिशन (MIDH) के तहत वि...",
-      "source": "Kisan Samadhan",
+      "title": "देश की अनोखी हर्बल मंडी: यहां बिकते हैं फूल, पत्ती, जड़, छाल और कांटे भी; किसानों को मिलते हैं मुंह मांगे दाम - ndtv.in",
+      "url": "https://news.google.com/rss/articles/CBMi9wFBVV95cUxPVGVpby1YcGtOS2RHdjZ6d1lHSXNUVW9UVWxSMEs0TzRiUVBxU1BiR25hNXdYYktGLVY3cjNpTFd4OFM5dVdWSmpleHFrN1VNbnhTcldYX3pJcWJmcExTNVhGQ2xBYmNQd0dIUFlBS3FYR3hSQ1ZOQ0J5SUZWRXQ3aldZMEZjM2h3Nm5qVm5Cb3hKQW5fMFZob3hOcENPVWxRaVI3MkFfcGVudkZlLTlWSXlBZjVfWHFaOXNWeUxQb1Fack91RzZESXFZUXVPcE1ncmk4S1NEUmp6MVJ3WU0tdHllVVhrREN4clFDRmtacTJrdUMwUHhV?oc=5",
+      "description": "<a href=\"https://news.google.com/rss/articles/CBMi9wFBVV95cUxPVGVpby1YcGtOS2RHdjZ6d1lHSXNUVW9UVWxSMEs0TzRiUVBxU1BiR25hNXdYYktGLVY3cjNpTFd4OFM5dVdWSmpleHFrN1VNbnhTcldYX3pJcWJmcExTNVhGQ2xBYmNQd0dIUFlBS3FYR3hSQ1ZOQ0J5SUZWRX...",
+      "source": "ndtv.in",
       "image": "",
       "lang": "hi",
-      "pubDate": "2026-09-24T05:14:04.723Z"
+      "pubDate": "2026-09-24T12:02:01.262Z"
     },
     {
-      "title": "धान की SRI विधि में निकले 17-19 कल्ले, पारंपरिक रोपाई में केवल 10-12; किसान को दोगुना उत्पादन होने की उम्मीद",
-      "url": "https://kisansamadhan.com/sri-paddy-transplanting-17-19-tillers-traditional-method-comparison/",
-      "description": "धान की खेती में एस.आर.आई यानि श्री विधि और पारंपरिक रोपाई के बीच स्पष्ट अंतर दिखाई दिया है। पनागर विकासखंड के ग्राम कुशनेर में किसान कुलदीप पटेल के खेत पर किए गए प्रदर्शन में एसआरआई (SRI) विधि से लगाए गए धान के पौधों में...",
-      "source": "Kisan Samadhan",
+      "title": "5 काम जो किसानों के लिए भारत-विस्तार प्लेटफॉर्म से आसान हो जाएंगे? ये काम कैसे करेगा - News18 Hindi",
+      "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxPUmhaNnRSQkIzQWtLWDVWaWZzd1FmUURXZFdWNjFyMmVicGpaajYzTXpWaUdXd2dvMHNJNVU5bmhvOG1md3N5SEw5WEVzdEhCR0JnM0stSTFCLTZSVVVCYi05SVo2Ykd0NElQU1AyR2U3NU1uREtpMERlbmgxbVRLOWwyUUR5S2Q5VGFEeldMSjF4WDVoQ2NrTFYtUmxoMmkyWGU1cmpGcGYwUmw0Szl6bXlENkxEUHNSQW1nenptLWFfdWJOckgyWVlqaFAzR3Zmczlqd9IB2gFBVV95cUxObk1Kem5nY1pVbDI3blZWRjR1a2xFQU83NTJoYXJNQ0J5TXZBNEI0QnlfR1V0dVduODN6d2N4XzR5eWdfeW1DR3o3Z21IZUUwd3JPb0NJdm9kcFg1eVFlUFhacmFkZFg1UWh4Z2Q1UWpCUU5Ba21VT2g2TGgzci1uc2xsSFhqMjVwbThKbjRnSGpNRU9rRU05VVE5NU1WcW1tUldsV2JQWWZJWUlSOER6S2lRMU9xOG5QZjJLQ210Uy1wZWwzQXNTQ3dyOGJZWWdKbWx1bUtGLTNIUQ?oc=5",
+      "description": "<a href=\"https://news.google.com/rss/articles/CBMi1AFBVV95cUxPUmhaNnRSQkIzQWtLWDVWaWZzd1FmUURXZFdWNjFyMmVicGpaajYzTXpWaUdXd2dvMHNJNVU5bmhvOG1md3N5SEw5WEVzdEhCR0JnM0stSTFCLTZSVVVCYi05SVo2Ykd0NElQU1AyR2U3NU1uREtpMERlbmgxbV...",
+      "source": "News18 Hindi",
       "image": "",
       "lang": "hi",
-      "pubDate": "2026-09-24T05:14:04.723Z"
+      "pubDate": "2026-09-24T12:02:01.262Z"
     },
     {
-      "title": "MP Cabinet Decisions: 4,967 करोड़ की सिंचाई परियोजनाएं मंजूर, 88 हजार हेक्टेयर खेतों को मिलेगा पानी",
-      "url": "https://kisansamadhan.com/mp-cabinet-approves-irrigation-projects-88000-hectare-farm-land/",
-      "description": "मध्यप्रदेश में किसानों के खेतों तक सिंचाई का पानी पहुंचाने और कृषि उत्पादन बढ़ाने के लिए तीन बड़ी सिंचाई परियोजनाओं को मंजूरी दी गई है। मुख्यमंत्री डॉ. मोहन यादव की अध्यक्षता में हुई मंत्रि-परिषद की बैठक में नीमच और राजग...",
-      "source": "Kisan Samadhan",
+      "title": "300 रुपये कुंतल पर आलू 20 रुपये किलो पर बिक्री, उत्तर भारत की मंडियों में औंधे गिरे दाम, लागत निकालने को जूझ रहे किसान - Jansatta",
+      "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxQQnFXTzNfZk1DMTd5dUE3WHByNU9YbnBoSUhzLUplYzVQcld1LU9YUXNIZHNtUHJoSlRTY3JtOXRxVzQwU3BYR2xJcVFlOUt2X282aXBFQXFGRU9mTjhIOHNwckJsUDRmSWxJdXVsMmFyQjVLQWs1eFdrQW9aQk1vTlVTWFpGd3didFRqVU83Y1g1TmdGVGZvMFByenZVUUZyZmNuX2FVck5nNUExQl9ORGszOXlEcXhHdmwzckhnN3ZPNFFCYVBmUjlhLXoxZ9IB1AFBVV95cUxQZGUta2Jnb3VEN3A3WlU0R0l2eWhaNUtrNXNNbVo2Wm5SbWRtTWN6S01IOG5OY250VUZTT0ZqakMya2ZudVgxZ19NLWt0YmpsYTFKdThhMFVpUUs1N0VZNmlkRjllcTBIeFhjT2dnYUY5TjNqT0xvM2dyTTI5NUR3R1RxXzVocWdtUmRTRW0welZFUFBhRWdmajNsa1UwMzJEN2dCQjlIMFZEWktqZEtMWHh6ZGZJRVlleXFkazhMYWVuU3lBREtJX1lMd3hxMmh1WC1Odg?oc=5",
+      "description": "<a href=\"https://news.google.com/rss/articles/CBMizgFBVV95cUxQQnFXTzNfZk1DMTd5dUE3WHByNU9YbnBoSUhzLUplYzVQcld1LU9YUXNIZHNtUHJoSlRTY3JtOXRxVzQwU3BYR2xJcVFlOUt2X282aXBFQXFGRU9mTjhIOHNwckJsUDRmSWxJdXVsMmFyQjVLQWs1eFdrQW9aQk...",
+      "source": "Jansatta",
       "image": "",
       "lang": "hi",
-      "pubDate": "2026-09-24T05:14:04.723Z"
+      "pubDate": "2026-09-24T12:02:01.262Z"
+    },
+    {
+      "title": "Explained: अब AI से खेती का होगा समाधान, किसानों के लिए 'भारत-विस्तार' लॉन्च, जानिए क्या - क्या होंगे काम - Livemint",
+      "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxNWUFMYWlLUzdjeDY0V0hlWkhHLTFjVmdIVDdMNV9WRzhsNEdaS3FZdDZjYjJjcHRVQTZzWHh2XzBsaDJ5bDJyZFVjdlZaZEdnT2xaWEgxNUxKV3ZsdEd4SFIxLTJaQUlKdVgtWHFmZFlIcDBhMEpRSlBpVUx2WHNqOTdpN3g1emE2Sk1qUWViYVFiMXdBaHJwQV9rZ090d2pEYm96NVhudVNldVhJWDY4Nkg0Rkp3Ql93R1pOU3VxSFNKOEpnNUp5clk5SGpYVV9VQU9Uc1c3TnlxZkVR0gHiAUFVX3lxTE00UXdZem5zNm03bU9DZjNNQkg3RGJMaG1yLXBjbTNEWmo1Y1lYMnRoN1N1NUttcGUxQ0RPMmxrVFFNYzZodlc3enVpU2tFamVyOTJGOFkxbVEtYnpiYUdEbHhUbU5PU0ZVSEdNTU1OVV9STGJCSHMwRFREdk1PYS1GX1M5bnc1U0lra0NQaEZwVFN3dFJuY2VaTlRnV1pLa0xJdHNzbkI1aFBiU2hfV0Fub2ZNbkk0S0o3Vm1QUFlEZXZjcVA5TmRtd2xTcDl1UGlIWUEwb1FhUkUtME80aHNscVE?oc=5",
+      "description": "<a href=\"https://news.google.com/rss/articles/CBMi3AFBVV95cUxNWUFMYWlLUzdjeDY0V0hlWkhHLTFjVmdIVDdMNV9WRzhsNEdaS3FZdDZjYjJjcHRVQTZzWHh2XzBsaDJ5bDJyZFVjdlZaZEdnT2xaWEgxNUxKV3ZsdEd4SFIxLTJaQUlKdVgtWHFmZFlIcDBhMEpRSlBpVUx2WH...",
+      "source": "Livemint",
+      "image": "",
+      "lang": "hi",
+      "pubDate": "2026-09-24T12:02:01.262Z"
+    },
+    {
+      "title": "साप्ताहिक मंडी भाव और क्रॉप प्राइस विश्लेषण: अनाज, दालों और तेलहन फसलों के भाव में उतार-चढ़ाव - Tractor Junction",
+      "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxOSnliRVM3ZmlnTXpmS3FldERza0JSM3FFOW1pSHlEdDdYVjVudEN4Sm1LY3NWNEhzbVJ2blJ0VmU5dnBITURQYkw5TnJBa2hQb0o5RmRPRmJCTEx3QVVLcVB2bGlBV0d2N3hUc3kyVDF3SG1GelZzWC05cnk4Rkt4eWdQbHVsckdIWFNnVlFZZWlMajB5dTFucmhKc9IBowFBVV95cUxQRnBFUTF6Mm8xTjF1RGhYcXN5QVJVTlMxdFdtMlFEZEQzQm11RFlGcEtLSHdIVk5CUlpPMF9CZkRuSTN5NGh4OG80dTZVRmlvNzBNbUtlZzJiWVVuWHYwREtlTjd5RUhFMGM1Nkx0Y3QxeHB4LVZYZGtwVFdWOE9KUTVTWjJfMUpJZkhKYmlCVWYwOXoyR25MYjVFMVI3elFvZTZF?oc=5",
+      "description": "<a href=\"https://news.google.com/rss/articles/CBMimwFBVV95cUxOSnliRVM3ZmlnTXpmS3FldERza0JSM3FFOW1pSHlEdDdYVjVudEN4Sm1LY3NWNEhzbVJ2blJ0VmU5dnBITURQYkw5TnJBa2hQb0o5RmRPRmJCTEx3QVVLcVB2bGlBV0d2N3hUc3kyVDF3SG1GelZzWC05cnk4Rk...",
+      "source": "Tractor Junction",
+      "image": "",
+      "lang": "hi",
+      "pubDate": "2026-09-24T12:02:01.262Z"
+    },
+    {
+      "title": "155261 पर किसान कल से करें कॉल, AI बताएगा मौसम, सरकारी योजनाओं, मंडी भाव, फसल का हाल - ndtv.in",
+      "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxPWnUxRkp2SkpibzdraWdQQWltZEloSjdDbEF6VHZmU1BEcU1BbERJSUI1ZVo1MUlkejVYX3lNY1o5QVpsNTRUSTN1YllaaHdnUS1TQk16aEpMRG0zME1NSkUzY0c4NjNJWlJsOEtCdGpib3phOFlsMENrQzJSMVRuNV92WTllYS1TOEwtRkgweDZfMzFDZFVqQ0wxTzU4N3BYN0MyRFR4ZW1waWJDdVJkYUY1T3ItQllRa1l3M0JWNXhfT3Jm?oc=5",
+      "description": "<a href=\"https://news.google.com/rss/articles/CBMixAFBVV95cUxPWnUxRkp2SkpibzdraWdQQWltZEloSjdDbEF6VHZmU1BEcU1BbERJSUI1ZVo1MUlkejVYX3lNY1o5QVpsNTRUSTN1YllaaHdnUS1TQk16aEpMRG0zME1NSkUzY0c4NjNJWlJsOEtCdGpib3phOFlsMENrQzJSMV...",
+      "source": "ndtv.in",
+      "image": "",
+      "lang": "hi",
+      "pubDate": "2026-09-24T12:02:01.262Z"
+    },
+    {
+      "title": "यूपी के आलू किसानों के लिए अच्छी खबर: पंजाब में फसल में देरी से मुनाफा की उम्मीद! दिवाली से पहले रेट बढ़ने के आसार - Agra Potato Farmers Hopeful as Punjab Crop Delay Boosts Local Demand - jagran.com",
+      "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxQRlAxbTNkVTNHMGpoRnlWVVFRS3pGR2g3eVFNd25GNzdyVGFVTWV1SUF6azgxVzV5VU5yQmhXTGxqRlZzeUdWa1VUaXJCTmgzVnhnWk50aHBqaFQ4YWZTMGtCZHJ3UE1iU3ZtdUVHZGpKX29PU045QllTNURfZ01kbFNIUmFzVkh5SHBDTnZBemdvcU5LXy1zYmpKZmFPNmVOTzdaYWs2ZTFSdFB0WDZ0VllRRm51Q3FCdUtmWlhEQXFXNmVrOTZKUw?oc=5",
+      "description": "<a href=\"https://news.google.com/rss/articles/CBMiyAFBVV95cUxQRlAxbTNkVTNHMGpoRnlWVVFRS3pGR2g3eVFNd25GNzdyVGFVTWV1SUF6azgxVzV5VU5yQmhXTGxqRlZzeUdWa1VUaXJCTmgzVnhnWk50aHBqaFQ4YWZTMGtCZHJ3UE1iU3ZtdUVHZGpKX29PU045QllTNURfZ0...",
+      "source": "jagran.com",
+      "image": "",
+      "lang": "hi",
+      "pubDate": "2026-09-24T12:02:01.263Z"
+    },
+    {
+      "title": "बीकानेर कृषि मंडी में मूंग का कारोबार शुरू, रोजाना आ रही 400 बोरी, भाव में 1500 रुपए तेजी - ETV Bharat",
+      "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxONTJuZTR6b25QUjE2TFNCeU12NFJFSVhfckJEVFhwMHRiYUZYeUNWVDFfZlBHaUMxSjZBN0N0YkhXNW1RX2F2OHRXN2RtMGhDcWdVb3hrVEs4dkFzMlV4VTQ2b2pvUmpPSFNCVi1jS3Bod2FqNk9jSUV0R3JBd19FekhuaTZSQjk0RmdEUjVGSnVaOFlMaHUtd1NOM1RMSE9WVVFQZ1AtLTRBclhfMGlwaFdOcnhCZXU0SFBtRkpVRW0yVEtpS0psMlZJMEl6TUNaYXdlempLRHRHWkXSAdsBQVVfeXFMTjUybmU0em9uUFIxNkxTQnlNdjRSRUlYX3JCRFRYcDB0YmFGWHlDVlQxX2ZQR2lDMUo2QTdDdGJIVzVtUV9hdjh0VzdkbTBoQ3FnVW94a1RLOHZBczJVeFU0Nm9qb1JqT0hTQlYtY0twaHdhajZPY0lFdEdyQXdfRXpIbmk2UkI5NEZnRFI1Rkp1WjhZTGh1LXdTTjNUTEhPVlVRUGdQLS00QXJYXzBpcGhXTnJ4QmV1NEhQbUZKVUVtMlRLaUtKbDJWSTBJek1DWmF3ZXpqS0R0R1pF?oc=5",
+      "description": "<a href=\"https://news.google.com/rss/articles/CBMi2wFBVV95cUxONTJuZTR6b25QUjE2TFNCeU12NFJFSVhfckJEVFhwMHRiYUZYeUNWVDFfZlBHaUMxSjZBN0N0YkhXNW1RX2F2OHRXN2RtMGhDcWdVb3hrVEs4dkFzMlV4VTQ2b2pvUmpPSFNCVi1jS3Bod2FqNk9jSUV0R3JBd1...",
+      "source": "ETV Bharat",
+      "image": "",
+      "lang": "hi",
+      "pubDate": "2026-09-24T12:02:01.263Z"
+    },
+    {
+      "title": "क्या भारत-अमेरिका ट्रेड डील से हर किसान को होगा फायदा? जानिए किन फसलों को मिलेगी नई उड़ान - Gaon Connection",
+      "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNY256M2FtUEV4UWQwZk5EdFZWc0RPcnVqRW9PaU9OOGVqSGRzUkVIa2FrTGt0UVJhTVBHOFF3OXNxeFk3RWhlMkRhNFpRb3RZWlFESjFLNkpmNmNuZGVYelcyOE54Y1VCTXo1VXAwSlF2cUVfV2s2d0NBSUxQWjd1LXpRREI5MjYyTE40T3hkUzlrNkFVZlBvN3RiVkpIVU1aT1Q3QVF0bHpoWkh3QkpvZGRaV0c3QlpPaEHSAb8BQVVfeXFMTml0anItRWZUQld2Z0poR29lYURGeVlnNjZnMTd1Z1N4bzZNQTlLOC1RLVZpRHFFajVMRi03ZV9RSUVFX0Ffa1ZsdS1FMGRobmVFQVYzSC1ZeEx4aGtSMC00RW9ReGdyWlMtd2hWS25lX1dGMUxiUklWb3huY2JDNlB4RXlKZDhKSm9oWWFYQUxGdml1NjctVFJhNGk3XzZGMDRDVlJFQVRXNXRBV1pvWlF4LUVLdnJGcENyQmVuWnc?oc=5",
+      "description": "<a href=\"https://news.google.com/rss/articles/CBMiugFBVV95cUxNY256M2FtUEV4UWQwZk5EdFZWc0RPcnVqRW9PaU9OOGVqSGRzUkVIa2FrTGt0UVJhTVBHOFF3OXNxeFk3RWhlMkRhNFpRb3RZWlFESjFLNkpmNmNuZGVYelcyOE54Y1VCTXo1VXAwSlF2cUVfV2s2d0NBSUxQWj...",
+      "source": "Gaon Connection",
+      "image": "",
+      "lang": "hi",
+      "pubDate": "2026-09-24T12:02:01.263Z"
+    },
+    {
+      "title": "Wheat Price: रिकॉर्ड उत्पादन और सरकारी खरीद से मंडियों में टूटा गेहूं का भाव, किसानों की आमदनी पर संकट गहराया - Amar Ujala",
+      "url": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxOb2lXelhKdVdhS3NOTkxmeGp3RDdVd1hBaWZndUl3SC03QXFFZTBFeXlkNVJxS0c4ekdpYVl2aUVKZUlnR2JQajFHOTlFdUNkdURTdDlVRGozTHdkdGY4LVlZc2tJUVEyWTlSbGdTeGEyNjk5NnJ2cXNWbmRTRC1YMy1aUlJnUlE1NXdDTk5RLVpKMDkwaWdVWWZESFR0ZG5RNzl1T0dCWkg0VUptWVlNMjdDcmJ3Znl5VW11cVdobnNvNmxoMnlOTlR1T1ZrWVQzaElsNGlhS3gwRjFKcXcyNlEzZmk5azDSAewBQVVfeXFMTl9GUFNWUE9SUXZGZ2FsbThoU2pLUTc0VkRIb1RpSnJaa2ZyYWdzXzRfTEVnaGgzdlpvZXM0VU5TVC1uX09QaEhwSGsyRnJRUVdtSzg2enNYZ2FfZHVtYWg0a3lrYlJMd0NVYnVNd18yX29PVjkyUW5SOVhNa3g3eGdBakF4bm00cTZxaWU1RVFBTVBTVk8xRHJ1WkNWS2dsZDFmVTB5LUR5UjA0WmkzSWhUVVVFY2FLSFpEZkpwc0cwUmRpM3lsU2Z4blJzTFlIWmsyX1VTcjdXRkRPN0Jac2dlcTRENk1iaS1oQ2Y?oc=5",
+      "description": "<a href=\"https://news.google.com/rss/articles/CBMi5wFBVV95cUxOb2lXelhKdVdhS3NOTkxmeGp3RDdVd1hBaWZndUl3SC03QXFFZTBFeXlkNVJxS0c4ekdpYVl2aUVKZUlnR2JQajFHOTlFdUNkdURTdDlVRGozTHdkdGY4LVlZc2tJUVEyWTlSbGdTeGEyNjk5NnJ2cXNWbmRTRC...",
+      "source": "Amar Ujala",
+      "image": "",
+      "lang": "hi",
+      "pubDate": "2026-09-24T12:02:01.263Z"
+    },
+    {
+      "title": "किसान मंडी में फसल बेचने के आसान तरीके - Kisaan Helpline",
+      "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPcUNPbk0ySHFzQ05scy10dUgtQllXazd3cXZOQmVlTy1xQ0k3MDIxUjBJdndsZDZGRWVjTG13aTV0S2tqTS1kSlEtMG5tNE1oY1I2Z090cEM5d01JY3NsOWt2a1Rxc01sdDRBUEFzeVdCNjJRRXdhaGY2Y3RULW1IWmFaY0FwQ1p6bTVEdk02SXhCMVVXVHdz?oc=5",
+      "description": "<a href=\"https://news.google.com/rss/articles/CBMilwFBVV95cUxPcUNPbk0ySHFzQ05scy10dUgtQllXazd3cXZOQmVlTy1xQ0k3MDIxUjBJdndsZDZGRWVjTG13aTV0S2tqTS1kSlEtMG5tNE1oY1I2Z090cEM5d01JY3NsOWt2a1Rxc01sdDRBUEFzeVdCNjJRRXdhaGY2Y3RULW...",
+      "source": "Kisaan Helpline",
+      "image": "",
+      "lang": "hi",
+      "pubDate": "2026-09-24T12:02:01.263Z"
+    },
+    {
+      "title": "चीनी-प्याज के बाद महंगा हुआ गेहूं, ₹150 तक बढ़े भाव! खुदरा बाजारों में कैसी रहेगी कीमत और सप्लाई? - jagran.com",
+      "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQLXZtUWN4UG5PdDVzSHRSanBjTmtXT3hnSEZMUS0wR1J5MjVpbml2d2wyWGtyMnFpUm5TV240bEpTc2cxREc1S2tEZGFpZlpmTE95TXZ5V0tsUkMzVlZMWkRIU2RxV2lYUF9XaFcydTk0VVNpVXJKa2syN2tCQ0dlVmdodl9PSXhsSmtSZ2MxREVOM0J0bUdoTXRNTVBPaEVxVXlfNk5iSkpaWGowbVZfekdHZURIdw?oc=5",
+      "description": "<a href=\"https://news.google.com/rss/articles/CBMitgFBVV95cUxQLXZtUWN4UG5PdDVzSHRSanBjTmtXT3hnSEZMUS0wR1J5MjVpbml2d2wyWGtyMnFpUm5TV240bEpTc2cxREc1S2tEZGFpZlpmTE95TXZ5V0tsUkMzVlZMWkRIU2RxV2lYUF9XaFcydTk0VVNpVXJKa2syN2tCQ0...",
+      "source": "jagran.com",
+      "image": "",
+      "lang": "hi",
+      "pubDate": "2026-09-24T12:02:01.263Z"
+    },
+    {
+      "title": "मक्का बाजार में तेजी बरकरार, दक्षिण भारत की मजबूत खरीद से किसानों को मिल रहे बेहतर भाव - Tractor Junction",
+      "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQSVdXZ25UaWthU1ZJbDJhbU0zTVZ4UXhyWGF4Z3o1Qmx1a29JRnNKZHlpYjBoN3NSRnZwVkR5V19DNHBVV2pfUlBYaVV2YVlGS3V5dnJuWExUaE8zRHVlcnhla3dCR2x2UGpEdGs1RkZ3QXo0aVJRLU5BQTJkaGszZ0RkMG1CSjZLUnZuNjh1ZkE2bVl4M2ktUWFEZXJxWFVQMk9TSWZLRjR4WHJrMVVqZ2xYZXlEZ9IBvgFBVV95cUxQSF9wQ2x4b2dUS09JaTVsUUFGSzJPUFRRWlRxVzhuZ3ktRDZGNjl1RTFnMWt5U25iOEhuUkMzRHFZU0tXR2RsMTdQWkpVa0w5a2dFN0FiS1F1VDVYdmhpZ2ZucFI4bDJUeWhKLVl5dDB0SUFqeUxpY2ZxQ01jS25BMHprWmVValZHTEdWSG1LbzNkQTFJOHR6cWpfQ3dtS2VjUjcweUJkYlVPRlJDZHdWNGl4dFVwQ2FjbGpyeURB?oc=5",
+      "description": "<a href=\"https://news.google.com/rss/articles/CBMitgFBVV95cUxQSVdXZ25UaWthU1ZJbDJhbU0zTVZ4UXhyWGF4Z3o1Qmx1a29JRnNKZHlpYjBoN3NSRnZwVkR5V19DNHBVV2pfUlBYaVV2YVlGS3V5dnJuWExUaE8zRHVlcnhla3dCR2x2UGpEdGs1RkZ3QXo0aVJRLU5BQTJkaG...",
+      "source": "Tractor Junction",
+      "image": "",
+      "lang": "hi",
+      "pubDate": "2026-09-24T12:02:01.263Z"
     }
   ]
 }
