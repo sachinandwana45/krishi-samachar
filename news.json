@@ -1,96 +1,105 @@
 {
-  "updated": "2026-10-03T05:38:18.518Z",
+  "updated": "2026-10-03T11:52:32.084Z",
   "count": 30,
   "hi_articles": [
     {
+      "title": "मध्यप्रदेश से दक्षिण -पश्चिम मानसून की वापसी",
+      "url": "https://www.krishakjagat.org/news/withdrawal-of-the-southwest-monsoon-from-madhya-pradesh/",
+      "description": "KRISHAK JAGAT | National Agriculture Hindi Newspaper मप्र के सभी जिले शुष्क रहे 03 अक्टूबर 2026, इंदौर: मध्यप्रदेश से दक्षिण -पश्चिम मानसून की वापसी &#8211; मौसम केंद्र , भोपाल से मिली जानकारी के अनुसार पिछले 24 घंटों के...",
+      "source": "Krishak Jagat",
+      "image": "https://www.krishakjagat.org/wp-content/uploads/2020/07/krishak-jagat-e1597562142880.jpg",
+      "lang": "hi",
+      "pubDate": "2026-10-03T11:51:53.428Z"
+    },
+    {
+      "title": "कर्नाटक में सूखे को लेकर मल्लिकार्जुन  खड़गे ने पीएम मोदी को लिखी चिट्ठी, ₹3,705 करोड़ की मदद समेत रखीं 6 मांगें",
+      "url": "https://www.krishakjagat.org/national-news/mallikarjun-kharge-writes-to-pm-modi-regarding-the-drought-in-karnataka-puts-forward-six-demands-including-financial-assistance-of-%e2%82%b93705-crore/",
+      "description": "KRISHAK JAGAT | National Agriculture Hindi Newspaper 03 अक्टूबर 2026, नई दिल्ली: कर्नाटक में सूखे को लेकर मल्लिकार्जुन खड़गे ने पीएम मोदी को लिखी चिट्ठी, ₹3,705 करोड़ की मदद समेत रखीं 6 मांगें &#8211; कर्नाटक में सूखे की...",
+      "source": "Krishak Jagat",
+      "image": "https://www.krishakjagat.org/wp-content/uploads/2026/10/sukha.jpg",
+      "lang": "hi",
+      "pubDate": "2026-10-03T11:51:53.428Z"
+    },
+    {
+      "title": "नमो ड्रोन दीदी योजना से बदली खेती की तस्वीर, गोदावरी साहू एक दिन में 20-25 एकड़ में कर रहीं छिड़काव",
+      "url": "https://www.krishakjagat.org/news/namo-drone-didi-scheme-transforms-the-agricultural-landscape-godavari-sahu-is-spraying-20-25-acres-in-a-single-day/",
+      "description": "KRISHAK JAGAT | National Agriculture Hindi Newspaper 03 अक्टूबर 2026, रायपुर: नमो ड्रोन दीदी योजना से बदली खेती की तस्वीर, गोदावरी साहू एक दिन में 20-25 एकड़ में कर रहीं छिड़काव &#8211; छत्तीसगढ़ सरकार की नमो ड्रोन दीदी ...",
+      "source": "Krishak Jagat",
+      "image": "https://www.krishakjagat.org/wp-content/uploads/2026/10/namo-frone.jpg",
+      "lang": "hi",
+      "pubDate": "2026-10-03T11:51:53.428Z"
+    },
+    {
+      "title": "फल-सब्जी से फूलों तक खेती पर अनुदान, हरियाणा में बागवानी किसानों के लिए सहायता योजना",
+      "url": "https://www.krishakjagat.org/news/subsidies-on-farming-ranging-from-fruits-and-vegetables-to-flowers-assistance-scheme-for-horticulture-farmers-in-haryana/",
+      "description": "KRISHAK JAGAT | National Agriculture Hindi Newspaper 03 अक्टूबर 2026, चंडीगढ़: फल-सब्जी से फूलों तक खेती पर अनुदान, हरियाणा में बागवानी किसानों के लिए सहायता योजना &#8211; हरियाणा में बागवानी फसलों को बढ़ावा देने और किसा...",
+      "source": "Krishak Jagat",
+      "image": "https://www.krishakjagat.org/wp-content/uploads/2026/10/sal.jpg",
+      "lang": "hi",
+      "pubDate": "2026-10-03T11:51:53.428Z"
+    },
+    {
+      "title": "बिहार में औषधीय खेती को बढ़ावा, 100 हेक्टेयर में एलोवेरा से शतावरी तक की खेती",
+      "url": "https://www.krishakjagat.org/news/promotion-of-medicinal-farming-in-bihar-cultivation-of-crops-ranging-from-aloe-vera-to-shatavari-across-100-hectares/",
+      "description": "KRISHAK JAGAT | National Agriculture Hindi Newspaper 03 अक्टूबर 2026, पटना: बिहार में औषधीय खेती को बढ़ावा, 100 हेक्टेयर में एलोवेरा से शतावरी तक की खेती &#8211; किसानों की आय बढ़ाने और पारंपरिक फसलों पर निर्भरता कम करने...",
+      "source": "Krishak Jagat",
+      "image": "https://www.krishakjagat.org/wp-content/uploads/2026/10/alld.jpg",
+      "lang": "hi",
+      "pubDate": "2026-10-03T11:51:53.428Z"
+    },
+    {
+      "title": "अब मंडी जाने से पहले किसान जान सकेंगे भाव, यूपी की 251 मंडियां एगमार्कनेट 2.0 से जुड़ीं",
+      "url": "https://www.krishakjagat.org/news/farmers-will-now-be-able-to-check-prices-before-visiting-the-mandi-251-mandis-in-up-have-been-linked-to-agmarknet-2-0/",
+      "description": "KRISHAK JAGAT | National Agriculture Hindi Newspaper 03 अक्टूबर 2026, लखनऊ: अब मंडी जाने से पहले किसान जान सकेंगे भाव, यूपी की 251 मंडियां एगमार्कनेट 2.0 से जुड़ीं &#8211; किसानों को कृषि उपज के बेहतर बाजार भाव की जानकार...",
+      "source": "Krishak Jagat",
+      "image": "https://www.krishakjagat.org/wp-content/uploads/2026/10/frmr.jpg",
+      "lang": "hi",
+      "pubDate": "2026-10-03T11:51:53.428Z"
+    },
+    {
       "title": "फसल नुकसान के पंचनामे पर सूचना आयोग का शिकंजा, तहसीलदार पर ₹25 हजार की शास्ति",
-      "url": "https://www.krishakjagat.org/news/information-commission-cracks-down-on-crop-loss-assessment-reports-%e2%82%b925000-penalty-imposed-on-tehsildar/",
-      "description": "KRISHAK JAGAT | National Agriculture Hindi Newspaper 02 अक्टूबर 2026, भोपाल (कृषक जगत): फसल नुकसान के पंचनामे पर सूचना आयोग का शिकंजा, तहसीलदार पर ₹25 हजार की शास्ति &#8211; किसान के खेत में फसल नुकसान हुआ, सरकारी अमले न...",
+      "url": "https://www.krishakjagat.org/news/information-commission-cracks-down-on-crop-loss-assessment-reports-%e2%82%b925000-penalty-imposed-on-tehsildar-3/",
+      "description": "KRISHAK JAGAT | National Agriculture Hindi Newspaper 03 अक्टूबर 2026,&#160;भोपाल:&#160;फसल नुकसान के पंचनामे पर सूचना आयोग का शिकंजा, तहसीलदार पर ₹25 हजार की शास्ति &#8211; किसान के खेत में फसल नुकसान हुआ, सरकारी अमले ने...",
       "source": "Krishak Jagat",
-      "image": "https://www.krishakjagat.org/wp-content/uploads/2026/09/aff.jpg",
+      "image": "https://www.krishakjagat.org/wp-content/uploads/2026/10/mp-1.jpg",
       "lang": "hi",
-      "pubDate": "2026-10-03T05:37:39.462Z"
+      "pubDate": "2026-10-03T11:51:53.428Z"
     },
     {
-      "title": "गेहूं, चना, सरसों समेत 6 रबी फसलों की MSP बढ़ी, सीएम मोहन यादव ने किसानों को दी बधाई",
-      "url": "https://www.krishakjagat.org/news/msp-hiked-for-six-rabi-crops-including-wheat-gram-and-mustard-cm-mohan-yadav-congratulates-farmers/",
-      "description": "KRISHAK JAGAT | National Agriculture Hindi Newspaper 02 अक्टूबर 2026, भोपाल: गेहूं, चना, सरसों समेत 6 रबी फसलों की MSP बढ़ी, सीएम मोहन यादव ने किसानों को दी बधाई &#8211; मुख्यमंत्री डॉ. मोहन यादव ने कहा है कि प्रधानमंत्र...",
+      "title": "रबी फसलों की एमएसपी बढ़ी, अब चुनौती किसानों तक लाभ पहुंचाने की",
+      "url": "https://www.krishakjagat.org/national-news/msp-for-rabi-crops-raised-the-challenge-now-is-to-ensure-the-benefits-reach-the-farmers/",
+      "description": "KRISHAK JAGAT | National Agriculture Hindi Newspaper 03 अक्टूबर 2026, नई दिल्ली: रबी फसलों की एमएसपी बढ़ी, अब चुनौती किसानों तक लाभ पहुंचाने की &#8211; केंद्र सरकार ने रबी विपणन सत्र 2027-28 के लिए छह अनिवार्य रबी फसलों ...",
       "source": "Krishak Jagat",
-      "image": "https://www.krishakjagat.org/wp-content/uploads/2026/10/WHEAT-4.jpg",
+      "image": "https://www.krishakjagat.org/wp-content/uploads/2026/10/msp.jpg",
       "lang": "hi",
-      "pubDate": "2026-10-03T05:37:39.462Z"
+      "pubDate": "2026-10-03T11:51:53.428Z"
     },
     {
-      "title": "कृषि विज्ञान केन्द्र, खरगोन के  वैज्ञानिक डॉ. सिंह सम्मानित",
-      "url": "https://www.krishakjagat.org/news/dr-singh-scientist-at-krishi-vigyan-kendra-khargone-honoured/",
-      "description": "KRISHAK JAGAT | National Agriculture Hindi Newspaper 02 अक्टूबर 2026, (दिलीप दसौंधी, कृषक जगत, मंडलेश्व): कृषि विज्ञान केन्द्र, खरगोन के वैज्ञानिक डॉ. सिंह सम्मानित &#8211; कृषि विज्ञान केन्द्र, खरगोन के प्रसार वैज्ञानिक...",
+      "title": "सोयाबीन किसानों के लिए राहत, भावांतर योजना में पंजीयन शुरू; इन केंद्रों पर मुफ्त में करा सकेंगे रजिस्ट्रेशन",
+      "url": "https://www.krishakjagat.org/news/relief-for-soybean-farmers-registration-for-the-bhavantar-scheme-has-begun-registration-can-be-done-free-of-charge-at-these-centers/",
+      "description": "KRISHAK JAGAT | National Agriculture Hindi Newspaper 03 अक्टूबर 2026, भोपाल: सोयाबीन किसानों के लिए राहत, भावांतर योजना में पंजीयन शुरू; इन केंद्रों पर मुफ्त में करा सकेंगे रजिस्ट्रेशन &#8211; मध्य प्रदेश के सोयाबीन किसा...",
       "source": "Krishak Jagat",
-      "image": "https://www.krishakjagat.org/wp-content/uploads/2026/10/Dr-Singh-Samman.jpg",
+      "image": "https://www.krishakjagat.org/wp-content/uploads/2026/10/SOYBEAN.jpg",
       "lang": "hi",
-      "pubDate": "2026-10-03T05:37:39.462Z"
+      "pubDate": "2026-10-03T11:51:53.428Z"
     },
     {
-      "title": "रबी सीजन में मध्य प्रदेश के किसानों को नहीं होगी बिजली की कमी, ऊर्जा मंत्री ने उत्पादन की समीक्षा कर दिए निर्देश",
-      "url": "https://www.krishakjagat.org/news/farmers-in-madhya-pradesh-will-not-face-a-power-shortage-during-the-rabi-season-the-energy-minister-issued-directives-after-reviewing-generation/",
-      "description": "KRISHAK JAGAT | National Agriculture Hindi Newspaper 02 अक्टूबर 2026, भोपाल: रबी सीजन में मध्य प्रदेश के किसानों को नहीं होगी बिजली की कमी, ऊर्जा मंत्री ने उत्पादन की समीक्षा कर दिए निर्देश &#8211; मध्यप्रदेश के ऊर्जा मं...",
+      "title": "दूध से दही, छाछ से श्रीखंड तक, सांची के उत्पादों को मिलेगी नई उड़ान",
+      "url": "https://www.krishakjagat.org/news/from-curd-made-from-milk-to-shrikhand-made-from-buttermilk-sanchis-products-are-set-to-soar-to-new-heights/",
+      "description": "KRISHAK JAGAT | National Agriculture Hindi Newspaper 03 अक्टूबर 2026, भोपाल: दूध से दही, छाछ से श्रीखंड तक, सांची के उत्पादों को मिलेगी नई उड़ान &#8211; मध्यप्रदेश में दुग्ध प्रसंस्करण और मूल्य वर्धित दुग्ध उत्पादों के उ...",
       "source": "Krishak Jagat",
-      "image": "https://www.krishakjagat.org/wp-content/uploads/2026/10/s.jpg",
+      "image": "https://www.krishakjagat.org/wp-content/uploads/2026/10/milk.jpg",
       "lang": "hi",
-      "pubDate": "2026-10-03T05:37:39.462Z"
+      "pubDate": "2026-10-03T11:51:53.428Z"
     },
     {
-      "title": "कम पानी अधिक उत्पादन किस्मे अपनाएं &#8211; जेडीए श्री सिंह",
-      "url": "https://www.krishakjagat.org/news/adopt-low-water-high-yield-varieties-jda-shri-singh/",
-      "description": "KRISHAK JAGAT | National Agriculture Hindi Newspaper 02 अक्टूबर 2026, धार ( कृषक जगत): कम पानी अधिक उत्पादन किस्मे अपनाएं &#8211; जेडीए श्री सिंह &#8211; अल्प वर्षा की स्थिति को दृष्टिगत रखते हुए रबी की तैयारियों पर कृषि...",
-      "source": "Krishak Jagat",
-      "image": "https://www.krishakjagat.org/wp-content/uploads/2026/10/dhar-1.jpg",
+      "title": "आत्मनिर्भरता दलहन मिशन: सरगुजा के 5 गांवों में &#8216;छत्तीसगढ़ अरहर-1 व 2’ किस्म का प्रदर्शन, किसानों के खेत बने तकनीक केंद्र",
+      "url": "https://kisansamadhan.com/chhattisgarh-arhar-1-2-variety-demonstration-sarguja/",
+      "description": "छत्तीसगढ़ में दलहन उत्पादन को बढ़ावा देने और किसानों तक अरहर की उन्नत उत्पादन तकनीक पहुंचाने के लिए आत्मनिर्भरता दलहन मिशन के तहत नई पहल की गई है। कृषि विज्ञान केंद्र, सरगुजा ने चयनित गांवों में किसानों के खेतों पर 55 हे...",
+      "source": "Kisan Samadhan",
+      "image": "",
       "lang": "hi",
-      "pubDate": "2026-10-03T05:37:39.462Z"
-    },
-    {
-      "title": "इफको “स्वच्छता ही सेवा” अभियान में शामिल",
-      "url": "https://www.krishakjagat.org/news/iffco-joins-the-swachhata-hi-seva-campaign/",
-      "description": "KRISHAK JAGAT | National Agriculture Hindi Newspaper 02 अक्टूबर 2026, भोपाल( कृषक जगत): इफको “स्वच्छता ही सेवा” अभियान में शामिल &#8211; इफको राज्य कार्यालय ने “स्वच्छता ही सेवा” अभियान के अंतर्गत विशेष स्वच्छता अभियान च...",
-      "source": "Krishak Jagat",
-      "image": "https://www.krishakjagat.org/wp-content/uploads/2026/10/dhar.jpg",
-      "lang": "hi",
-      "pubDate": "2026-10-03T05:37:39.462Z"
-    },
-    {
-      "title": "मत्स्य महासंघ की 115वीं बैठक: 2027-28 के बजट को मंजूरी, मछुआ कल्याण योजनाओं और उत्पादन बढ़ाने पर जोर",
-      "url": "https://www.krishakjagat.org/news/115th-meeting-of-the-fisheries-federation-2027-28-budget-approved-focus-on-fishermens-welfare-schemes-and-boosting-production/",
-      "description": "KRISHAK JAGAT | National Agriculture Hindi Newspaper 02 अक्टूबर 2026, भोपाल: मत्स्य महासंघ की 115वीं बैठक: 2027-28 के बजट को मंजूरी, मछुआ कल्याण योजनाओं और उत्पादन बढ़ाने पर जोर &#8211; मध्यप्रदेश के मछुआ कल्याण तथा मत्स...",
-      "source": "Krishak Jagat",
-      "image": "https://www.krishakjagat.org/wp-content/uploads/2026/10/ssfw.jpg",
-      "lang": "hi",
-      "pubDate": "2026-10-03T05:37:39.462Z"
-    },
-    {
-      "title": "गेहूं-चावल के सुरक्षित भंडारण के लिए नई तकनीक पर होगा शोध, ICAR-FCI ने किया समझौता",
-      "url": "https://www.krishakjagat.org/national-news/research-to-be-conducted-on-new-technology-for-safe-storage-of-wheat-and-rice-icar-and-fci-sign-agreement/",
-      "description": "KRISHAK JAGAT | National Agriculture Hindi Newspaper 02 अक्टूबर 2026, नई दिल्ली: गेहूं-चावल के सुरक्षित भंडारण के लिए नई तकनीक पर होगा शोध, ICAR-FCI ने किया समझौता &#8211; गेहूं और चावल के भंडारण के दौरान लगने वाले कीटों...",
-      "source": "Krishak Jagat",
-      "image": "https://www.krishakjagat.org/wp-content/uploads/2026/10/sdk.jpg",
-      "lang": "hi",
-      "pubDate": "2026-10-03T05:37:39.462Z"
-    },
-    {
-      "title": "मध्य प्रदेश का मौसम मुख्यतः शुष्क",
-      "url": "https://www.krishakjagat.org/news/the-weather-in-madhya-pradesh-is-mainly-dry/",
-      "description": "KRISHAK JAGAT | National Agriculture Hindi Newspaper 02 अक्टूबर 2026, इंदौर: मध्य प्रदेश का मौसम मुख्यतः शुष्क &#8211; मौसम केंद्र , भोपाल से मिली जानकारी के अनुसार पिछले 24 घंटों के दौरान मध्यप्रदेश के रीवा, जबलपुर संभा...",
-      "source": "Krishak Jagat",
-      "image": "https://www.krishakjagat.org/wp-content/uploads/2026/10/monsoon.jpg",
-      "lang": "hi",
-      "pubDate": "2026-10-03T05:37:39.462Z"
-    },
-    {
-      "title": "राजस्थान: खेत में फसल अवशेष जलाया तो लगेगा ₹30 हजार तक जुर्माना, रोकथाम के लिए बनी समिति",
-      "url": "https://www.krishakjagat.org/news/rajasthan-fine-of-up-to-%e2%82%b930000-for-burning-crop-residue-in-fields-committee-formed-to-curb-the-practice/",
-      "description": "KRISHAK JAGAT | National Agriculture Hindi Newspaper 02 अक्टूबर 2026, जयपुर: राजस्थान: खेत में फसल अवशेष जलाया तो लगेगा ₹30 हजार तक जुर्माना, रोकथाम के लिए बनी समिति &#8211; राजस्थान के श्रीगंगानगर जिले में फसल कटाई के ब...",
-      "source": "Krishak Jagat",
-      "image": "https://www.krishakjagat.org/wp-content/uploads/2026/10/NARVAI.jpg",
-      "lang": "hi",
-      "pubDate": "2026-10-03T05:37:39.462Z"
+      "pubDate": "2026-10-03T11:51:54.950Z"
     },
     {
       "title": "प्रधानमंत्री फसल बीमा योजना में राजस्थान ने रचा इतिहास, देश में मिला चौथा स्थान; तकनीक और पारदर्शिता में मिले पूरे 10 अंक",
@@ -99,7 +108,7 @@
       "source": "Kisan Samadhan",
       "image": "",
       "lang": "hi",
-      "pubDate": "2026-10-03T05:37:40.885Z"
+      "pubDate": "2026-10-03T11:51:54.950Z"
     },
     {
       "title": "Haryana Horticulture Training 2026: बागवानी विभाग की मुफ़्त ट्रेनिंग योजना, रहने-खाने की व्यवस्था और बस किराया भी मिलेगा!",
@@ -108,7 +117,7 @@
       "source": "Kisan Samadhan",
       "image": "",
       "lang": "hi",
-      "pubDate": "2026-10-03T05:37:40.885Z"
+      "pubDate": "2026-10-03T11:51:54.950Z"
     },
     {
       "title": "मानसून 2026 में देश में 13% कम बारिश, 2001 के बाद चौथा सबसे सूखा मानसून",
@@ -117,7 +126,7 @@
       "source": "Kisan Samadhan",
       "image": "",
       "lang": "hi",
-      "pubDate": "2026-10-03T05:37:40.885Z"
+      "pubDate": "2026-10-03T11:51:54.950Z"
     },
     {
       "title": "गेहूं और चावल के सुरक्षित भंडारण के लिए ICAR और FCI में समझौता, अब इको-फ्रेंडली गैसों से रुकेंगे कीट",
@@ -126,16 +135,7 @@
       "source": "Kisan Samadhan",
       "image": "",
       "lang": "hi",
-      "pubDate": "2026-10-03T05:37:40.885Z"
-    },
-    {
-      "title": "यूपी के किसानों को 6% ब्याज पर ₹6 लाख तक ऋण, जानें मुख्यमंत्री कृषक समृद्धि योजना और आवेदन की जानकारी",
-      "url": "https://kisansamadhan.com/up-krishak-samriddhi-yojana-loan-application-online-apply-mksyldb-in/",
-      "description": "उत्तर प्रदेश में लघु और सीमांत किसानों को रियायती दर पर दीर्घकालीन ऋण उपलब्ध कराने के लिए मुख्यमंत्री कृषक समृद्धि योजना का संचालन शुरू हो गया है। योजना के तहत पात्र किसानों को ₹6 लाख तक का ऋण 6 प्रतिशत की प्रभावी वार्षि...",
-      "source": "Kisan Samadhan",
-      "image": "",
-      "lang": "hi",
-      "pubDate": "2026-10-03T05:37:40.885Z"
+      "pubDate": "2026-10-03T11:51:54.951Z"
     }
   ],
   "en_articles": [
@@ -146,16 +146,16 @@
       "source": "The Indian Express",
       "image": "",
       "lang": "en",
-      "pubDate": "2026-10-03T05:37:49.200Z"
+      "pubDate": "2026-10-03T11:52:03.460Z"
     },
     {
-      "title": "From Chikiti to Chicago: How Scientific Black Rice Cultivation Enabled a Young Farmer to Reach Global Markets - icar.org.in",
+      "title": "From Chikiti to Chicago: How Scientific Black Rice Cultivation Enabled a Young Farmer to Reach Global Markets - Indian Council Of Agricultural Research",
       "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxOdm1ZNEdnc05WWWtDMU5PZFpmdjBnZTJJbERXQlFVTWVHZUI3OXZnR01GSDZUNjZQaGg1THhMX1JGZkdTSDlfU2tEMmJBZ0plUVdaQ1RwS2wwaTc0dU53YkdQNktmWDdUU1pkUEVlSDd0VXY5aWhQSTlDRUl5LWFkYS1VZjBOUDhnY1lFam9JMXczcUJ0Um9oYkNmQl9GWThGNGY4bm5kVWZjbnVTeDlyMEFMNl9SRU1kSmc?oc=5",
       "description": "<a href=\"https://news.google.com/rss/articles/CBMiugFBVV95cUxOdm1ZNEdnc05WWWtDMU5PZFpmdjBnZTJJbERXQlFVTWVHZUI3OXZnR01GSDZUNjZQaGg1THhMX1JGZkdTSDlfU2tEMmJBZ0plUVdaQ1RwS2wwaTc0dU53YkdQNktmWDdUU1pkUEVlSDd0VXY5aWhQSTlDRUl5LW...",
-      "source": "icar.org.in",
+      "source": "Indian Council Of Agricultural Research",
       "image": "",
       "lang": "en",
-      "pubDate": "2026-10-03T05:37:49.200Z"
+      "pubDate": "2026-10-03T11:52:03.460Z"
     },
     {
       "title": "Satellite data emerging as game-changer for crop insurance and farm credit : Technovate 2026 - AgroSpectrum India",
@@ -164,16 +164,16 @@
       "source": "AgroSpectrum India",
       "image": "",
       "lang": "en",
-      "pubDate": "2026-10-03T05:37:49.200Z"
+      "pubDate": "2026-10-03T11:52:03.460Z"
     },
     {
-      "title": "Union Minister Shri Shivraj Singh Chouhan Leads States in Kharif Campaign 2026 Strategy Meet - pib.gov.in",
+      "title": "Union Minister Shri Shivraj Singh Chouhan Leads States in Kharif Campaign 2026 Strategy Meet - PIB",
       "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE8ydG9TeElGNVdPdjBSQ05IUE93ZmxWMXhlbWMyeFpuM1dRSG9PQzEydzBQalNUTlVObTlMS3hOaEpKUmdkWkFVWVNaeXZiRjBseUlBZGdiaHhtRGQ4SGd1OXBLREw3azQyc1Rj?oc=5",
       "description": "<a href=\"https://news.google.com/rss/articles/CBMia0FVX3lxTE8ydG9TeElGNVdPdjBSQ05IUE93ZmxWMXhlbWMyeFpuM1dRSG9PQzEydzBQalNUTlVObTlMS3hOaEpKUmdkWkFVWVNaeXZiRjBseUlBZGdiaHhtRGQ4SGd1OXBLREw3azQyc1Rj?oc=5\" target=\"_blank\">Uni...",
-      "source": "pib.gov.in",
+      "source": "PIB",
       "image": "",
       "lang": "en",
-      "pubDate": "2026-10-03T05:37:49.200Z"
+      "pubDate": "2026-10-03T11:52:03.460Z"
     },
     {
       "title": "From Crop Pests to Sick Cattle: These Farmers Are Using AI To Get Answers In Their Language - The Better India",
@@ -182,25 +182,16 @@
       "source": "The Better India",
       "image": "",
       "lang": "en",
-      "pubDate": "2026-10-03T05:37:49.200Z"
+      "pubDate": "2026-10-03T11:52:03.460Z"
     },
     {
-      "title": "Half of India’s women farmers recorded as unpaid helpers, report says - Down To Earth",
-      "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQdUlpbDZPZGNEU29qUGY1aFl0aHRCRnNsUXo5alplNFBDT29sWjBNbENENnJWdkxjeWduRGgyemRmaS1oYk45V0ZVbU54YS1BZW9seVh4YVViZEs2RjdPZEM3V3dfX2x1MEI0OHlYNExXV0ZORlRiWURaaDJFZGR5WFRaREQ3RzdGY04zal8zZlJjZFFEb0F6U1h1M3djSmh5UDN3blRTblo0QlV2d0Nv0gG8AUFVX3lxTE1qY0RRUDNUOGNsTUt0Y0I5OURKUmM2MmRXaVFDcXYtSlFKc3dzYVgxb0RVRHVyQ0hTQnpTVjJiOUlWZXlLYW9fR3NXMUkzaTI4Y3Y2MEJmV0xYdkxuNE1CeFllMkZfREppVWRqYzNTRlNwQWhPM3JRQlBkMTRBdkFaRURLVk1MTmZSWWxaN0gtV2xQZXFxRkl2ZG9kNmN4MUlPZG9MSzJ0VmFWakpacWEyeUQzR2c2VTBmNkNy?oc=5",
-      "description": "<a href=\"https://news.google.com/rss/articles/CBMirwFBVV95cUxQdUlpbDZPZGNEU29qUGY1aFl0aHRCRnNsUXo5alplNFBDT29sWjBNbENENnJWdkxjeWduRGgyemRmaS1oYk45V0ZVbU54YS1BZW9seVh4YVViZEs2RjdPZEM3V3dfX2x1MEI0OHlYNExXV0ZORlRiWURaaDJFZG...",
-      "source": "Down To Earth",
+      "title": "India hands over 12 agricultural drones to Fiji to support sugarcane farmers - ChiniMandi",
+      "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxQQ0d6QVZPclcxd3AzblZTWE9sanU1WEZLMjJhcVg2QVdCY1lrdFR4TnBBUzNXTExzZTBjTDF5WmN4TlVxckxfaE5HR0VsTWpJSG1VM1Z4elNYZXJnVThid29FVmZTS0RJZzlhYkdJWlhTdnZNRTB0U0ExS3hXTWc4eUZSWWFMMTU5NWVPUEJmd3dleURSZy1LakdNXzRhdzMwcDdSbl9jWQ?oc=5",
+      "description": "<a href=\"https://news.google.com/rss/articles/CBMipwFBVV95cUxQQ0d6QVZPclcxd3AzblZTWE9sanU1WEZLMjJhcVg2QVdCY1lrdFR4TnBBUzNXTExzZTBjTDF5WmN4TlVxckxfaE5HR0VsTWpJSG1VM1Z4elNYZXJnVThid29FVmZTS0RJZzlhYkdJWlhTdnZNRTB0U0ExS3hXTW...",
+      "source": "ChiniMandi",
       "image": "",
       "lang": "en",
-      "pubDate": "2026-10-03T05:37:49.200Z"
-    },
-    {
-      "title": "Why Does India’s Agricultural System Keep Farmers Poor? - Countercurrents.org",
-      "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNSTlvYjVtT21RS2ZSdHNxZ1dqWWlxU2hibnNGVlpWMkZvLWtkalgyaDJJbkNDV1F3MHQ3c2FOTWpkbkJlaTQ3U1kwRFNXQ2NRcmQtX2g3Z21NTUZWSnQtLXRXZEw4WkJkTUpWaWFCX2QwYWNNN2xWaEs4Vzc2M0RTYVludVJDa1B6dEZjNGVXUEFWYWRn?oc=5",
-      "description": "<a href=\"https://news.google.com/rss/articles/CBMilAFBVV95cUxNSTlvYjVtT21RS2ZSdHNxZ1dqWWlxU2hibnNGVlpWMkZvLWtkalgyaDJJbkNDV1F3MHQ3c2FOTWpkbkJlaTQ3U1kwRFNXQ2NRcmQtX2g3Z21NTUZWSnQtLXRXZEw4WkJkTUpWaWFCX2QwYWNNN2xWaEs4Vzc2M0...",
-      "source": "Countercurrents.org",
-      "image": "",
-      "lang": "en",
-      "pubDate": "2026-10-03T05:37:49.200Z"
+      "pubDate": "2026-10-03T11:52:03.460Z"
     },
     {
       "title": "AgriStack and the Digitisation of India’s Agricultural Data - smallcapspotlight.in",
@@ -209,16 +200,52 @@
       "source": "smallcapspotlight.in",
       "image": "",
       "lang": "en",
-      "pubDate": "2026-10-03T05:37:49.200Z"
+      "pubDate": "2026-10-03T11:52:03.460Z"
     },
     {
-      "title": "India’s farms do ecological work that no policy has accounted [Commentary] - Mongabay India",
-      "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNQVFuNnRyZjBDaUNVRmZkbU5zVTB6ZGRtaW1WNGp6Y3VrZWM5OWRIbnBTamFGRXF4b25aV1ZxazBQdGp6bHRnTW1IVFdQbEVsSlFhOUszaHpxNzJCVlBJMHNUVkJPRzFsdDdrdW9qZzZPZnBYcHlnU3hnVkpFeGx4WVNvWEtQZlBJOV84MlBxZDkwODg5SzhLMXo0OHJRV3lTeTdpcml3bFlsTjA?oc=5",
-      "description": "<a href=\"https://news.google.com/rss/articles/CBMiqwFBVV95cUxNQVFuNnRyZjBDaUNVRmZkbU5zVTB6ZGRtaW1WNGp6Y3VrZWM5OWRIbnBTamFGRXF4b25aV1ZxazBQdGp6bHRnTW1IVFdQbEVsSlFhOUszaHpxNzJCVlBJMHNUVkJPRzFsdDdrdW9qZzZPZnBYcHlnU3hnVkpFeG...",
-      "source": "Mongabay India",
+      "title": "Scaling Agri Resilience: From India to the World - blog.google",
+      "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPeTdCMlNxcGdxaTdXcUxDNlZ6LVBrSEVkQmZhRTJSY25YVDE5d0tBOXpLWmxsd1U2cGc1VzV5Wl9qRGlLLVkzUkZHLUJiNUpJZHEybjlOREhsR2ZTbEZWRS14NjZMMlF6SHN3TDkzdk5vSGFTQVJxSnVReFFTQnJCNGJtZW0xLURsUEdVc0kzdG1qM2UyV0FZ?oc=5",
+      "description": "<a href=\"https://news.google.com/rss/articles/CBMilwFBVV95cUxPeTdCMlNxcGdxaTdXcUxDNlZ6LVBrSEVkQmZhRTJSY25YVDE5d0tBOXpLWmxsd1U2cGc1VzV5Wl9qRGlLLVkzUkZHLUJiNUpJZHEybjlOREhsR2ZTbEZWRS14NjZMMlF6SHN3TDkzdk5vSGFTQVJxSnVReFFTQn...",
+      "source": "blog.google",
       "image": "",
       "lang": "en",
-      "pubDate": "2026-10-03T05:37:49.200Z"
+      "pubDate": "2026-10-03T11:52:03.460Z"
+    },
+    {
+      "title": "Half of India’s women farmers recorded as unpaid helpers, report says - Down To Earth",
+      "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQdUlpbDZPZGNEU29qUGY1aFl0aHRCRnNsUXo5alplNFBDT29sWjBNbENENnJWdkxjeWduRGgyemRmaS1oYk45V0ZVbU54YS1BZW9seVh4YVViZEs2RjdPZEM3V3dfX2x1MEI0OHlYNExXV0ZORlRiWURaaDJFZGR5WFRaREQ3RzdGY04zal8zZlJjZFFEb0F6U1h1M3djSmh5UDN3blRTblo0QlV2d0Nv0gG8AUFVX3lxTE1qY0RRUDNUOGNsTUt0Y0I5OURKUmM2MmRXaVFDcXYtSlFKc3dzYVgxb0RVRHVyQ0hTQnpTVjJiOUlWZXlLYW9fR3NXMUkzaTI4Y3Y2MEJmV0xYdkxuNE1CeFllMkZfREppVWRqYzNTRlNwQWhPM3JRQlBkMTRBdkFaRURLVk1MTmZSWWxaN0gtV2xQZXFxRkl2ZG9kNmN4MUlPZG9MSzJ0VmFWakpacWEyeUQzR2c2VTBmNkNy?oc=5",
+      "description": "<a href=\"https://news.google.com/rss/articles/CBMirwFBVV95cUxQdUlpbDZPZGNEU29qUGY1aFl0aHRCRnNsUXo5alplNFBDT29sWjBNbENENnJWdkxjeWduRGgyemRmaS1oYk45V0ZVbU54YS1BZW9seVh4YVViZEs2RjdPZEM3V3dfX2x1MEI0OHlYNExXV0ZORlRiWURaaDJFZG...",
+      "source": "Down To Earth",
+      "image": "",
+      "lang": "en",
+      "pubDate": "2026-10-03T11:52:03.460Z"
+    },
+    {
+      "title": "India’s crops face rising heat stress. Europe’s earlier harvests offer a warning - Firstpost",
+      "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPY1VjWGlBR1l4RGUwR1h4dEUxajhsVGppMXg0WnJZYTB1ZG1LOXJGU0JzX3VSeEhESW9KWjl3NDR4OE5wSVNtdUVrRUJHQUlXajFoRWdzMy1pei11MmgyczZReDJYSjVJYWN1SlFmQ2I2U3ZHcV9MVnhLekVYZl8xMGZxT2xPTUF5STFsX0hGZlBjMDIxZ3VubWdyTDBrV1JZVVQwbWtn0gGrAUFVX3lxTE5hWXZUVWpWWTREU3htQVBibUxCM0RSa2xxVXhxRy04QU1LSTJTUkNRclJJZ1RsekFUU1BXNUplcTRRbEdRRWs2Ry1XTWJVVXc2aThucFhSSkFQRVNKNU85Mkc5dFNwZWZaeTBTa2twZHBoRndIV2U5WE1PQlR2bGNyQ1hMM3NPUEFfOEtnZThTajQ4dnh3SktxQmJkSzhSOHVIYnpNak5xSU1DSQ?oc=5",
+      "description": "<a href=\"https://news.google.com/rss/articles/CBMipgFBVV95cUxPY1VjWGlBR1l4RGUwR1h4dEUxajhsVGppMXg0WnJZYTB1ZG1LOXJGU0JzX3VSeEhESW9KWjl3NDR4OE5wSVNtdUVrRUJHQUlXajFoRWdzMy1pei11MmgyczZReDJYSjVJYWN1SlFmQ2I2U3ZHcV9MVnhLekVYZl...",
+      "source": "Firstpost",
+      "image": "",
+      "lang": "en",
+      "pubDate": "2026-10-03T11:52:03.460Z"
+    },
+    {
+      "title": "How Indian farmers are improving yields and supporting each other with the help of a free farming hotline - Gates Foundation",
+      "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxPNk00eGdlOEZSSXlUaEtBSEFRR3FEN1ZudzdJbWpKRG1yTWxtSlhadUFTb1o3N1pxektGa2FJS0NfZ1dFWl9RZ0t5VktLb3Z4RVN1QV9WUFRRQkxRLTN2bzAtLWVjMzJTWE41a0dqZTR0WnZhRmpDQWE5UTU2RFpTTk8waXVYZGlxSjZwTlJ3?oc=5",
+      "description": "<a href=\"https://news.google.com/rss/articles/CBMijgFBVV95cUxPNk00eGdlOEZSSXlUaEtBSEFRR3FEN1ZudzdJbWpKRG1yTWxtSlhadUFTb1o3N1pxektGa2FJS0NfZ1dFWl9RZ0t5VktLb3Z4RVN1QV9WUFRRQkxRLTN2bzAtLWVjMzJTWE41a0dqZTR0WnZhRmpDQWE5UTU2RF...",
+      "source": "Gates Foundation",
+      "image": "",
+      "lang": "en",
+      "pubDate": "2026-10-03T11:52:03.460Z"
+    },
+    {
+      "title": "Why Does India’s Agricultural System Keep Farmers Poor? - Countercurrents.org",
+      "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNSTlvYjVtT21RS2ZSdHNxZ1dqWWlxU2hibnNGVlpWMkZvLWtkalgyaDJJbkNDV1F3MHQ3c2FOTWpkbkJlaTQ3U1kwRFNXQ2NRcmQtX2g3Z21NTUZWSnQtLXRXZEw4WkJkTUpWaWFCX2QwYWNNN2xWaEs4Vzc2M0RTYVludVJDa1B6dEZjNGVXUEFWYWRn?oc=5",
+      "description": "<a href=\"https://news.google.com/rss/articles/CBMilAFBVV95cUxNSTlvYjVtT21RS2ZSdHNxZ1dqWWlxU2hibnNGVlpWMkZvLWtkalgyaDJJbkNDV1F3MHQ3c2FOTWpkbkJlaTQ3U1kwRFNXQ2NRcmQtX2g3Z21NTUZWSnQtLXRXZEw4WkJkTUpWaWFCX2QwYWNNN2xWaEs4Vzc2M0...",
+      "source": "Countercurrents.org",
+      "image": "",
+      "lang": "en",
+      "pubDate": "2026-10-03T11:52:03.460Z"
     },
     {
       "title": "Natural Farming: India's Path to Resilient Agriculture - Drishti IAS",
@@ -227,7 +254,7 @@
       "source": "Drishti IAS",
       "image": "",
       "lang": "en",
-      "pubDate": "2026-10-03T05:37:49.200Z"
+      "pubDate": "2026-10-03T11:52:03.460Z"
     },
     {
       "title": "How FarmerChat Is Putting Instant Crop Diagnosis and Local Language Advice Into Every Farmer’s Pocket - The Better India",
@@ -236,135 +263,117 @@
       "source": "The Better India",
       "image": "",
       "lang": "en",
-      "pubDate": "2026-10-03T05:37:49.200Z"
+      "pubDate": "2026-10-03T11:52:03.460Z"
     },
     {
-      "title": "ICAR’s 97th AGM Charts the Roadmap for Transformative Agriculture - icar.org.in",
+      "title": "ICAR’s 97th AGM Charts the Roadmap for Transformative Agriculture - Indian Council Of Agricultural Research",
       "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxQUjJZTkRHc0d6VVBnLVBmR3BaMVhHOXZxNzhvX0dBeVB2QjdzVmdVc3Y0TGp5OXNBVTNsRXo5U1k3eWNNVmM4WFA1c1VyLTdTUUV1c00tTnBfZFJrLWNxZkk5RWxEemNMa2hyUmhUQWdSczIzcnFHS1VtTEVRRWZROE42UlE2TDBUN25N?oc=5",
       "description": "<a href=\"https://news.google.com/rss/articles/CBMiiwFBVV95cUxQUjJZTkRHc0d6VVBnLVBmR3BaMVhHOXZxNzhvX0dBeVB2QjdzVmdVc3Y0TGp5OXNBVTNsRXo5U1k3eWNNVmM4WFA1c1VyLTdTUUV1c00tTnBfZFJrLWNxZkk5RWxEemNMa2hyUmhUQWdSczIzcnFHS1VtTEVRRW...",
-      "source": "icar.org.in",
+      "source": "Indian Council Of Agricultural Research",
       "image": "",
       "lang": "en",
-      "pubDate": "2026-10-03T05:37:49.200Z"
-    },
-    {
-      "title": "India needs a human- and farmer-centred model of agricultural AI - Down To Earth",
-      "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOODJiWUZrUVpieXlpakVHY3NZV0x5R29Zb25JVTNUczRhU2ZqT1U3RjhnbjZhS0ZWT3pQWnNydTFCSzcyemRELTNqVC0zbkp5U25sZmdORDZzYUgwZnEtSzQwLWpLQUFCb2JpelBfYlFRdXJsTTJnejJkMXZDSnpjN2lPa3kzTnJ4NEh5TEFwTzVCOXlSVnBpOUxKNVl1OUhpVVRqdEdwcFk3QdIBtwFBVV95cUxPajFSby1NV2EtNnpYVHBwLU9laEFLZ3RXSWZGTzNsTWRWMVM3b0VOVm85UmxQdks4OEUxUmlwb1ZtbHZ5bGVoTzBIRHQ3b1RDWkFWNFlXaWo0MjVBU1ZjcVFlTDFxT2dzY3Zqd1dudDVZeFVNSzY1RXBIR0hhM0J6bmhEWVNGblJoRFVNbzNBdGd5N1U4eWRtUWpZZ1N3eHNabFZ2SkpfS3NhbHZBSjVobHhsNWV3UFk?oc=5",
-      "description": "<a href=\"https://news.google.com/rss/articles/CBMiqgFBVV95cUxOODJiWUZrUVpieXlpakVHY3NZV0x5R29Zb25JVTNUczRhU2ZqT1U3RjhnbjZhS0ZWT3pQWnNydTFCSzcyemRELTNqVC0zbkp5U25sZmdORDZzYUgwZnEtSzQwLWpLQUFCb2JpelBfYlFRdXJsTTJnejJkMXZDSn...",
-      "source": "Down To Earth",
-      "image": "",
-      "lang": "en",
-      "pubDate": "2026-10-03T05:37:49.200Z"
-    },
-    {
-      "title": "The New Era of Indian Agriculture and Allied Sectors - pib.gov.in",
-      "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE45S2pHQ1ZyVHVMR0dkSHdRdXBfNjhUeHBwbjN4RWR0bWpXckZqUVpuaWxRTTB4ZEhYUUVuYW9vNi1wNG9paGwtUW1lN0xnN1c3WUVUVmR2Zlp1QWVSYndMS3JQN3VkbXhI?oc=5",
-      "description": "<a href=\"https://news.google.com/rss/articles/CBMiaEFVX3lxTE45S2pHQ1ZyVHVMR0dkSHdRdXBfNjhUeHBwbjN4RWR0bWpXckZqUVpuaWxRTTB4ZEhYUUVuYW9vNi1wNG9paGwtUW1lN0xnN1c3WUVUVmR2Zlp1QWVSYndMS3JQN3VkbXhI?oc=5\" target=\"_blank\">The New...",
-      "source": "pib.gov.in",
-      "image": "",
-      "lang": "en",
-      "pubDate": "2026-10-03T05:37:49.200Z"
-    },
-    {
-      "title": "Over the Past Year, ICAR Developed 386 Improved Varieties Across 44 Crops, Including 94% Climate-Resilient and 29 Biofortified Varieties: Shri Shivraj Singh Chouhan - pib.gov.in",
-      "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE1NZ1pRaXIxZFFUbHNodDduSk1XTktCdkdyYW5RZW16Y05ZS2lCQ1VrbVh1eWVKdmgyeFc5ZVZIZ3RHdTdZV3ZiZ0tqbFhTYVlfOWhwemxURWJjNG00eVpUWndhcVp4MEtQcHZOdUdFVy00UHR4MzZuV3JOUQ?oc=5",
-      "description": "<a href=\"https://news.google.com/rss/articles/CBMie0FVX3lxTE1NZ1pRaXIxZFFUbHNodDduSk1XTktCdkdyYW5RZW16Y05ZS2lCQ1VrbVh1eWVKdmgyeFc5ZVZIZ3RHdTdZV3ZiZ0tqbFhTYVlfOWhwemxURWJjNG00eVpUWndhcVp4MEtQcHZOdUdFVy00UHR4MzZuV3JOUQ?oc=...",
-      "source": "pib.gov.in",
-      "image": "",
-      "lang": "en",
-      "pubDate": "2026-10-03T05:37:49.200Z"
+      "pubDate": "2026-10-03T11:52:03.460Z"
     }
   ],
   "articles": [
     {
+      "title": "मध्यप्रदेश से दक्षिण -पश्चिम मानसून की वापसी",
+      "url": "https://www.krishakjagat.org/news/withdrawal-of-the-southwest-monsoon-from-madhya-pradesh/",
+      "description": "KRISHAK JAGAT | National Agriculture Hindi Newspaper मप्र के सभी जिले शुष्क रहे 03 अक्टूबर 2026, इंदौर: मध्यप्रदेश से दक्षिण -पश्चिम मानसून की वापसी &#8211; मौसम केंद्र , भोपाल से मिली जानकारी के अनुसार पिछले 24 घंटों के...",
+      "source": "Krishak Jagat",
+      "image": "https://www.krishakjagat.org/wp-content/uploads/2020/07/krishak-jagat-e1597562142880.jpg",
+      "lang": "hi",
+      "pubDate": "2026-10-03T11:51:53.428Z"
+    },
+    {
+      "title": "कर्नाटक में सूखे को लेकर मल्लिकार्जुन  खड़गे ने पीएम मोदी को लिखी चिट्ठी, ₹3,705 करोड़ की मदद समेत रखीं 6 मांगें",
+      "url": "https://www.krishakjagat.org/national-news/mallikarjun-kharge-writes-to-pm-modi-regarding-the-drought-in-karnataka-puts-forward-six-demands-including-financial-assistance-of-%e2%82%b93705-crore/",
+      "description": "KRISHAK JAGAT | National Agriculture Hindi Newspaper 03 अक्टूबर 2026, नई दिल्ली: कर्नाटक में सूखे को लेकर मल्लिकार्जुन खड़गे ने पीएम मोदी को लिखी चिट्ठी, ₹3,705 करोड़ की मदद समेत रखीं 6 मांगें &#8211; कर्नाटक में सूखे की...",
+      "source": "Krishak Jagat",
+      "image": "https://www.krishakjagat.org/wp-content/uploads/2026/10/sukha.jpg",
+      "lang": "hi",
+      "pubDate": "2026-10-03T11:51:53.428Z"
+    },
+    {
+      "title": "नमो ड्रोन दीदी योजना से बदली खेती की तस्वीर, गोदावरी साहू एक दिन में 20-25 एकड़ में कर रहीं छिड़काव",
+      "url": "https://www.krishakjagat.org/news/namo-drone-didi-scheme-transforms-the-agricultural-landscape-godavari-sahu-is-spraying-20-25-acres-in-a-single-day/",
+      "description": "KRISHAK JAGAT | National Agriculture Hindi Newspaper 03 अक्टूबर 2026, रायपुर: नमो ड्रोन दीदी योजना से बदली खेती की तस्वीर, गोदावरी साहू एक दिन में 20-25 एकड़ में कर रहीं छिड़काव &#8211; छत्तीसगढ़ सरकार की नमो ड्रोन दीदी ...",
+      "source": "Krishak Jagat",
+      "image": "https://www.krishakjagat.org/wp-content/uploads/2026/10/namo-frone.jpg",
+      "lang": "hi",
+      "pubDate": "2026-10-03T11:51:53.428Z"
+    },
+    {
+      "title": "फल-सब्जी से फूलों तक खेती पर अनुदान, हरियाणा में बागवानी किसानों के लिए सहायता योजना",
+      "url": "https://www.krishakjagat.org/news/subsidies-on-farming-ranging-from-fruits-and-vegetables-to-flowers-assistance-scheme-for-horticulture-farmers-in-haryana/",
+      "description": "KRISHAK JAGAT | National Agriculture Hindi Newspaper 03 अक्टूबर 2026, चंडीगढ़: फल-सब्जी से फूलों तक खेती पर अनुदान, हरियाणा में बागवानी किसानों के लिए सहायता योजना &#8211; हरियाणा में बागवानी फसलों को बढ़ावा देने और किसा...",
+      "source": "Krishak Jagat",
+      "image": "https://www.krishakjagat.org/wp-content/uploads/2026/10/sal.jpg",
+      "lang": "hi",
+      "pubDate": "2026-10-03T11:51:53.428Z"
+    },
+    {
+      "title": "बिहार में औषधीय खेती को बढ़ावा, 100 हेक्टेयर में एलोवेरा से शतावरी तक की खेती",
+      "url": "https://www.krishakjagat.org/news/promotion-of-medicinal-farming-in-bihar-cultivation-of-crops-ranging-from-aloe-vera-to-shatavari-across-100-hectares/",
+      "description": "KRISHAK JAGAT | National Agriculture Hindi Newspaper 03 अक्टूबर 2026, पटना: बिहार में औषधीय खेती को बढ़ावा, 100 हेक्टेयर में एलोवेरा से शतावरी तक की खेती &#8211; किसानों की आय बढ़ाने और पारंपरिक फसलों पर निर्भरता कम करने...",
+      "source": "Krishak Jagat",
+      "image": "https://www.krishakjagat.org/wp-content/uploads/2026/10/alld.jpg",
+      "lang": "hi",
+      "pubDate": "2026-10-03T11:51:53.428Z"
+    },
+    {
+      "title": "अब मंडी जाने से पहले किसान जान सकेंगे भाव, यूपी की 251 मंडियां एगमार्कनेट 2.0 से जुड़ीं",
+      "url": "https://www.krishakjagat.org/news/farmers-will-now-be-able-to-check-prices-before-visiting-the-mandi-251-mandis-in-up-have-been-linked-to-agmarknet-2-0/",
+      "description": "KRISHAK JAGAT | National Agriculture Hindi Newspaper 03 अक्टूबर 2026, लखनऊ: अब मंडी जाने से पहले किसान जान सकेंगे भाव, यूपी की 251 मंडियां एगमार्कनेट 2.0 से जुड़ीं &#8211; किसानों को कृषि उपज के बेहतर बाजार भाव की जानकार...",
+      "source": "Krishak Jagat",
+      "image": "https://www.krishakjagat.org/wp-content/uploads/2026/10/frmr.jpg",
+      "lang": "hi",
+      "pubDate": "2026-10-03T11:51:53.428Z"
+    },
+    {
       "title": "फसल नुकसान के पंचनामे पर सूचना आयोग का शिकंजा, तहसीलदार पर ₹25 हजार की शास्ति",
-      "url": "https://www.krishakjagat.org/news/information-commission-cracks-down-on-crop-loss-assessment-reports-%e2%82%b925000-penalty-imposed-on-tehsildar/",
-      "description": "KRISHAK JAGAT | National Agriculture Hindi Newspaper 02 अक्टूबर 2026, भोपाल (कृषक जगत): फसल नुकसान के पंचनामे पर सूचना आयोग का शिकंजा, तहसीलदार पर ₹25 हजार की शास्ति &#8211; किसान के खेत में फसल नुकसान हुआ, सरकारी अमले न...",
+      "url": "https://www.krishakjagat.org/news/information-commission-cracks-down-on-crop-loss-assessment-reports-%e2%82%b925000-penalty-imposed-on-tehsildar-3/",
+      "description": "KRISHAK JAGAT | National Agriculture Hindi Newspaper 03 अक्टूबर 2026,&#160;भोपाल:&#160;फसल नुकसान के पंचनामे पर सूचना आयोग का शिकंजा, तहसीलदार पर ₹25 हजार की शास्ति &#8211; किसान के खेत में फसल नुकसान हुआ, सरकारी अमले ने...",
       "source": "Krishak Jagat",
-      "image": "https://www.krishakjagat.org/wp-content/uploads/2026/09/aff.jpg",
+      "image": "https://www.krishakjagat.org/wp-content/uploads/2026/10/mp-1.jpg",
       "lang": "hi",
-      "pubDate": "2026-10-03T05:37:39.462Z"
+      "pubDate": "2026-10-03T11:51:53.428Z"
     },
     {
-      "title": "गेहूं, चना, सरसों समेत 6 रबी फसलों की MSP बढ़ी, सीएम मोहन यादव ने किसानों को दी बधाई",
-      "url": "https://www.krishakjagat.org/news/msp-hiked-for-six-rabi-crops-including-wheat-gram-and-mustard-cm-mohan-yadav-congratulates-farmers/",
-      "description": "KRISHAK JAGAT | National Agriculture Hindi Newspaper 02 अक्टूबर 2026, भोपाल: गेहूं, चना, सरसों समेत 6 रबी फसलों की MSP बढ़ी, सीएम मोहन यादव ने किसानों को दी बधाई &#8211; मुख्यमंत्री डॉ. मोहन यादव ने कहा है कि प्रधानमंत्र...",
+      "title": "रबी फसलों की एमएसपी बढ़ी, अब चुनौती किसानों तक लाभ पहुंचाने की",
+      "url": "https://www.krishakjagat.org/national-news/msp-for-rabi-crops-raised-the-challenge-now-is-to-ensure-the-benefits-reach-the-farmers/",
+      "description": "KRISHAK JAGAT | National Agriculture Hindi Newspaper 03 अक्टूबर 2026, नई दिल्ली: रबी फसलों की एमएसपी बढ़ी, अब चुनौती किसानों तक लाभ पहुंचाने की &#8211; केंद्र सरकार ने रबी विपणन सत्र 2027-28 के लिए छह अनिवार्य रबी फसलों ...",
       "source": "Krishak Jagat",
-      "image": "https://www.krishakjagat.org/wp-content/uploads/2026/10/WHEAT-4.jpg",
+      "image": "https://www.krishakjagat.org/wp-content/uploads/2026/10/msp.jpg",
       "lang": "hi",
-      "pubDate": "2026-10-03T05:37:39.462Z"
+      "pubDate": "2026-10-03T11:51:53.428Z"
     },
     {
-      "title": "कृषि विज्ञान केन्द्र, खरगोन के  वैज्ञानिक डॉ. सिंह सम्मानित",
-      "url": "https://www.krishakjagat.org/news/dr-singh-scientist-at-krishi-vigyan-kendra-khargone-honoured/",
-      "description": "KRISHAK JAGAT | National Agriculture Hindi Newspaper 02 अक्टूबर 2026, (दिलीप दसौंधी, कृषक जगत, मंडलेश्व): कृषि विज्ञान केन्द्र, खरगोन के वैज्ञानिक डॉ. सिंह सम्मानित &#8211; कृषि विज्ञान केन्द्र, खरगोन के प्रसार वैज्ञानिक...",
+      "title": "सोयाबीन किसानों के लिए राहत, भावांतर योजना में पंजीयन शुरू; इन केंद्रों पर मुफ्त में करा सकेंगे रजिस्ट्रेशन",
+      "url": "https://www.krishakjagat.org/news/relief-for-soybean-farmers-registration-for-the-bhavantar-scheme-has-begun-registration-can-be-done-free-of-charge-at-these-centers/",
+      "description": "KRISHAK JAGAT | National Agriculture Hindi Newspaper 03 अक्टूबर 2026, भोपाल: सोयाबीन किसानों के लिए राहत, भावांतर योजना में पंजीयन शुरू; इन केंद्रों पर मुफ्त में करा सकेंगे रजिस्ट्रेशन &#8211; मध्य प्रदेश के सोयाबीन किसा...",
       "source": "Krishak Jagat",
-      "image": "https://www.krishakjagat.org/wp-content/uploads/2026/10/Dr-Singh-Samman.jpg",
+      "image": "https://www.krishakjagat.org/wp-content/uploads/2026/10/SOYBEAN.jpg",
       "lang": "hi",
-      "pubDate": "2026-10-03T05:37:39.462Z"
+      "pubDate": "2026-10-03T11:51:53.428Z"
     },
     {
-      "title": "रबी सीजन में मध्य प्रदेश के किसानों को नहीं होगी बिजली की कमी, ऊर्जा मंत्री ने उत्पादन की समीक्षा कर दिए निर्देश",
-      "url": "https://www.krishakjagat.org/news/farmers-in-madhya-pradesh-will-not-face-a-power-shortage-during-the-rabi-season-the-energy-minister-issued-directives-after-reviewing-generation/",
-      "description": "KRISHAK JAGAT | National Agriculture Hindi Newspaper 02 अक्टूबर 2026, भोपाल: रबी सीजन में मध्य प्रदेश के किसानों को नहीं होगी बिजली की कमी, ऊर्जा मंत्री ने उत्पादन की समीक्षा कर दिए निर्देश &#8211; मध्यप्रदेश के ऊर्जा मं...",
+      "title": "दूध से दही, छाछ से श्रीखंड तक, सांची के उत्पादों को मिलेगी नई उड़ान",
+      "url": "https://www.krishakjagat.org/news/from-curd-made-from-milk-to-shrikhand-made-from-buttermilk-sanchis-products-are-set-to-soar-to-new-heights/",
+      "description": "KRISHAK JAGAT | National Agriculture Hindi Newspaper 03 अक्टूबर 2026, भोपाल: दूध से दही, छाछ से श्रीखंड तक, सांची के उत्पादों को मिलेगी नई उड़ान &#8211; मध्यप्रदेश में दुग्ध प्रसंस्करण और मूल्य वर्धित दुग्ध उत्पादों के उ...",
       "source": "Krishak Jagat",
-      "image": "https://www.krishakjagat.org/wp-content/uploads/2026/10/s.jpg",
+      "image": "https://www.krishakjagat.org/wp-content/uploads/2026/10/milk.jpg",
       "lang": "hi",
-      "pubDate": "2026-10-03T05:37:39.462Z"
+      "pubDate": "2026-10-03T11:51:53.428Z"
     },
     {
-      "title": "कम पानी अधिक उत्पादन किस्मे अपनाएं &#8211; जेडीए श्री सिंह",
-      "url": "https://www.krishakjagat.org/news/adopt-low-water-high-yield-varieties-jda-shri-singh/",
-      "description": "KRISHAK JAGAT | National Agriculture Hindi Newspaper 02 अक्टूबर 2026, धार ( कृषक जगत): कम पानी अधिक उत्पादन किस्मे अपनाएं &#8211; जेडीए श्री सिंह &#8211; अल्प वर्षा की स्थिति को दृष्टिगत रखते हुए रबी की तैयारियों पर कृषि...",
-      "source": "Krishak Jagat",
-      "image": "https://www.krishakjagat.org/wp-content/uploads/2026/10/dhar-1.jpg",
+      "title": "आत्मनिर्भरता दलहन मिशन: सरगुजा के 5 गांवों में &#8216;छत्तीसगढ़ अरहर-1 व 2’ किस्म का प्रदर्शन, किसानों के खेत बने तकनीक केंद्र",
+      "url": "https://kisansamadhan.com/chhattisgarh-arhar-1-2-variety-demonstration-sarguja/",
+      "description": "छत्तीसगढ़ में दलहन उत्पादन को बढ़ावा देने और किसानों तक अरहर की उन्नत उत्पादन तकनीक पहुंचाने के लिए आत्मनिर्भरता दलहन मिशन के तहत नई पहल की गई है। कृषि विज्ञान केंद्र, सरगुजा ने चयनित गांवों में किसानों के खेतों पर 55 हे...",
+      "source": "Kisan Samadhan",
+      "image": "",
       "lang": "hi",
-      "pubDate": "2026-10-03T05:37:39.462Z"
-    },
-    {
-      "title": "इफको “स्वच्छता ही सेवा” अभियान में शामिल",
-      "url": "https://www.krishakjagat.org/news/iffco-joins-the-swachhata-hi-seva-campaign/",
-      "description": "KRISHAK JAGAT | National Agriculture Hindi Newspaper 02 अक्टूबर 2026, भोपाल( कृषक जगत): इफको “स्वच्छता ही सेवा” अभियान में शामिल &#8211; इफको राज्य कार्यालय ने “स्वच्छता ही सेवा” अभियान के अंतर्गत विशेष स्वच्छता अभियान च...",
-      "source": "Krishak Jagat",
-      "image": "https://www.krishakjagat.org/wp-content/uploads/2026/10/dhar.jpg",
-      "lang": "hi",
-      "pubDate": "2026-10-03T05:37:39.462Z"
-    },
-    {
-      "title": "मत्स्य महासंघ की 115वीं बैठक: 2027-28 के बजट को मंजूरी, मछुआ कल्याण योजनाओं और उत्पादन बढ़ाने पर जोर",
-      "url": "https://www.krishakjagat.org/news/115th-meeting-of-the-fisheries-federation-2027-28-budget-approved-focus-on-fishermens-welfare-schemes-and-boosting-production/",
-      "description": "KRISHAK JAGAT | National Agriculture Hindi Newspaper 02 अक्टूबर 2026, भोपाल: मत्स्य महासंघ की 115वीं बैठक: 2027-28 के बजट को मंजूरी, मछुआ कल्याण योजनाओं और उत्पादन बढ़ाने पर जोर &#8211; मध्यप्रदेश के मछुआ कल्याण तथा मत्स...",
-      "source": "Krishak Jagat",
-      "image": "https://www.krishakjagat.org/wp-content/uploads/2026/10/ssfw.jpg",
-      "lang": "hi",
-      "pubDate": "2026-10-03T05:37:39.462Z"
-    },
-    {
-      "title": "गेहूं-चावल के सुरक्षित भंडारण के लिए नई तकनीक पर होगा शोध, ICAR-FCI ने किया समझौता",
-      "url": "https://www.krishakjagat.org/national-news/research-to-be-conducted-on-new-technology-for-safe-storage-of-wheat-and-rice-icar-and-fci-sign-agreement/",
-      "description": "KRISHAK JAGAT | National Agriculture Hindi Newspaper 02 अक्टूबर 2026, नई दिल्ली: गेहूं-चावल के सुरक्षित भंडारण के लिए नई तकनीक पर होगा शोध, ICAR-FCI ने किया समझौता &#8211; गेहूं और चावल के भंडारण के दौरान लगने वाले कीटों...",
-      "source": "Krishak Jagat",
-      "image": "https://www.krishakjagat.org/wp-content/uploads/2026/10/sdk.jpg",
-      "lang": "hi",
-      "pubDate": "2026-10-03T05:37:39.462Z"
-    },
-    {
-      "title": "मध्य प्रदेश का मौसम मुख्यतः शुष्क",
-      "url": "https://www.krishakjagat.org/news/the-weather-in-madhya-pradesh-is-mainly-dry/",
-      "description": "KRISHAK JAGAT | National Agriculture Hindi Newspaper 02 अक्टूबर 2026, इंदौर: मध्य प्रदेश का मौसम मुख्यतः शुष्क &#8211; मौसम केंद्र , भोपाल से मिली जानकारी के अनुसार पिछले 24 घंटों के दौरान मध्यप्रदेश के रीवा, जबलपुर संभा...",
-      "source": "Krishak Jagat",
-      "image": "https://www.krishakjagat.org/wp-content/uploads/2026/10/monsoon.jpg",
-      "lang": "hi",
-      "pubDate": "2026-10-03T05:37:39.462Z"
-    },
-    {
-      "title": "राजस्थान: खेत में फसल अवशेष जलाया तो लगेगा ₹30 हजार तक जुर्माना, रोकथाम के लिए बनी समिति",
-      "url": "https://www.krishakjagat.org/news/rajasthan-fine-of-up-to-%e2%82%b930000-for-burning-crop-residue-in-fields-committee-formed-to-curb-the-practice/",
-      "description": "KRISHAK JAGAT | National Agriculture Hindi Newspaper 02 अक्टूबर 2026, जयपुर: राजस्थान: खेत में फसल अवशेष जलाया तो लगेगा ₹30 हजार तक जुर्माना, रोकथाम के लिए बनी समिति &#8211; राजस्थान के श्रीगंगानगर जिले में फसल कटाई के ब...",
-      "source": "Krishak Jagat",
-      "image": "https://www.krishakjagat.org/wp-content/uploads/2026/10/NARVAI.jpg",
-      "lang": "hi",
-      "pubDate": "2026-10-03T05:37:39.462Z"
+      "pubDate": "2026-10-03T11:51:54.950Z"
     },
     {
       "title": "प्रधानमंत्री फसल बीमा योजना में राजस्थान ने रचा इतिहास, देश में मिला चौथा स्थान; तकनीक और पारदर्शिता में मिले पूरे 10 अंक",
@@ -373,7 +382,7 @@
       "source": "Kisan Samadhan",
       "image": "",
       "lang": "hi",
-      "pubDate": "2026-10-03T05:37:40.885Z"
+      "pubDate": "2026-10-03T11:51:54.950Z"
     },
     {
       "title": "Haryana Horticulture Training 2026: बागवानी विभाग की मुफ़्त ट्रेनिंग योजना, रहने-खाने की व्यवस्था और बस किराया भी मिलेगा!",
@@ -382,7 +391,7 @@
       "source": "Kisan Samadhan",
       "image": "",
       "lang": "hi",
-      "pubDate": "2026-10-03T05:37:40.885Z"
+      "pubDate": "2026-10-03T11:51:54.950Z"
     },
     {
       "title": "मानसून 2026 में देश में 13% कम बारिश, 2001 के बाद चौथा सबसे सूखा मानसून",
@@ -391,7 +400,7 @@
       "source": "Kisan Samadhan",
       "image": "",
       "lang": "hi",
-      "pubDate": "2026-10-03T05:37:40.885Z"
+      "pubDate": "2026-10-03T11:51:54.950Z"
     },
     {
       "title": "गेहूं और चावल के सुरक्षित भंडारण के लिए ICAR और FCI में समझौता, अब इको-फ्रेंडली गैसों से रुकेंगे कीट",
@@ -400,16 +409,7 @@
       "source": "Kisan Samadhan",
       "image": "",
       "lang": "hi",
-      "pubDate": "2026-10-03T05:37:40.885Z"
-    },
-    {
-      "title": "यूपी के किसानों को 6% ब्याज पर ₹6 लाख तक ऋण, जानें मुख्यमंत्री कृषक समृद्धि योजना और आवेदन की जानकारी",
-      "url": "https://kisansamadhan.com/up-krishak-samriddhi-yojana-loan-application-online-apply-mksyldb-in/",
-      "description": "उत्तर प्रदेश में लघु और सीमांत किसानों को रियायती दर पर दीर्घकालीन ऋण उपलब्ध कराने के लिए मुख्यमंत्री कृषक समृद्धि योजना का संचालन शुरू हो गया है। योजना के तहत पात्र किसानों को ₹6 लाख तक का ऋण 6 प्रतिशत की प्रभावी वार्षि...",
-      "source": "Kisan Samadhan",
-      "image": "",
-      "lang": "hi",
-      "pubDate": "2026-10-03T05:37:40.885Z"
+      "pubDate": "2026-10-03T11:51:54.951Z"
     }
   ]
 }
